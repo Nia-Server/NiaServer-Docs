@@ -18,6 +18,11 @@ export default defineUserConfig({
     }
   },
   theme: defaultTheme({
+    repo: 'NIANIANKNIA/NiaServer-Docs',
+    docsRepo: 'https://github.com/NIANIANKNIA/NiaServer-Docs',
+    docsBranch: 'main',
+    docsDir: 'docs',
+    editLinkPattern: ':repo/edit/:branch/:path',
     locales: {
       '/en-US/': {
         selectLanguageName: 'English',
@@ -32,10 +37,6 @@ export default defineUserConfig({
               {
                 text: 'Blog',
                 link: 'https://www.mcnia.top'
-              },
-              {
-                text: 'Github',
-                link: 'https://www.github.com/NIANIANKNIA/NIASERVER-V4'
               }
             ],
           }
@@ -51,6 +52,9 @@ export default defineUserConfig({
         }
       },
       '/': {
+        editLinkText: '编辑此页',
+        lastUpdatedText: '最近更新时间',
+        contributorsText: '贡献者',
         selectLanguageName: '简体中文',
         navbar: [
           {
@@ -63,10 +67,6 @@ export default defineUserConfig({
               {
                 text: 'Blog',
                 link: 'https://www.mcnia.top'
-              },
-              {
-                text: 'Github',
-                link: 'https://www.github.com/NIANIANKNIA/NIASERVER-V4'
               }
             ],
           }
@@ -74,9 +74,9 @@ export default defineUserConfig({
         sidebar: {
           '/': [
             {
-              text: '服务器游玩相关文档',
+              text: '服务器相关文档',
               collapsible: true,
-              children: ['/regulation.md','/guide.md','/Illustrated.md'],
+              children: ['/regulation.md','/guide.md','/Illustrated.md','/update.md'],
             },
             {
               text: '如何部署服务器',
@@ -84,9 +84,14 @@ export default defineUserConfig({
               children: [],
             },
             {
+              text: '服务器插件使用说明',
+              collapsible: true,
+              children: ['/plugins/Ntrade.md'],
+            },
+            {
               text: '开发者&特别鸣谢',
               collapsible: true,
-              children: [],
+              children: ['/developers.md','/specialThanks.md'],
             },
           ]
         }
