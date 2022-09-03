@@ -1,6 +1,6 @@
 # NiaServer-Docs
 
-NIA服务器文档站相关文件
+[NIA服务器文档站](https://docs.mcnia.top/)相关文件
 
 文档站基于[Vuepress](https://v2.vuepress.vuejs.org/)建设
 
