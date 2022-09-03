@@ -1,1 +1,0 @@
-import{_ as t,o as a,c as o,a as e,d as r}from"./app.cc107f5b.js";const s={},c=e("h1",{id:"\u7F16\u5199\u4E2D",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#\u7F16\u5199\u4E2D","aria-hidden":"true"},"#"),r(" \u7F16\u5199\u4E2D...")],-1),n=[c];function _(d,i){return a(),o("div",null,n)}const l=t(s,[["render",_],["__file","history.html.vue"]]);export{l as default};

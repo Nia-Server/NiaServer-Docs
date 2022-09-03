@@ -1,13 +1,13 @@
 export const searchIndex = [
   {
-    "title": "开发者名单",
+    "title": "😙开发者名单",
     "headers": [],
     "path": "/developers.html",
     "pathLocale": "/",
     "extraFields": []
   },
   {
-    "title": "游玩指南",
+    "title": "📣游玩指南",
     "headers": [
       {
         "level": 3,
@@ -29,6 +29,20 @@ export const searchIndex = [
         "slug": "申请白名单",
         "link": "#申请白名单",
         "children": []
+      },
+      {
+        "level": 3,
+        "title": "进入服务器",
+        "slug": "进入服务器",
+        "link": "#进入服务器",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "部分无法进入服务器的情况以及解决方法",
+        "slug": "部分无法进入服务器的情况以及解决方法",
+        "link": "#部分无法进入服务器的情况以及解决方法",
+        "children": []
       }
     ],
     "path": "/guide.html",
@@ -36,14 +50,14 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "服务器历史",
+    "title": "📒服务器历史",
     "headers": [],
     "path": "/history.html",
     "pathLocale": "/",
     "extraFields": []
   },
   {
-    "title": "服务器图鉴",
+    "title": "📜服务器图鉴",
     "headers": [],
     "path": "/Illustrated.html",
     "pathLocale": "/",
@@ -57,7 +71,7 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "规章制度",
+    "title": "📝规章制度",
     "headers": [
       {
         "level": 3,
@@ -121,23 +135,15 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "特别鸣谢",
+    "title": "❤️特别鸣谢",
     "headers": [],
     "path": "/specialThanks.html",
     "pathLocale": "/",
     "extraFields": []
   },
   {
-    "title": "服务器更新日志",
-    "headers": [
-      {
-        "level": 3,
-        "title": "v4版本暂时没有开放",
-        "slug": "v4版本暂时没有开放",
-        "link": "#v4版本暂时没有开放",
-        "children": []
-      }
-    ],
+    "title": "📎服务器更新日志",
+    "headers": [],
     "path": "/update.html",
     "pathLocale": "/",
     "extraFields": []
@@ -150,8 +156,44 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "Ntrade使用方法",
+    "title": "🚯KillItem使用方法",
     "headers": [
+      {
+        "level": 3,
+        "title": "插件作用",
+        "slug": "插件作用",
+        "link": "#插件作用",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "初始化插件",
+        "slug": "初始化插件",
+        "link": "#初始化插件",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "开始使用",
+        "slug": "开始使用",
+        "link": "#开始使用",
+        "children": []
+      }
+    ],
+    "path": "/plugins/KillItem.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "📦Ntrade使用方法",
+    "headers": [
+      {
+        "level": 3,
+        "title": "插件作用",
+        "slug": "插件作用",
+        "link": "#插件作用",
+        "children": []
+      },
       {
         "level": 3,
         "title": "初始化插件",

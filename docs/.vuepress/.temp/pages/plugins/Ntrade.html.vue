@@ -1,4 +1,6 @@
 <template><div><h1 id="ntrade使用教程" tabindex="-1"><a class="header-anchor" href="#ntrade使用教程" aria-hidden="true">#</a> Ntrade使用教程</h1>
+<h3 id="插件作用" tabindex="-1"><a class="header-anchor" href="#插件作用" aria-hidden="true">#</a> 插件作用</h3>
+<p>用于实现玩家间交易的一个插件</p>
 <h3 id="初始化插件" tabindex="-1"><a class="header-anchor" href="#初始化插件" aria-hidden="true">#</a> 初始化插件</h3>
 <ol>
 <li>
