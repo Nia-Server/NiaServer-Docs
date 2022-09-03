@@ -5,6 +5,8 @@ export const pagesComponents = {
   "v-1906d712": defineAsyncComponent(() => import(/* webpackChunkName: "v-1906d712" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/developers.html.vue")),
   // path: /guide.html
   "v-5d7259d4": defineAsyncComponent(() => import(/* webpackChunkName: "v-5d7259d4" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/guide.html.vue")),
+  // path: /history.html
+  "v-a7d34384": defineAsyncComponent(() => import(/* webpackChunkName: "v-a7d34384" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/history.html.vue")),
   // path: /Illustrated.html
   "v-36284dfb": defineAsyncComponent(() => import(/* webpackChunkName: "v-36284dfb" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/Illustrated.html.vue")),
   // path: /

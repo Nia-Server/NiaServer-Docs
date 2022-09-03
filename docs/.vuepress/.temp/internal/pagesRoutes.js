@@ -1,6 +1,7 @@
 export const pagesRoutes = [
   ["v-1906d712","/developers.html",{"title":"开发者名单"},["/developers","/developers.md"]],
   ["v-5d7259d4","/guide.html",{"title":"游玩指南"},["/guide","/guide.md"]],
+  ["v-a7d34384","/history.html",{"title":"服务器历史"},["/history","/history.md"]],
   ["v-36284dfb","/Illustrated.html",{"title":"服务器图鉴"},["/Illustrated","/Illustrated.md"]],
   ["v-8daa1a0e","/",{"title":""},["/index.html","/README.md"]],
   ["v-4c40ab56","/regulation.html",{"title":"规章制度"},["/regulation","/regulation.md"]],

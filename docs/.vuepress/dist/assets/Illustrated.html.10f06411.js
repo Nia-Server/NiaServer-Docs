@@ -1,1 +1,0 @@
-import{_ as t,o as a,c as r,a as e,b as s}from"./app.8c5f0ce1.js";const c={},o=e("h1",{id:"\u7F16\u5199\u4E2D",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#\u7F16\u5199\u4E2D","aria-hidden":"true"},"#"),s(" \u7F16\u5199\u4E2D...")],-1),n=[o];function _(d,l){return a(),r("div",null,n)}const h=t(c,[["render",_],["__file","Illustrated.html.vue"]]);export{h as default};
