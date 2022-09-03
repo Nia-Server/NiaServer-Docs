@@ -17,6 +17,8 @@ export const pagesData = {
   "v-0dcdc517": () => import(/* webpackChunkName: "v-0dcdc517" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/update.html.js").then(({ data }) => data),
   // path: /en-US/
   "v-7c1a6266": () => import(/* webpackChunkName: "v-7c1a6266" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/en-US/index.html.js").then(({ data }) => data),
+  // path: /plugins/KillItem.html
+  "v-666da380": () => import(/* webpackChunkName: "v-666da380" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/plugins/KillItem.html.js").then(({ data }) => data),
   // path: /plugins/Ntrade.html
   "v-36d48d8a": () => import(/* webpackChunkName: "v-36d48d8a" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/plugins/Ntrade.html.js").then(({ data }) => data),
   // path: /404.html

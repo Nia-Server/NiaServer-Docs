@@ -102,7 +102,7 @@ export default defineUserConfig({
             {
               text: '服务器插件使用说明',
               collapsible: true,
-              children: ['/plugins/Ntrade.md'],
+              children: ['/plugins/Ntrade.md','/plugins/KillItem.md'],
             },
             {
               text: '开发者&特别鸣谢',

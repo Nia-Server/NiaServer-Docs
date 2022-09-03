@@ -1,6 +1,7 @@
 ---
 home: true
 heroImage: /logo.png
+heroImageDark: /logoDark.png
 actions:
   - text: Github
     link: https://www.github.com/NIANIANKNIA/NIASERVER-V4

@@ -1,6 +1,6 @@
 ---
 lang: zh-CN
-title: 规章制度
+title: 📝规章制度
 ---
 
 # NIA服务器规章制度v3.0

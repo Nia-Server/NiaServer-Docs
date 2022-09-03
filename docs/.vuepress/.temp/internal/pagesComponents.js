@@ -19,6 +19,8 @@ export const pagesComponents = {
   "v-0dcdc517": defineAsyncComponent(() => import(/* webpackChunkName: "v-0dcdc517" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/update.html.vue")),
   // path: /en-US/
   "v-7c1a6266": defineAsyncComponent(() => import(/* webpackChunkName: "v-7c1a6266" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/en-US/index.html.vue")),
+  // path: /plugins/KillItem.html
+  "v-666da380": defineAsyncComponent(() => import(/* webpackChunkName: "v-666da380" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/plugins/KillItem.html.vue")),
   // path: /plugins/Ntrade.html
   "v-36d48d8a": defineAsyncComponent(() => import(/* webpackChunkName: "v-36d48d8a" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/plugins/Ntrade.html.vue")),
   // path: /404.html
