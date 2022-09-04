@@ -19,12 +19,18 @@ export const pagesComponents = {
   "v-035c0ff0": defineAsyncComponent(() => import(/* webpackChunkName: "v-035c0ff0" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/specialThanks.html.vue")),
   // path: /update.html
   "v-0dcdc517": defineAsyncComponent(() => import(/* webpackChunkName: "v-0dcdc517" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/update.html.vue")),
+  // path: /en-US/About.html
+  "v-4c864472": defineAsyncComponent(() => import(/* webpackChunkName: "v-4c864472" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/en-US/About.html.vue")),
   // path: /en-US/
   "v-7c1a6266": defineAsyncComponent(() => import(/* webpackChunkName: "v-7c1a6266" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/en-US/index.html.vue")),
   // path: /plugins/KillItem.html
   "v-666da380": defineAsyncComponent(() => import(/* webpackChunkName: "v-666da380" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/plugins/KillItem.html.vue")),
   // path: /plugins/Ntrade.html
   "v-36d48d8a": defineAsyncComponent(() => import(/* webpackChunkName: "v-36d48d8a" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/plugins/Ntrade.html.vue")),
+  // path: /en-US/plugins/KillItem.html
+  "v-6fd4d61a": defineAsyncComponent(() => import(/* webpackChunkName: "v-6fd4d61a" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/en-US/plugins/KillItem.html.vue")),
+  // path: /en-US/plugins/Ntrade.html
+  "v-5dbb9ea4": defineAsyncComponent(() => import(/* webpackChunkName: "v-5dbb9ea4" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/en-US/plugins/Ntrade.html.vue")),
   // path: /404.html
   "v-3706649a": defineAsyncComponent(() => import(/* webpackChunkName: "v-3706649a" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/404.html.vue")),
 }

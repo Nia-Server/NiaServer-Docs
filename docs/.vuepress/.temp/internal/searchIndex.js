@@ -156,6 +156,13 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "🎈About this website",
+    "headers": [],
+    "path": "/en-US/About.html",
+    "pathLocale": "/en-US/",
+    "extraFields": []
+  },
+  {
     "title": "",
     "headers": [],
     "path": "/en-US/",
@@ -225,6 +232,71 @@ export const searchIndex = [
     ],
     "path": "/plugins/Ntrade.html",
     "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "🚯KillItem tutorial",
+    "headers": [
+      {
+        "level": 3,
+        "title": "Plugin function",
+        "slug": "plugin-function",
+        "link": "#plugin-function",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "Initialize the plugin",
+        "slug": "initialize-the-plugin",
+        "link": "#initialize-the-plugin",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "Get started",
+        "slug": "get-started",
+        "link": "#get-started",
+        "children": []
+      }
+    ],
+    "path": "/en-US/plugins/KillItem.html",
+    "pathLocale": "/en-US/",
+    "extraFields": []
+  },
+  {
+    "title": "📦Ntrade tutorial",
+    "headers": [
+      {
+        "level": 3,
+        "title": "Plugin function",
+        "slug": "plugin-function",
+        "link": "#plugin-function",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "Initialize the plugin",
+        "slug": "initialize-the-plugin",
+        "link": "#initialize-the-plugin",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "Modify the configuration file",
+        "slug": "modify-the-configuration-file",
+        "link": "#modify-the-configuration-file",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "Get started",
+        "slug": "get-started",
+        "link": "#get-started",
+        "children": []
+      }
+    ],
+    "path": "/en-US/plugins/Ntrade.html",
+    "pathLocale": "/en-US/",
     "extraFields": []
   },
   {

@@ -6,6 +6,9 @@ actions:
   - text: Github
     link: https://github.com/NIANIANKNIA/NiaServer-Docs
     type: primary
+  - text: Start
+    link: /en-US/plugins/Ntrade
+    type: secondary
 features:
 - title: 📝Rules and regulations
   details: No rules and no squares, in order to ensure the normal operation of the server, we have written rules and regulations to maintain the game order of the server!
