@@ -1,9 +1,9 @@
 ---
 lang: zh-CN
-title: 🚯KillItem使用方法
+title: 🚯KillItem使用教程
 ---
 
-# KillItem使用教程
+# 🚯KillItem使用教程
 
 ### 插件作用
 
@@ -13,7 +13,7 @@ title: 🚯KillItem使用方法
 
 1. 配置好相应的BDS服务端，并安装好[LiteLoader](https://github.com/LiteLDev/LiteLoaderBDS)
 
-2. 下载最新版本的[Ntrade](https://github.com/NIANIANKNIA/KillItemreleases)
+2. 下载最新版本的[KillItem](https://github.com/NIANIANKNIA/KillItem)
 
 3. 将解压包中的KillItem.js放到BDS根目录的plugins文件夹下
 
@@ -23,6 +23,6 @@ title: 🚯KillItem使用方法
 ### 开始使用
 
 
-1.在服务器中输入/trade指令打开GUI进行相应操作
+1.在服务器中输入/recoveritem指令打开GUI
 
-2.您可以输入/opentradegui @p给最近的玩家打开交易市场GUI
+2.根据GUI显示的选择相应文件数据进行恢复

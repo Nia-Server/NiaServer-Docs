@@ -83,6 +83,10 @@ export default defineUserConfig({
               {
                 text: 'Blog',
                 link: 'https://www.mcnia.top'
+              },
+              {
+                text: '如何编辑本文档站',
+                link: 'https://www.mcnia.top/howtoedit'
               }
             ],
           }
@@ -97,7 +101,7 @@ export default defineUserConfig({
             {
               text: '如何部署服务器',
               collapsible: true,
-              children: [],
+              children: ['/deploy.md'],
             },
             {
               text: '服务器插件使用说明',
