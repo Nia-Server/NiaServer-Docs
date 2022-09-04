@@ -7,7 +7,7 @@ actions:
     link: https://github.com/NIANIANKNIA/NiaServer-Docs
     type: primary
   - text: Start
-    link: /en-US/plugins/Ntrade
+    link: /en-US/About
     type: secondary
 features:
 - title: 📝Rules and regulations
