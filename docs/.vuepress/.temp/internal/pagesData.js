@@ -17,12 +17,18 @@ export const pagesData = {
   "v-035c0ff0": () => import(/* webpackChunkName: "v-035c0ff0" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/specialThanks.html.js").then(({ data }) => data),
   // path: /update.html
   "v-0dcdc517": () => import(/* webpackChunkName: "v-0dcdc517" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/update.html.js").then(({ data }) => data),
+  // path: /en-US/About.html
+  "v-4c864472": () => import(/* webpackChunkName: "v-4c864472" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/en-US/About.html.js").then(({ data }) => data),
   // path: /en-US/
   "v-7c1a6266": () => import(/* webpackChunkName: "v-7c1a6266" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/en-US/index.html.js").then(({ data }) => data),
   // path: /plugins/KillItem.html
   "v-666da380": () => import(/* webpackChunkName: "v-666da380" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/plugins/KillItem.html.js").then(({ data }) => data),
   // path: /plugins/Ntrade.html
   "v-36d48d8a": () => import(/* webpackChunkName: "v-36d48d8a" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/plugins/Ntrade.html.js").then(({ data }) => data),
+  // path: /en-US/plugins/KillItem.html
+  "v-6fd4d61a": () => import(/* webpackChunkName: "v-6fd4d61a" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/en-US/plugins/KillItem.html.js").then(({ data }) => data),
+  // path: /en-US/plugins/Ntrade.html
+  "v-5dbb9ea4": () => import(/* webpackChunkName: "v-5dbb9ea4" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/en-US/plugins/Ntrade.html.js").then(({ data }) => data),
   // path: /404.html
   "v-3706649a": () => import(/* webpackChunkName: "v-3706649a" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/404.html.js").then(({ data }) => data),
 }

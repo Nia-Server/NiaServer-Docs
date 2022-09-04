@@ -60,9 +60,14 @@ export default defineUserConfig({
         sidebar: {
           '/en-US/': [
             {
-              text: '服务器游玩相关文档',
+              text: 'About',
               collapsible: true,
-              children: ['/regulation.md','/guide.md'],
+              children: ['/en-US/About.md'],
+            },
+            {
+              text: 'Plugins',
+              collapsible: true,
+              children: ['/en-US/plugins/Ntrade.md','/en-US/plugins/KillItem.md'],
             },
           ]
         }
