@@ -1,4 +1,6 @@
 export const pagesData = {
+  // path: /deploy.html
+  "v-2ef9efb9": () => import(/* webpackChunkName: "v-2ef9efb9" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/deploy.html.js").then(({ data }) => data),
   // path: /developers.html
   "v-1906d712": () => import(/* webpackChunkName: "v-1906d712" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/developers.html.js").then(({ data }) => data),
   // path: /guide.html

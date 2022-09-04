@@ -1,4 +1,4 @@
-<template><div><h1 id="编写中" tabindex="-1"><a class="header-anchor" href="#编写中" aria-hidden="true">#</a> 编写中...</h1>
+<template><div><h1 id="📣游玩指南-编写中" tabindex="-1"><a class="header-anchor" href="#📣游玩指南-编写中" aria-hidden="true">#</a> 📣游玩指南（编写中...）</h1>
 <h3 id="安装游戏" tabindex="-1"><a class="header-anchor" href="#安装游戏" aria-hidden="true">#</a> 安装游戏</h3>
 <p>首先，你应当下载服务器当前对应的基岩版我的世界</p>
 <p>基岩版几乎支持全平台，你可以根据自己的设备前往<strong>Miscrosoft Store（WIN10）、App Store（IOS）、Google Play（Android）</strong> 购买相应的我的世界基岩版并下载</p>
@@ -14,6 +14,10 @@
 <li>使用移动网络（流量）进入服务器，却显示没有连接互联网</li>
 </ul>
 <p>解决办法：设置中打开“使用移动网络游戏”即可解决！</p>
+<ul>
+<li>显示首先应当通过'微软服务器验证'才可以游玩</li>
+</ul>
+<p>解决方法：删掉后台、关闭游戏重新进入，多次失败建议换网。</p>
 </div></template>
 
 

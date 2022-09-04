@@ -1,4 +1,5 @@
 export const pagesRoutes = [
+  ["v-2ef9efb9","/deploy.html",{"title":"🖥️部署指南"},["/deploy","/deploy.md"]],
   ["v-1906d712","/developers.html",{"title":"😙开发者名单"},["/developers","/developers.md"]],
   ["v-5d7259d4","/guide.html",{"title":"📣游玩指南"},["/guide","/guide.md"]],
   ["v-a7d34384","/history.html",{"title":"📒服务器历史"},["/history","/history.md"]],
@@ -8,7 +9,7 @@ export const pagesRoutes = [
   ["v-035c0ff0","/specialThanks.html",{"title":"❤️特别鸣谢"},["/specialThanks","/specialThanks.md"]],
   ["v-0dcdc517","/update.html",{"title":"📎服务器更新日志"},["/update","/update.md"]],
   ["v-7c1a6266","/en-US/",{"title":""},["/en-US/index.html","/en-US/README.md"]],
-  ["v-666da380","/plugins/KillItem.html",{"title":"🚯KillItem使用方法"},["/plugins/KillItem","/plugins/KillItem.md"]],
-  ["v-36d48d8a","/plugins/Ntrade.html",{"title":"📦Ntrade使用方法"},["/plugins/Ntrade","/plugins/Ntrade.md"]],
+  ["v-666da380","/plugins/KillItem.html",{"title":"🚯KillItem使用教程"},["/plugins/KillItem","/plugins/KillItem.md"]],
+  ["v-36d48d8a","/plugins/Ntrade.html",{"title":"📦Ntrade使用教程"},["/plugins/Ntrade","/plugins/Ntrade.md"]],
   ["v-3706649a","/404.html",{"title":""},["/404"]],
 ]

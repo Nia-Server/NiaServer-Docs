@@ -1,5 +1,12 @@
 export const searchIndex = [
   {
+    "title": "🖥️部署指南",
+    "headers": [],
+    "path": "/deploy.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "😙开发者名单",
     "headers": [],
     "path": "/developers.html",
@@ -156,7 +163,7 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "🚯KillItem使用方法",
+    "title": "🚯KillItem使用教程",
     "headers": [
       {
         "level": 3,
@@ -185,7 +192,7 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "📦Ntrade使用方法",
+    "title": "📦Ntrade使用教程",
     "headers": [
       {
         "level": 3,

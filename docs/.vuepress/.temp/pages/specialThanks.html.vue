@@ -1,4 +1,4 @@
-<template><div><p><strong>特别鸣谢</strong></p>
+<template><div><h1 id="❤️特别鸣谢" tabindex="-1"><a class="header-anchor" href="#❤️特别鸣谢" aria-hidden="true">#</a> ❤️特别鸣谢</h1>
 <ul>
 <li>感谢以下玩家的无私奉献，在NIA服务器v4建设中发挥了关键作用！</li>
 </ul>
