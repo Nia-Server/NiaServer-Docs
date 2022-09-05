@@ -28,7 +28,7 @@ Configuration file location: `plugins/Ntrade/config.json`
 ```json
 {
     "MarketID": 1, //Market ID, do not change under normal circumstances
-"llmoney": 0, // whether to enable llmoney economy, 0 (false) is not enabled, 1 (true) is enabled
+    "llmoney": 0, // whether to enable llmoney economy, 0 (false) is not enabled, 1 (true) is enabled
     "MoneyScoresBoardName": "money", // If for scoreboard economy, the corresponding scoreboard name
     "Password": "123456", //Remove Authorization Code
     "BanItems": [
@@ -38,7 +38,7 @@ Configuration file location: `plugins/Ntrade/config.json`
         }
     ],
     "language": "en_US", //the main language of the plugin, en_US is English and zh_CN is Chinese
-AutoOffShelfTime: 72, // Automatic removal time (in hours), set to -1 will not automatically take off the shelves
+    "AutoOffShelfTime": 72, // Automatic removal time (in hours), set to -1 will not automatically take off the shelves
     "TaxRate": 0 // Transfer tax rate, set to 0 will not charge a fee, if necessary, please change to any number of [0,1) by yourself
 }
 ```

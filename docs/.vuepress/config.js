@@ -45,7 +45,7 @@ export default defineUserConfig({
         navbar: [
           {
             text: 'Home',
-            link: '/en-US',
+            link: '/en-US/',
           },
           {
             text: 'Links',
@@ -73,7 +73,7 @@ export default defineUserConfig({
         }
       },
       '/': {
-        editLinkText: '编辑此页',
+        editLinkText: '在Github上编辑此页',
         lastUpdatedText: '最近更新时间',
         contributorsText: '贡献者',
         selectLanguageName: '简体中文',
