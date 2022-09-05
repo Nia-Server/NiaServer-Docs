@@ -1,4 +1,7 @@
 <template><div><h1 id="📣游玩指南-编写中" tabindex="-1"><a class="header-anchor" href="#📣游玩指南-编写中" aria-hidden="true">#</a> 📣游玩指南（编写中...）</h1>
+<div class="custom-container warning"><p class="custom-container-title">编写中页面提醒</p>
+<p>本页面仍处于编写状态中，内容可能不全面，会对阅读造成一定的影响！</p>
+</div>
 <h3 id="安装游戏" tabindex="-1"><a class="header-anchor" href="#安装游戏" aria-hidden="true">#</a> 安装游戏</h3>
 <p>首先，你应当下载服务器当前对应的基岩版我的世界</p>
 <p>基岩版几乎支持全平台，你可以根据自己的设备前往<strong>Miscrosoft Store（WIN10）、App Store（IOS）、Google Play（Android）</strong> 购买相应的我的世界基岩版并下载</p>

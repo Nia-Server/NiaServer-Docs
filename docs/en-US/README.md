@@ -1,6 +1,7 @@
 ---
 home: true
 heroImage: /logo.png
+heroImageDark: /logoDark.png
 tagline: Coming soon...
 actions:
   - text: Github
