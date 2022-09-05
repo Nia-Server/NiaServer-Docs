@@ -41,6 +41,7 @@ export default defineUserConfig({
     editLinkPattern: ':repo/edit/:branch/:path',
     locales: {
       '/en-US/': {
+        selectLanguageText: 'Languages',
         selectLanguageName: 'English',
         navbar: [
           {
@@ -76,6 +77,7 @@ export default defineUserConfig({
         editLinkText: '在Github上编辑此页',
         lastUpdatedText: '最近更新时间',
         contributorsText: '贡献者',
+        selectLanguageText: '语言',
         selectLanguageName: '简体中文',
         navbar: [
           {
