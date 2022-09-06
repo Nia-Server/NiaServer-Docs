@@ -12,4 +12,4 @@ You are also welcome to actively write && correct this document!
 
 You can fork the repository first and then pr again, I will read every one!
 
-**Finally, thank you for all your contributions to this documentation site! **
+**Finally, thank you for all your contributions to this documentation site!**
