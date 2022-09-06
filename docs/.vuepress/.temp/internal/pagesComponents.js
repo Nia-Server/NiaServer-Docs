@@ -17,6 +17,8 @@ export const pagesComponents = {
   "v-4c40ab56": defineAsyncComponent(() => import(/* webpackChunkName: "v-4c40ab56" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/regulation.html.vue")),
   // path: /specialThanks.html
   "v-035c0ff0": defineAsyncComponent(() => import(/* webpackChunkName: "v-035c0ff0" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/specialThanks.html.vue")),
+  // path: /start.html
+  "v-6f9a3970": defineAsyncComponent(() => import(/* webpackChunkName: "v-6f9a3970" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/start.html.vue")),
   // path: /update.html
   "v-0dcdc517": defineAsyncComponent(() => import(/* webpackChunkName: "v-0dcdc517" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/update.html.vue")),
   // path: /en-US/About.html

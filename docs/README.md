@@ -3,11 +3,11 @@ home: true
 heroImage: /logo.png
 heroImageDark: /logoDark.png
 actions:
-  - text: Github
-    link: https://www.github.com/NIANIANKNIA/NIASERVER-V4
+  - text: 立即游玩
+    link: /start
     type: primary
   - text: 开始阅读
-    link: /regulation
+    link: /guide
     type: secondary
 features:
   - title: 📝规章制度

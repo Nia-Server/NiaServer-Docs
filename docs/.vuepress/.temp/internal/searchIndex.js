@@ -149,6 +149,13 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "🎮游玩前准备",
+    "headers": [],
+    "path": "/start.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "📎服务器更新日志",
     "headers": [],
     "path": "/update.html",
