@@ -1,6 +1,6 @@
 # NiaServer-Docs
 
-##### Language: English | [Simplified Chinese](README.md)
+##### Language: English | [简体中文](README.md)
 
 [NIA Server Documentation Station](https://docs.mcnia.top/) related documents
 
