@@ -5,7 +5,6 @@
 <p>在游玩服务器前，您需要加入服务器相关群聊，<strong>否则您将无法正常游玩本服务器!</strong></p>
 <p><a href="https://jq.qq.com/?_wv=1027&amp;k=qsGBYtfP" target="_blank" rel="noopener noreferrer">请点击本行字加入服务器官方审核群<ExternalLinkIcon/></a></p>
 <p>若审核群无法正常加入，您可以通过<a href="https://qm.qq.com/cgi-bin/qm/qr?k=7mnlY_HJbyNa8zZ94amitHNMmayXDyHS&amp;noverify=0&amp;personal_qrcode_source=4" target="_blank" rel="noopener noreferrer">添加服主QQ<ExternalLinkIcon/></a>进行询问</p>
-<p><a href="https://pan.baidu.com/s/1PZZ4rhnJH6ahCJ4_V1Gkuw?pwd=h8wv" target="_blank" rel="noopener noreferrer">点击下载服务器存档<ExternalLinkIcon/></a> 提取码请加群获取</p>
 <div class="custom-container tip"><p class="custom-container-title">以下为服务器官方认证群聊，请注意辨识</p>
 <p>服务器主群：724360499</p>
 <p>服务器审核群：371417932</p>
