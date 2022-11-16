@@ -3,7 +3,11 @@
 <p>本页面仍处于编写状态中，内容可能不全面，会对阅读造成一定的影响！</p>
 </div>
 <p><a href="https://www.github.com/NIANIANKNIA/NIASERVER-V4" target="_blank" rel="noopener noreferrer">NIA服务器V4<ExternalLinkIcon/></a>仍处于开发状态中</p>
-<p>固暂时没有更新日志...</p>
+<h2 id="🎈2022-11-14-betav0-1更新日志" tabindex="-1"><a class="header-anchor" href="#🎈2022-11-14-betav0-1更新日志" aria-hidden="true">#</a> 🎈2022/11/14 BetaV0.1更新日志</h2>
+<p>【新增】</p>
+<p>1.基于Gametest的空岛位置生成算法</p>
+<p>2.可以根据空岛数量直接算出空岛相应的坐标</p>
+<p>3.服务器运行基本安装程序</p>
 </div></template>
 
 

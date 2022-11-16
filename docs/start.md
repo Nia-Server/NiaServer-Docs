@@ -15,7 +15,6 @@ title: 🎮游玩前准备
 
 若审核群无法正常加入，您可以通过[添加服主QQ](https://qm.qq.com/cgi-bin/qm/qr?k=7mnlY_HJbyNa8zZ94amitHNMmayXDyHS&noverify=0&personal_qrcode_source=4)进行询问
 
-[点击下载服务器存档](https://pan.baidu.com/s/1PZZ4rhnJH6ahCJ4_V1Gkuw?pwd=h8wv) 提取码请加群获取
 
 ::: tip 以下为服务器官方认证群聊，请注意辨识
 服务器主群：724360499

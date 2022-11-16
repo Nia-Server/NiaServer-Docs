@@ -157,7 +157,15 @@ export const searchIndex = [
   },
   {
     "title": "📎服务器更新日志",
-    "headers": [],
+    "headers": [
+      {
+        "level": 2,
+        "title": "🎈2022/11/14 BetaV0.1更新日志",
+        "slug": "🎈2022-11-14-betav0-1更新日志",
+        "link": "#🎈2022-11-14-betav0-1更新日志",
+        "children": []
+      }
+    ],
     "path": "/update.html",
     "pathLocale": "/",
     "extraFields": []
