@@ -185,6 +185,28 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "⛳生成空岛",
+    "headers": [
+      {
+        "level": 3,
+        "title": "❓什么是Gametest？",
+        "slug": "❓什么是gametest",
+        "link": "#❓什么是gametest",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "🚃开始编写脚本开始生成空岛吧！",
+        "slug": "🚃开始编写脚本开始生成空岛吧",
+        "link": "#🚃开始编写脚本开始生成空岛吧",
+        "children": []
+      }
+    ],
+    "path": "/open-source/generate-skyisland.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "🚯KillItem使用教程",
     "headers": [
       {

@@ -11,6 +11,7 @@ export const pagesRoutes = [
   ["v-0dcdc517","/update.html",{"title":"📎服务器更新日志"},["/update","/update.md"]],
   ["v-4c864472","/en-US/About.html",{"title":"🎈About this website"},["/en-US/About","/en-US/About.md"]],
   ["v-7c1a6266","/en-US/",{"title":""},["/en-US/index.html","/en-US/README.md"]],
+  ["v-3731705e","/open-source/generate-skyisland.html",{"title":"⛳生成空岛"},["/open-source/generate-skyisland","/open-source/generate-skyisland.md"]],
   ["v-666da380","/plugins/KillItem.html",{"title":"🚯KillItem使用教程"},["/plugins/KillItem","/plugins/KillItem.md"]],
   ["v-36d48d8a","/plugins/Ntrade.html",{"title":"📦Ntrade使用教程"},["/plugins/Ntrade","/plugins/Ntrade.md"]],
   ["v-6fd4d61a","/en-US/plugins/KillItem.html",{"title":"🚯KillItem tutorial"},["/en-US/plugins/KillItem","/en-US/plugins/KillItem.md"]],

@@ -108,7 +108,7 @@ export default defineUserConfig({
             {
               text: '如何部署服务器',
               collapsible: true,
-              children: ['/deploy.md'],
+              children: ['/deploy.md','/open-source/generate-skyisland.md'],
             },
             {
               text: '服务器插件使用说明',
