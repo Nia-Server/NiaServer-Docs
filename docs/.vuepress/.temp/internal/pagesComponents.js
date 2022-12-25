@@ -25,6 +25,8 @@ export const pagesComponents = {
   "v-4c864472": defineAsyncComponent(() => import(/* webpackChunkName: "v-4c864472" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/en-US/About.html.vue")),
   // path: /en-US/
   "v-7c1a6266": defineAsyncComponent(() => import(/* webpackChunkName: "v-7c1a6266" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/en-US/index.html.vue")),
+  // path: /open-source/generate-skyisland.html
+  "v-3731705e": defineAsyncComponent(() => import(/* webpackChunkName: "v-3731705e" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/open-source/generate-skyisland.html.vue")),
   // path: /plugins/KillItem.html
   "v-666da380": defineAsyncComponent(() => import(/* webpackChunkName: "v-666da380" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/plugins/KillItem.html.vue")),
   // path: /plugins/Ntrade.html
