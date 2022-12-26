@@ -103,7 +103,7 @@ export default defineUserConfig({
             {
               text: '服务器相关文档',
               collapsible: true,
-              children: ['/start.md','/guide.md','/regulation.md','/Illustrated.md','/update.md','/history.md'],
+              children: ['/start.md','/guide.md','/regulation.md','/Illustrated.md','/update.md','/history.md','/map.md'],
             },
             {
               text: '如何部署服务器',

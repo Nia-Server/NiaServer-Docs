@@ -9,6 +9,8 @@ export const pagesData = {
   "v-a7d34384": () => import(/* webpackChunkName: "v-a7d34384" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/history.html.js").then(({ data }) => data),
   // path: /Illustrated.html
   "v-36284dfb": () => import(/* webpackChunkName: "v-36284dfb" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/Illustrated.html.js").then(({ data }) => data),
+  // path: /map.html
+  "v-42c50214": () => import(/* webpackChunkName: "v-42c50214" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/map.html.js").then(({ data }) => data),
   // path: /
   "v-8daa1a0e": () => import(/* webpackChunkName: "v-8daa1a0e" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/index.html.js").then(({ data }) => data),
   // path: /regulation.html

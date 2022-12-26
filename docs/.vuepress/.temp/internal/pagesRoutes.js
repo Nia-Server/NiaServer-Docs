@@ -4,6 +4,7 @@ export const pagesRoutes = [
   ["v-5d7259d4","/guide.html",{"title":"📣游玩指南"},["/guide","/guide.md"]],
   ["v-a7d34384","/history.html",{"title":"📒服务器历史"},["/history","/history.md"]],
   ["v-36284dfb","/Illustrated.html",{"title":"📜服务器图鉴"},["/Illustrated","/Illustrated.md"]],
+  ["v-42c50214","/map.html",{"title":"🗺️存档下载"},["/map","/map.md"]],
   ["v-8daa1a0e","/",{"title":""},["/index.html","/README.md"]],
   ["v-4c40ab56","/regulation.html",{"title":"📝规章制度"},["/regulation","/regulation.md"]],
   ["v-035c0ff0","/specialThanks.html",{"title":"❤️特别鸣谢"},["/specialThanks","/specialThanks.md"]],
