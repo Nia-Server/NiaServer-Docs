@@ -10,6 +10,7 @@
 <h3 id="🚨基本玩法" tabindex="-1"><a class="header-anchor" href="#🚨基本玩法" aria-hidden="true">#</a> 🚨基本玩法</h3>
 <p>敬请期待</p>
 <h3 id="🗻所有空岛类型" tabindex="-1"><a class="header-anchor" href="#🗻所有空岛类型" aria-hidden="true">#</a> 🗻所有空岛类型</h3>
+<p><img src="/island1.png" alt="ceshi"></p>
 <p>敬请期待</p>
 <h3 id="💵货币系统" tabindex="-1"><a class="header-anchor" href="#💵货币系统" aria-hidden="true">#</a> 💵货币系统</h3>
 <p>货币名为能源币，基准为一颗钻石1000货币</p>

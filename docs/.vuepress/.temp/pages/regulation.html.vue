@@ -1,9 +1,9 @@
-<template><div><h1 id="📝nia服务器规章制度v3-0" tabindex="-1"><a class="header-anchor" href="#📝nia服务器规章制度v3-0" aria-hidden="true">#</a> 📝NIA服务器规章制度v3.0</h1>
+<template><div><h1 id="📝nia服务器规章制度v3-1" tabindex="-1"><a class="header-anchor" href="#📝nia服务器规章制度v3-1" aria-hidden="true">#</a> 📝NIA服务器规章制度v3.1</h1>
 <hr>
-<p>更新时间 : 2022.8.12</p>
+<p>更新时间 : 2022.12-27</p>
 <p>编写：NIA服务器运营团队</p>
 <p>审批 :鸽子腐竹</p>
-<p>当前版本：3.0</p>
+<p>当前版本：3.1</p>
 <hr>
 <h3 id="序章-注意事项" tabindex="-1"><a class="header-anchor" href="#序章-注意事项" aria-hidden="true">#</a> 序章 注意事项</h3>
 <p>1.一旦您加入本服务器相关群聊、加入服务器管理层，我们就认为您已熟读并同意以下规定，请熟知</p>
@@ -35,11 +35,6 @@
 </tr>
 </thead>
 <tbody>
-<tr>
-<td style="text-align:center">永久夜视</td>
-<td style="text-align:center">1个小时</td>
-<td style="text-align:center">夜视材质包</td>
-</tr>
 <tr>
 <td style="text-align:center">范围伤害</td>
 <td style="text-align:center">24个小时</td>
