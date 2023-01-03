@@ -58,7 +58,15 @@ export const searchIndex = [
   },
   {
     "title": "📒服务器历史",
-    "headers": [],
+    "headers": [
+      {
+        "level": 3,
+        "title": "群聊黑历史截图",
+        "slug": "群聊黑历史截图",
+        "link": "#群聊黑历史截图",
+        "children": []
+      }
+    ],
     "path": "/history.html",
     "pathLocale": "/",
     "extraFields": []
