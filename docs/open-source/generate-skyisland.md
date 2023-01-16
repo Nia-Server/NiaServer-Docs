@@ -21,9 +21,9 @@ title: ⛳生成空岛
 
 ### 🚃开始编写脚本开始生成空岛吧！
 
-首先我们要在游戏中添加一个名为`IslandDate`的计分板，**并且添加一个名为`num`的虚拟对象并将其的值设定为1**！
+首先我们要在游戏中添加一个名为`IslandData`的计分板，**并且添加一个名为`num`的虚拟对象并将其的值设定为1**！
 
-这里的`IslandDate`计分板是用于存储空岛相关数据的一个积分板，其中`num`为当前空岛的数量。
+这里的`IslandData`计分板是用于存储空岛相关数据的一个积分板，其中`num`为当前空岛的数量。
 
 然后这里为了方便后续的编写，我自定义了几个函数。
 
@@ -69,14 +69,14 @@ const CZ = 0;
 
 //自定义函数
 function CaculatePos(playerName,cX,cY,cZ) {
-    //这里首先取得IslandDate计分板下所有计分项名称
-    let Participants = world.scoreboard.getObjective("IslandDate").getParticipants()
+    //这里首先取得IslandData计分板下所有计分项名称
+    let Participants = world.scoreboard.getObjective("IslandData").getParticipants()
     //这里使用一个循环遍历所有计分项
     for (let i = 0; i < Participants.length; i++) {
         //直到计分项名称为num时才执行if里的语句
         if (Participants[i].displayName == "num") {
             //读取计分项num的值，并赋值给变量num
-            let num = world.scoreboard.getObjective("IslandDate").getScore(Participants[i]);
+            let num = world.scoreboard.getObjective("IslandData").getScore(Participants[i]);
             //赋值变量Allnum r
             let AllNum = 0;
             let r = 0;
@@ -102,7 +102,7 @@ function CaculatePos(playerName,cX,cY,cZ) {
             //然后把玩家传送过去
             RunCmd(`tp @a[name=${playerName}] ${posX} ${cY + 15} ${posZ}`);
             //最后给空岛数量加一
-            RunCmd("scoreboard players add num IslandDate 1");
+            RunCmd("scoreboard players add num IslandData 1");
             //结束整个循环
             break;
         }

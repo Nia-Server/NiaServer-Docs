@@ -16,5 +16,5 @@ features:
     details: 初次来到NIA服务器不知道如何游玩？在这里你可以通过查阅本文档了解如何游玩！
   - title: 📦部署服务器
     details: 想要部署一个跟我们一样的服务器？在这里有教程帮您轻松部署服务器！
-footer: Copyright © 2019-2022 NIA服务器
+footer: Copyright © 2019-2023 NIA服务器
 ---
