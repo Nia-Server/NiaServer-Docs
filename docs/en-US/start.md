@@ -1,11 +1,13 @@
-```
+---
 lang: en-US
 title: 🎮BEFORE PLAYING
-```
+---
 
 # 🎮BEFORE PLAYING
 
-::: warning WARN: Pages are editing The page is in editing. It may be imperfect, and affect your reading！  :::
+::: warning
+Pages are editing The page is in editing. It may be imperfect, and affect your reading！
+:::
 
 Before playing NIA Server, join our confirmed group, **or you can't play!**
 
@@ -21,4 +23,5 @@ NIA Backup Group：258515673
 
 NIA OP REG Group：543363488
 
-NIA Master QQ：1020317403 :::
+NIA Master QQ：1020317403
+:::

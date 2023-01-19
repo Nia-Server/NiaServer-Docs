@@ -1,8 +1,10 @@
 <template><div><h1 id="📣playing-guide-under-construction" tabindex="-1"><a class="header-anchor" href="#📣playing-guide-under-construction" aria-hidden="true">#</a> 📣Playing Guide（Under Construction...）</h1>
-<div class="custom-container warning"><p class="custom-container-title">WARN: Pages are editing The page is in editing. It may be imperfect, and affect your reading！:::</p>
+<div class="custom-container warning"><p class="custom-container-title">WARNING</p>
+<p>Pages are editing The page is in editing. It may be imperfect, and affect your reading！</p>
+</div>
 <h3 id="install-game" tabindex="-1"><a class="header-anchor" href="#install-game" aria-hidden="true">#</a> Install Game</h3>
 <p>First, you should download the current Minecraft Bedrock Version our server uses.</p>
-<p>Bedrock Version supports almost all system, go to **Miscrosoft Store（WIN10）,  App Store（IOS）or Google Play（Android）**to buy and download.</p>
+<p>Bedrock Version supports almost all system, go to <strong>Miscrosoft Store(WIN10), Apple Store(IOS)or Google Play(Android)</strong> to buy and download.</p>
 <p>No money? The website <strong>Minebbs</strong> has cracked versions（only android）.</p>
 <h3 id="open-minecraft" tabindex="-1"><a class="header-anchor" href="#open-minecraft" aria-hidden="true">#</a> Open Minecraft</h3>
 <p>After Installing, open your minecraft, and log in Xbox account if you have. It's free to register, too. Take note of your Xbox ID.</p>
@@ -19,7 +21,6 @@
 <li>Shows &quot;pass the microsoft confirmed server first&quot; when joining.</li>
 </ul>
 <p>sol：Rerun your game and join again. Check your network status.</p>
-</div>
 </div></template>
 
 

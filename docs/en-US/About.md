@@ -1,7 +1,7 @@
----
+```
 lang: en-US
 title: 🎈About this website
----
+```
 
 # 🎈About this website
 

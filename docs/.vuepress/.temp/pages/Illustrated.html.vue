@@ -48,15 +48,17 @@
 <h3 id="🫧氧气值设定" tabindex="-1"><a class="header-anchor" href="#🫧氧气值设定" aria-hidden="true">#</a> 🫧氧气值设定</h3>
 <p>玩家初始拥有“初始呼吸装备”便获得<strong>5000/5000</strong>点氧气值 （前面为如今氧气值，后面的为初始等级氧气值最大容量）</p>
 <p>以下所有数值除非说明否则均以“初始呼吸装备”为准</p>
+<div class="custom-container warning"><p class="custom-container-title">变动中数据提醒</p>
+<p>以下数据均基于NIA V4.1.15，数据仍会出现较大变动，具体请以正式服为准</p>
+</div>
 <p>当玩家在线时，氧气值将以每分钟<strong>20</strong>点减少</p>
 <p>当<strong>氧气值≥14000</strong>时玩家血量将由<strong>20点变为40点</strong></p>
 <p>当<strong>氧气值≥10000</strong>时玩家获得<strong>跳跃提升1</strong>提升</p>
 <p>当<strong>氧气值≥4800</strong>时玩家获得<strong>力量1</strong>提升</p>
 <p>当<strong>氧气值≥3500</strong>时玩家获得<strong>生命恢复1</strong>提升</p>
-<p>当<strong>氧气值≤400</strong>时玩家获得<strong>缓慢</strong>效果</p>
-<p>当<strong>氧气值归零时</strong>，玩家初始会获得<strong>眩晕/缓慢/中毒/缺氧/挖掘疲劳/虚弱</strong>效果</p>
-<p>当<strong>氧气值归零超过1分钟</strong>获得<strong>失明</strong>效果</p>
-<p>当<strong>氧气值归零超过5分钟</strong>，玩家<strong>直接死亡</strong>并强制重生至&quot;医院&quot;，在&quot;医院&quot;强制支付一定数量的货币进行治疗，并获得400氧气值用于生命的基本维持，玩家需在下次氧气值归零前购买足够的氧气用于保命。</p>
+<p>当<strong>氧气值≤200</strong>时玩家获得<strong>缓慢/虚弱</strong>效果</p>
+<p>当<strong>氧气值归零超过1分钟</strong>获得<strong>失明/挖掘疲劳/反胃</strong>效果</p>
+<p>当<strong>氧气值归零超过4分钟</strong>，玩家<strong>直接死亡</strong>并强制重生至&quot;医院&quot;，在&quot;医院&quot;强制支付<strong>50能源币</strong>进行治疗，并获得<strong>200</strong>氧气值用于生命的基本维持，玩家需在下次氧气值归零前购买足够的氧气用于保命。</p>
 <h3 id="🤖-呼吸装备-设定" tabindex="-1"><a class="header-anchor" href="#🤖-呼吸装备-设定" aria-hidden="true">#</a> 🤖&quot;呼吸装备&quot;设定</h3>
 <p>玩家可以通过升级自己的呼吸装备来获得更高等级的效果</p>
 <table>
