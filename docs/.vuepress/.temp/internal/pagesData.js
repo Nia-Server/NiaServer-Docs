@@ -23,8 +23,12 @@ export const pagesData = {
   "v-0dcdc517": () => import(/* webpackChunkName: "v-0dcdc517" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/update.html.js").then(({ data }) => data),
   // path: /en-US/About.html
   "v-4c864472": () => import(/* webpackChunkName: "v-4c864472" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/en-US/About.html.js").then(({ data }) => data),
+  // path: /en-US/guide.html
+  "v-f750c37a": () => import(/* webpackChunkName: "v-f750c37a" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/en-US/guide.html.js").then(({ data }) => data),
   // path: /en-US/
   "v-7c1a6266": () => import(/* webpackChunkName: "v-7c1a6266" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/en-US/index.html.js").then(({ data }) => data),
+  // path: /en-US/start.html
+  "v-22ab049d": () => import(/* webpackChunkName: "v-22ab049d" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/en-US/start.html.js").then(({ data }) => data),
   // path: /open-source/generate-skyisland.html
   "v-3731705e": () => import(/* webpackChunkName: "v-3731705e" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/open-source/generate-skyisland.html.js").then(({ data }) => data),
   // path: /plugins/KillItem.html
