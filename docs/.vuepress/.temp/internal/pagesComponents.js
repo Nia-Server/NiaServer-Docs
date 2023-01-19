@@ -25,8 +25,12 @@ export const pagesComponents = {
   "v-0dcdc517": defineAsyncComponent(() => import(/* webpackChunkName: "v-0dcdc517" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/update.html.vue")),
   // path: /en-US/About.html
   "v-4c864472": defineAsyncComponent(() => import(/* webpackChunkName: "v-4c864472" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/en-US/About.html.vue")),
+  // path: /en-US/guide.html
+  "v-f750c37a": defineAsyncComponent(() => import(/* webpackChunkName: "v-f750c37a" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/en-US/guide.html.vue")),
   // path: /en-US/
   "v-7c1a6266": defineAsyncComponent(() => import(/* webpackChunkName: "v-7c1a6266" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/en-US/index.html.vue")),
+  // path: /en-US/start.html
+  "v-22ab049d": defineAsyncComponent(() => import(/* webpackChunkName: "v-22ab049d" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/en-US/start.html.vue")),
   // path: /open-source/generate-skyisland.html
   "v-3731705e": defineAsyncComponent(() => import(/* webpackChunkName: "v-3731705e" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/open-source/generate-skyisland.html.vue")),
   // path: /plugins/KillItem.html

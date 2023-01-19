@@ -271,9 +271,59 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "📣Playing Guide",
+    "headers": [
+      {
+        "level": 3,
+        "title": "Install Game",
+        "slug": "install-game",
+        "link": "#install-game",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "Open Minecraft",
+        "slug": "open-minecraft",
+        "link": "#open-minecraft",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "The Whitelist",
+        "slug": "the-whitelist",
+        "link": "#the-whitelist",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "Join Game!",
+        "slug": "join-game",
+        "link": "#join-game",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "Some Solutions of Problems",
+        "slug": "some-solutions-of-problems",
+        "link": "#some-solutions-of-problems",
+        "children": []
+      }
+    ],
+    "path": "/en-US/guide.html",
+    "pathLocale": "/en-US/",
+    "extraFields": []
+  },
+  {
     "title": "",
     "headers": [],
     "path": "/en-US/",
+    "pathLocale": "/en-US/",
+    "extraFields": []
+  },
+  {
+    "title": "🎮BEFORE PLAYING",
+    "headers": [],
+    "path": "/en-US/start.html",
     "pathLocale": "/en-US/",
     "extraFields": []
   },
