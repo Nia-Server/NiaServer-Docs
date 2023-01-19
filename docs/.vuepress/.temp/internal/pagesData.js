@@ -1,26 +1,6 @@
 export const pagesData = {
-  // path: /deploy.html
-  "v-2ef9efb9": () => import(/* webpackChunkName: "v-2ef9efb9" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/deploy.html.js").then(({ data }) => data),
-  // path: /developers.html
-  "v-1906d712": () => import(/* webpackChunkName: "v-1906d712" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/developers.html.js").then(({ data }) => data),
-  // path: /guide.html
-  "v-5d7259d4": () => import(/* webpackChunkName: "v-5d7259d4" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/guide.html.js").then(({ data }) => data),
-  // path: /history.html
-  "v-a7d34384": () => import(/* webpackChunkName: "v-a7d34384" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/history.html.js").then(({ data }) => data),
-  // path: /Illustrated.html
-  "v-36284dfb": () => import(/* webpackChunkName: "v-36284dfb" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/Illustrated.html.js").then(({ data }) => data),
-  // path: /map.html
-  "v-42c50214": () => import(/* webpackChunkName: "v-42c50214" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/map.html.js").then(({ data }) => data),
   // path: /
   "v-8daa1a0e": () => import(/* webpackChunkName: "v-8daa1a0e" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/index.html.js").then(({ data }) => data),
-  // path: /regulation.html
-  "v-4c40ab56": () => import(/* webpackChunkName: "v-4c40ab56" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/regulation.html.js").then(({ data }) => data),
-  // path: /specialThanks.html
-  "v-035c0ff0": () => import(/* webpackChunkName: "v-035c0ff0" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/specialThanks.html.js").then(({ data }) => data),
-  // path: /start.html
-  "v-6f9a3970": () => import(/* webpackChunkName: "v-6f9a3970" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/start.html.js").then(({ data }) => data),
-  // path: /update.html
-  "v-0dcdc517": () => import(/* webpackChunkName: "v-0dcdc517" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/update.html.js").then(({ data }) => data),
   // path: /en-US/About.html
   "v-4c864472": () => import(/* webpackChunkName: "v-4c864472" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/en-US/About.html.js").then(({ data }) => data),
   // path: /en-US/guide.html
@@ -29,16 +9,36 @@ export const pagesData = {
   "v-7c1a6266": () => import(/* webpackChunkName: "v-7c1a6266" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/en-US/index.html.js").then(({ data }) => data),
   // path: /en-US/start.html
   "v-22ab049d": () => import(/* webpackChunkName: "v-22ab049d" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/en-US/start.html.js").then(({ data }) => data),
-  // path: /open-source/generate-skyisland.html
-  "v-3731705e": () => import(/* webpackChunkName: "v-3731705e" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/open-source/generate-skyisland.html.js").then(({ data }) => data),
-  // path: /plugins/KillItem.html
-  "v-666da380": () => import(/* webpackChunkName: "v-666da380" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/plugins/KillItem.html.js").then(({ data }) => data),
-  // path: /plugins/Ntrade.html
-  "v-36d48d8a": () => import(/* webpackChunkName: "v-36d48d8a" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/plugins/Ntrade.html.js").then(({ data }) => data),
+  // path: /zh-CN/deploy.html
+  "v-af418158": () => import(/* webpackChunkName: "v-af418158" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/zh-CN/deploy.html.js").then(({ data }) => data),
+  // path: /zh-CN/developers.html
+  "v-d7aac2dc": () => import(/* webpackChunkName: "v-d7aac2dc" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/zh-CN/developers.html.js").then(({ data }) => data),
+  // path: /zh-CN/guide.html
+  "v-0308b7ca": () => import(/* webpackChunkName: "v-0308b7ca" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/zh-CN/guide.html.js").then(({ data }) => data),
+  // path: /zh-CN/history.html
+  "v-5f5b0203": () => import(/* webpackChunkName: "v-5f5b0203" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/zh-CN/history.html.js").then(({ data }) => data),
+  // path: /zh-CN/Illustrated.html
+  "v-a988f180": () => import(/* webpackChunkName: "v-a988f180" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/zh-CN/Illustrated.html.js").then(({ data }) => data),
+  // path: /zh-CN/map.html
+  "v-7b26658a": () => import(/* webpackChunkName: "v-7b26658a" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/zh-CN/map.html.js").then(({ data }) => data),
+  // path: /zh-CN/regulation.html
+  "v-2622951e": () => import(/* webpackChunkName: "v-2622951e" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/zh-CN/regulation.html.js").then(({ data }) => data),
+  // path: /zh-CN/specialThanks.html
+  "v-fef3e816": () => import(/* webpackChunkName: "v-fef3e816" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/zh-CN/specialThanks.html.js").then(({ data }) => data),
+  // path: /zh-CN/start.html
+  "v-c661eb16": () => import(/* webpackChunkName: "v-c661eb16" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/zh-CN/start.html.js").then(({ data }) => data),
+  // path: /zh-CN/update.html
+  "v-f199d69c": () => import(/* webpackChunkName: "v-f199d69c" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/zh-CN/update.html.js").then(({ data }) => data),
   // path: /en-US/plugins/KillItem.html
   "v-6fd4d61a": () => import(/* webpackChunkName: "v-6fd4d61a" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/en-US/plugins/KillItem.html.js").then(({ data }) => data),
   // path: /en-US/plugins/Ntrade.html
   "v-5dbb9ea4": () => import(/* webpackChunkName: "v-5dbb9ea4" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/en-US/plugins/Ntrade.html.js").then(({ data }) => data),
+  // path: /zh-CN/open-source/generate-skyisland.html
+  "v-a0639328": () => import(/* webpackChunkName: "v-a0639328" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/zh-CN/open-source/generate-skyisland.html.js").then(({ data }) => data),
+  // path: /zh-CN/plugins/KillItem.html
+  "v-458ff81b": () => import(/* webpackChunkName: "v-458ff81b" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/zh-CN/plugins/KillItem.html.js").then(({ data }) => data),
+  // path: /zh-CN/plugins/Ntrade.html
+  "v-0cab3dd6": () => import(/* webpackChunkName: "v-0cab3dd6" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/zh-CN/plugins/Ntrade.html.js").then(({ data }) => data),
   // path: /404.html
   "v-3706649a": () => import(/* webpackChunkName: "v-3706649a" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/404.html.js").then(({ data }) => data),
 }

@@ -108,22 +108,22 @@ export default defineUserConfig({
             {
               text: '服务器相关文档',
               collapsible: true,
-              children: ['/start.md','/guide.md','/regulation.md','/Illustrated.md','/update.md','/history.md','/map.md'],
+              children: ['/zh-CN/start.md','/zh-CN/guide.md','/zh-CN/regulation.md','/zh-CN/Illustrated.md','/zh-CN/update.md','/zh-CN/history.md','/zh-CN/map.md'],
             },
             {
               text: '如何部署服务器',
               collapsible: true,
-              children: ['/deploy.md','/open-source/generate-skyisland.md'],
+              children: ['/zh-CN/deploy.md','/zh-CN/open-source/generate-skyisland.md'],
             },
             {
               text: '服务器插件使用说明',
               collapsible: true,
-              children: ['/plugins/Ntrade.md','/plugins/KillItem.md'],
+              children: ['/zh-CN/plugins/Ntrade.md','/zh-CN/plugins/KillItem.md'],
             },
             {
               text: '开发者&特别鸣谢',
               collapsible: true,
-              children: ['/developers.md','/specialThanks.md'],
+              children: ['/zh-CN/developers.md','/zh-CN/specialThanks.md'],
             },
           ]
         }

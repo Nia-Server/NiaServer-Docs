@@ -1,15 +1,86 @@
 export const searchIndex = [
   {
+    "title": "",
+    "headers": [],
+    "path": "/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "🎈About this website",
+    "headers": [],
+    "path": "/en-US/About.html",
+    "pathLocale": "/en-US/",
+    "extraFields": []
+  },
+  {
+    "title": "📣Playing Guide",
+    "headers": [
+      {
+        "level": 3,
+        "title": "Install Game",
+        "slug": "install-game",
+        "link": "#install-game",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "Open Minecraft",
+        "slug": "open-minecraft",
+        "link": "#open-minecraft",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "The Whitelist",
+        "slug": "the-whitelist",
+        "link": "#the-whitelist",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "Join Game!",
+        "slug": "join-game",
+        "link": "#join-game",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "Some Solutions of Problems",
+        "slug": "some-solutions-of-problems",
+        "link": "#some-solutions-of-problems",
+        "children": []
+      }
+    ],
+    "path": "/en-US/guide.html",
+    "pathLocale": "/en-US/",
+    "extraFields": []
+  },
+  {
+    "title": "",
+    "headers": [],
+    "path": "/en-US/",
+    "pathLocale": "/en-US/",
+    "extraFields": []
+  },
+  {
+    "title": "🎮BEFORE PLAYING",
+    "headers": [],
+    "path": "/en-US/start.html",
+    "pathLocale": "/en-US/",
+    "extraFields": []
+  },
+  {
     "title": "🖥️部署指南",
     "headers": [],
-    "path": "/deploy.html",
+    "path": "/zh-CN/deploy.html",
     "pathLocale": "/",
     "extraFields": []
   },
   {
     "title": "😙开发者名单",
     "headers": [],
-    "path": "/developers.html",
+    "path": "/zh-CN/developers.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -52,7 +123,7 @@ export const searchIndex = [
         "children": []
       }
     ],
-    "path": "/guide.html",
+    "path": "/zh-CN/guide.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -67,7 +138,7 @@ export const searchIndex = [
         "children": []
       }
     ],
-    "path": "/history.html",
+    "path": "/zh-CN/history.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -152,21 +223,14 @@ export const searchIndex = [
         "children": []
       }
     ],
-    "path": "/Illustrated.html",
+    "path": "/zh-CN/Illustrated.html",
     "pathLocale": "/",
     "extraFields": []
   },
   {
     "title": "🗺️存档下载",
     "headers": [],
-    "path": "/map.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "",
-    "headers": [],
-    "path": "/",
+    "path": "/zh-CN/map.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -230,21 +294,21 @@ export const searchIndex = [
         "children": []
       }
     ],
-    "path": "/regulation.html",
+    "path": "/zh-CN/regulation.html",
     "pathLocale": "/",
     "extraFields": []
   },
   {
     "title": "❤️特别鸣谢",
     "headers": [],
-    "path": "/specialThanks.html",
+    "path": "/zh-CN/specialThanks.html",
     "pathLocale": "/",
     "extraFields": []
   },
   {
     "title": "🎮游玩前准备",
     "headers": [],
-    "path": "/start.html",
+    "path": "/zh-CN/start.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -266,158 +330,7 @@ export const searchIndex = [
         "children": []
       }
     ],
-    "path": "/update.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "🎈About this website",
-    "headers": [],
-    "path": "/en-US/About.html",
-    "pathLocale": "/en-US/",
-    "extraFields": []
-  },
-  {
-    "title": "📣Playing Guide",
-    "headers": [
-      {
-        "level": 3,
-        "title": "Install Game",
-        "slug": "install-game",
-        "link": "#install-game",
-        "children": []
-      },
-      {
-        "level": 3,
-        "title": "Open Minecraft",
-        "slug": "open-minecraft",
-        "link": "#open-minecraft",
-        "children": []
-      },
-      {
-        "level": 3,
-        "title": "The Whitelist",
-        "slug": "the-whitelist",
-        "link": "#the-whitelist",
-        "children": []
-      },
-      {
-        "level": 3,
-        "title": "Join Game!",
-        "slug": "join-game",
-        "link": "#join-game",
-        "children": []
-      },
-      {
-        "level": 3,
-        "title": "Some Solutions of Problems",
-        "slug": "some-solutions-of-problems",
-        "link": "#some-solutions-of-problems",
-        "children": []
-      }
-    ],
-    "path": "/en-US/guide.html",
-    "pathLocale": "/en-US/",
-    "extraFields": []
-  },
-  {
-    "title": "",
-    "headers": [],
-    "path": "/en-US/",
-    "pathLocale": "/en-US/",
-    "extraFields": []
-  },
-  {
-    "title": "🎮BEFORE PLAYING",
-    "headers": [],
-    "path": "/en-US/start.html",
-    "pathLocale": "/en-US/",
-    "extraFields": []
-  },
-  {
-    "title": "⛳生成空岛",
-    "headers": [
-      {
-        "level": 3,
-        "title": "❓什么是Gametest？",
-        "slug": "❓什么是gametest",
-        "link": "#❓什么是gametest",
-        "children": []
-      },
-      {
-        "level": 3,
-        "title": "🚃开始编写脚本开始生成空岛吧！",
-        "slug": "🚃开始编写脚本开始生成空岛吧",
-        "link": "#🚃开始编写脚本开始生成空岛吧",
-        "children": []
-      }
-    ],
-    "path": "/open-source/generate-skyisland.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "🚯KillItem使用教程",
-    "headers": [
-      {
-        "level": 3,
-        "title": "插件作用",
-        "slug": "插件作用",
-        "link": "#插件作用",
-        "children": []
-      },
-      {
-        "level": 3,
-        "title": "初始化插件",
-        "slug": "初始化插件",
-        "link": "#初始化插件",
-        "children": []
-      },
-      {
-        "level": 3,
-        "title": "开始使用",
-        "slug": "开始使用",
-        "link": "#开始使用",
-        "children": []
-      }
-    ],
-    "path": "/plugins/KillItem.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "📦Ntrade使用教程",
-    "headers": [
-      {
-        "level": 3,
-        "title": "插件作用",
-        "slug": "插件作用",
-        "link": "#插件作用",
-        "children": []
-      },
-      {
-        "level": 3,
-        "title": "初始化插件",
-        "slug": "初始化插件",
-        "link": "#初始化插件",
-        "children": []
-      },
-      {
-        "level": 3,
-        "title": "修改配置文件",
-        "slug": "修改配置文件",
-        "link": "#修改配置文件",
-        "children": []
-      },
-      {
-        "level": 3,
-        "title": "开始使用",
-        "slug": "开始使用",
-        "link": "#开始使用",
-        "children": []
-      }
-    ],
-    "path": "/plugins/Ntrade.html",
+    "path": "/zh-CN/update.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -484,6 +397,93 @@ export const searchIndex = [
     ],
     "path": "/en-US/plugins/Ntrade.html",
     "pathLocale": "/en-US/",
+    "extraFields": []
+  },
+  {
+    "title": "⛳生成空岛",
+    "headers": [
+      {
+        "level": 3,
+        "title": "❓什么是Gametest？",
+        "slug": "❓什么是gametest",
+        "link": "#❓什么是gametest",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "🚃开始编写脚本开始生成空岛吧！",
+        "slug": "🚃开始编写脚本开始生成空岛吧",
+        "link": "#🚃开始编写脚本开始生成空岛吧",
+        "children": []
+      }
+    ],
+    "path": "/zh-CN/open-source/generate-skyisland.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "🚯KillItem使用教程",
+    "headers": [
+      {
+        "level": 3,
+        "title": "插件作用",
+        "slug": "插件作用",
+        "link": "#插件作用",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "初始化插件",
+        "slug": "初始化插件",
+        "link": "#初始化插件",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "开始使用",
+        "slug": "开始使用",
+        "link": "#开始使用",
+        "children": []
+      }
+    ],
+    "path": "/zh-CN/plugins/KillItem.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "📦Ntrade使用教程",
+    "headers": [
+      {
+        "level": 3,
+        "title": "插件作用",
+        "slug": "插件作用",
+        "link": "#插件作用",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "初始化插件",
+        "slug": "初始化插件",
+        "link": "#初始化插件",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "修改配置文件",
+        "slug": "修改配置文件",
+        "link": "#修改配置文件",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "开始使用",
+        "slug": "开始使用",
+        "link": "#开始使用",
+        "children": []
+      }
+    ],
+    "path": "/zh-CN/plugins/Ntrade.html",
+    "pathLocale": "/",
     "extraFields": []
   },
   {

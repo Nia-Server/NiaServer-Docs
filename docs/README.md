@@ -4,10 +4,10 @@ heroImage: /logo.png
 heroImageDark: /logoDark.png
 actions:
   - text: 立即游玩
-    link: /start
+    link: /zh-CN/start
     type: primary
   - text: 开始阅读
-    link: /guide
+    link: /zh-CN/guide
     type: secondary
 features:
   - title: 📝规章制度
