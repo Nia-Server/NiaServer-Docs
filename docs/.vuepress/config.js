@@ -66,6 +66,11 @@ export default defineUserConfig({
               children: ['/en-US/About.md'],
             },
             {
+              text: 'Server',
+              collapsible: true,
+              children: ['/en-US/start.md','/en-US/guide.md'],
+            },
+            {
               text: 'Plugins',
               collapsible: true,
               children: ['/en-US/plugins/Ntrade.md','/en-US/plugins/KillItem.md'],
