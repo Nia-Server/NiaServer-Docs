@@ -1,28 +1,8 @@
 import { defineAsyncComponent } from 'vue'
 
 export const pagesComponents = {
-  // path: /deploy.html
-  "v-2ef9efb9": defineAsyncComponent(() => import(/* webpackChunkName: "v-2ef9efb9" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/deploy.html.vue")),
-  // path: /developers.html
-  "v-1906d712": defineAsyncComponent(() => import(/* webpackChunkName: "v-1906d712" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/developers.html.vue")),
-  // path: /guide.html
-  "v-5d7259d4": defineAsyncComponent(() => import(/* webpackChunkName: "v-5d7259d4" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/guide.html.vue")),
-  // path: /history.html
-  "v-a7d34384": defineAsyncComponent(() => import(/* webpackChunkName: "v-a7d34384" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/history.html.vue")),
-  // path: /Illustrated.html
-  "v-36284dfb": defineAsyncComponent(() => import(/* webpackChunkName: "v-36284dfb" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/Illustrated.html.vue")),
-  // path: /map.html
-  "v-42c50214": defineAsyncComponent(() => import(/* webpackChunkName: "v-42c50214" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/map.html.vue")),
   // path: /
   "v-8daa1a0e": defineAsyncComponent(() => import(/* webpackChunkName: "v-8daa1a0e" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/index.html.vue")),
-  // path: /regulation.html
-  "v-4c40ab56": defineAsyncComponent(() => import(/* webpackChunkName: "v-4c40ab56" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/regulation.html.vue")),
-  // path: /specialThanks.html
-  "v-035c0ff0": defineAsyncComponent(() => import(/* webpackChunkName: "v-035c0ff0" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/specialThanks.html.vue")),
-  // path: /start.html
-  "v-6f9a3970": defineAsyncComponent(() => import(/* webpackChunkName: "v-6f9a3970" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/start.html.vue")),
-  // path: /update.html
-  "v-0dcdc517": defineAsyncComponent(() => import(/* webpackChunkName: "v-0dcdc517" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/update.html.vue")),
   // path: /en-US/About.html
   "v-4c864472": defineAsyncComponent(() => import(/* webpackChunkName: "v-4c864472" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/en-US/About.html.vue")),
   // path: /en-US/guide.html
@@ -31,16 +11,36 @@ export const pagesComponents = {
   "v-7c1a6266": defineAsyncComponent(() => import(/* webpackChunkName: "v-7c1a6266" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/en-US/index.html.vue")),
   // path: /en-US/start.html
   "v-22ab049d": defineAsyncComponent(() => import(/* webpackChunkName: "v-22ab049d" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/en-US/start.html.vue")),
-  // path: /open-source/generate-skyisland.html
-  "v-3731705e": defineAsyncComponent(() => import(/* webpackChunkName: "v-3731705e" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/open-source/generate-skyisland.html.vue")),
-  // path: /plugins/KillItem.html
-  "v-666da380": defineAsyncComponent(() => import(/* webpackChunkName: "v-666da380" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/plugins/KillItem.html.vue")),
-  // path: /plugins/Ntrade.html
-  "v-36d48d8a": defineAsyncComponent(() => import(/* webpackChunkName: "v-36d48d8a" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/plugins/Ntrade.html.vue")),
+  // path: /zh-CN/deploy.html
+  "v-af418158": defineAsyncComponent(() => import(/* webpackChunkName: "v-af418158" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/zh-CN/deploy.html.vue")),
+  // path: /zh-CN/developers.html
+  "v-d7aac2dc": defineAsyncComponent(() => import(/* webpackChunkName: "v-d7aac2dc" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/zh-CN/developers.html.vue")),
+  // path: /zh-CN/guide.html
+  "v-0308b7ca": defineAsyncComponent(() => import(/* webpackChunkName: "v-0308b7ca" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/zh-CN/guide.html.vue")),
+  // path: /zh-CN/history.html
+  "v-5f5b0203": defineAsyncComponent(() => import(/* webpackChunkName: "v-5f5b0203" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/zh-CN/history.html.vue")),
+  // path: /zh-CN/Illustrated.html
+  "v-a988f180": defineAsyncComponent(() => import(/* webpackChunkName: "v-a988f180" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/zh-CN/Illustrated.html.vue")),
+  // path: /zh-CN/map.html
+  "v-7b26658a": defineAsyncComponent(() => import(/* webpackChunkName: "v-7b26658a" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/zh-CN/map.html.vue")),
+  // path: /zh-CN/regulation.html
+  "v-2622951e": defineAsyncComponent(() => import(/* webpackChunkName: "v-2622951e" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/zh-CN/regulation.html.vue")),
+  // path: /zh-CN/specialThanks.html
+  "v-fef3e816": defineAsyncComponent(() => import(/* webpackChunkName: "v-fef3e816" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/zh-CN/specialThanks.html.vue")),
+  // path: /zh-CN/start.html
+  "v-c661eb16": defineAsyncComponent(() => import(/* webpackChunkName: "v-c661eb16" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/zh-CN/start.html.vue")),
+  // path: /zh-CN/update.html
+  "v-f199d69c": defineAsyncComponent(() => import(/* webpackChunkName: "v-f199d69c" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/zh-CN/update.html.vue")),
   // path: /en-US/plugins/KillItem.html
   "v-6fd4d61a": defineAsyncComponent(() => import(/* webpackChunkName: "v-6fd4d61a" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/en-US/plugins/KillItem.html.vue")),
   // path: /en-US/plugins/Ntrade.html
   "v-5dbb9ea4": defineAsyncComponent(() => import(/* webpackChunkName: "v-5dbb9ea4" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/en-US/plugins/Ntrade.html.vue")),
+  // path: /zh-CN/open-source/generate-skyisland.html
+  "v-a0639328": defineAsyncComponent(() => import(/* webpackChunkName: "v-a0639328" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/zh-CN/open-source/generate-skyisland.html.vue")),
+  // path: /zh-CN/plugins/KillItem.html
+  "v-458ff81b": defineAsyncComponent(() => import(/* webpackChunkName: "v-458ff81b" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/zh-CN/plugins/KillItem.html.vue")),
+  // path: /zh-CN/plugins/Ntrade.html
+  "v-0cab3dd6": defineAsyncComponent(() => import(/* webpackChunkName: "v-0cab3dd6" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/zh-CN/plugins/Ntrade.html.vue")),
   // path: /404.html
   "v-3706649a": defineAsyncComponent(() => import(/* webpackChunkName: "v-3706649a" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/404.html.vue")),
 }
