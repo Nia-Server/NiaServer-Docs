@@ -33,6 +33,8 @@ export const pagesData = {
   "v-6fd4d61a": () => import(/* webpackChunkName: "v-6fd4d61a" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/en-US/plugins/KillItem.html.js").then(({ data }) => data),
   // path: /en-US/plugins/Ntrade.html
   "v-5dbb9ea4": () => import(/* webpackChunkName: "v-5dbb9ea4" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/en-US/plugins/Ntrade.html.js").then(({ data }) => data),
+  // path: /zh-CN/develop/start.html
+  "v-2b5d9367": () => import(/* webpackChunkName: "v-2b5d9367" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/zh-CN/develop/start.html.js").then(({ data }) => data),
   // path: /zh-CN/open-source/generate-skyisland.html
   "v-a0639328": () => import(/* webpackChunkName: "v-a0639328" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/zh-CN/open-source/generate-skyisland.html.js").then(({ data }) => data),
   // path: /zh-CN/plugins/KillItem.html

@@ -10,13 +10,20 @@
 <h3 id="🚨基本玩法" tabindex="-1"><a class="header-anchor" href="#🚨基本玩法" aria-hidden="true">#</a> 🚨基本玩法</h3>
 <p>敬请期待</p>
 <h3 id="🗻所有空岛类型" tabindex="-1"><a class="header-anchor" href="#🗻所有空岛类型" aria-hidden="true">#</a> 🗻所有空岛类型</h3>
-<p><img src="/island1.png" alt="ceshi"></p>
+<h4 id="丛林岛-作者-lonely" tabindex="-1"><a class="header-anchor" href="#丛林岛-作者-lonely" aria-hidden="true">#</a> 丛林岛 作者@lonely</h4>
+<p>丛林风格的空岛，拥有较大的空间以及资源，岛上甚至还有两只羊！是萌新开始空岛生存的不二之选!</p>
+<p><img src="/island/forest.png" alt="forest"></p>
+<h4 id="多种群落岛-作者-lonely" tabindex="-1"><a class="header-anchor" href="#多种群落岛-作者-lonely" aria-hidden="true">#</a> 多种群落岛 作者@lonely</h4>
+<p>多种群落杂糅在一起的一个小岛，空间较为紧凑，同样没有奖励箱，但也是很美观的一个小岛</p>
+<p><img src="/island/island1.png" alt="island1"></p>
 <p>敬请期待</p>
 <h3 id="💵货币系统" tabindex="-1"><a class="header-anchor" href="#💵货币系统" aria-hidden="true">#</a> 💵货币系统</h3>
 <p>货币名为能源币，基准为一颗钻石1000货币</p>
 <p>服务器商店回收木头，农作物，石头等物品</p>
 <p>服务器所有商品价格/回收价格均基于<strong>基础物价*物价指数</strong></p>
-<p>其中物价指数将每半小时更新一次，每次在<code v-pre>0.20-1.80</code>之间随机波动，概率符合二项分布。</p>
+<p>其中物价指数将每小时更新一次，其中物价指数的生成规则为：</p>
+<p>理论上服务器生成的物价指数分布符合以<code v-pre>100</code>为<strong>均值</strong>，<code v-pre>20</code>为<strong>方差</strong>的标准正态分布（物价指数将取随机生成后的数据除以100并保留两位小数的处理）</p>
+<p>根据标准正态分布曲线，将有99.74%的数据分布于<code v-pre>0.4-1.6</code>之间</p>
 <p><strong>附表：基础物品基础物价表</strong></p>
 <table>
 <thead>
@@ -49,7 +56,7 @@
 <p>玩家初始拥有“初始呼吸装备”便获得<strong>5000/5000</strong>点氧气值 （前面为如今氧气值，后面的为初始等级氧气值最大容量）</p>
 <p>以下所有数值除非说明否则均以“初始呼吸装备”为准</p>
 <div class="custom-container warning"><p class="custom-container-title">变动中数据提醒</p>
-<p>以下数据均基于NIA V4.1.15，数据仍会出现较大变动，具体请以正式服为准</p>
+<p>以下数据均基于NIA V4.1.30，数据仍会出现较大变动，具体请以正式服为准</p>
 </div>
 <p>当玩家在线时，氧气值将以每分钟<strong>20</strong>点减少</p>
 <p>当<strong>氧气值≥14000</strong>时玩家血量将由<strong>20点变为40点</strong></p>
@@ -104,14 +111,14 @@
 <td style="text-align:center">中级呼吸装备Ⅱ</td>
 <td style="text-align:center">6000</td>
 <td style="text-align:center">17</td>
-<td style="text-align:center">700</td>
+<td style="text-align:center">1000</td>
 <td style="text-align:center">-</td>
 </tr>
 <tr>
 <td style="text-align:center">中级呼吸装备Ⅲ</td>
 <td style="text-align:center">6000</td>
 <td style="text-align:center">16</td>
-<td style="text-align:center">1000</td>
+<td style="text-align:center">1200</td>
 <td style="text-align:center">-</td>
 </tr>
 <tr>
@@ -146,14 +153,14 @@
 <td style="text-align:center">X级呼吸装备Ⅱ</td>
 <td style="text-align:center">8000</td>
 <td style="text-align:center">13</td>
-<td style="text-align:center">7000</td>
+<td style="text-align:center">8000</td>
 <td style="text-align:center">-</td>
 </tr>
 <tr>
 <td style="text-align:center">X级呼吸装备Ⅲ</td>
 <td style="text-align:center">9000</td>
 <td style="text-align:center">12</td>
-<td style="text-align:center">9000</td>
+<td style="text-align:center">10000</td>
 <td style="text-align:center">-</td>
 </tr>
 <tr>

@@ -35,6 +35,8 @@ export const pagesComponents = {
   "v-6fd4d61a": defineAsyncComponent(() => import(/* webpackChunkName: "v-6fd4d61a" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/en-US/plugins/KillItem.html.vue")),
   // path: /en-US/plugins/Ntrade.html
   "v-5dbb9ea4": defineAsyncComponent(() => import(/* webpackChunkName: "v-5dbb9ea4" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/en-US/plugins/Ntrade.html.vue")),
+  // path: /zh-CN/develop/start.html
+  "v-2b5d9367": defineAsyncComponent(() => import(/* webpackChunkName: "v-2b5d9367" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/zh-CN/develop/start.html.vue")),
   // path: /zh-CN/open-source/generate-skyisland.html
   "v-a0639328": defineAsyncComponent(() => import(/* webpackChunkName: "v-a0639328" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/zh-CN/open-source/generate-skyisland.html.vue")),
   // path: /zh-CN/plugins/KillItem.html

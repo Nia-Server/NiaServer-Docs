@@ -11,6 +11,14 @@ title: 📎服务器更新日志
 
 [NIA服务器V4](https://www.github.com/NIANIANKNIA/NIASERVER-V4)仍处于开发状态中
 
+## 🎈2023/1/25 BetaV4.1.25更新日志
+
+【新增】
+
+
+【优化】
+
+
 ## 🎈2023/1/15 BetaV4.1.15更新日志
 
 【新增】
