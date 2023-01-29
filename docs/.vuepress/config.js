@@ -121,6 +121,11 @@ export default defineUserConfig({
               children: ['/zh-CN/plugins/Ntrade.md','/zh-CN/plugins/KillItem.md'],
             },
             {
+              text: '服务器开发文档',
+              collapsible: true,
+              children: ['/zh-CN/develop/start.md'],
+            },
+            {
               text: '开发者&特别鸣谢',
               collapsible: true,
               children: ['/zh-CN/developers.md','/zh-CN/specialThanks.md'],

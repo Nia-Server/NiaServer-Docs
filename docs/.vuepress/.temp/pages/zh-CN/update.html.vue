@@ -3,6 +3,9 @@
 <p>本页面仍处于编写状态中，内容可能不全面，会对阅读造成一定的影响！</p>
 </div>
 <p><a href="https://www.github.com/NIANIANKNIA/NIASERVER-V4" target="_blank" rel="noopener noreferrer">NIA服务器V4<ExternalLinkIcon/></a>仍处于开发状态中</p>
+<h2 id="🎈2023-1-25-betav4-1-25更新日志" tabindex="-1"><a class="header-anchor" href="#🎈2023-1-25-betav4-1-25更新日志" aria-hidden="true">#</a> 🎈2023/1/25 BetaV4.1.25更新日志</h2>
+<p>【新增】</p>
+<p>【优化】</p>
 <h2 id="🎈2023-1-15-betav4-1-15更新日志" tabindex="-1"><a class="header-anchor" href="#🎈2023-1-15-betav4-1-15更新日志" aria-hidden="true">#</a> 🎈2023/1/15 BetaV4.1.15更新日志</h2>
 <p>【新增】</p>
 <p>1.全功能商店系统</p>
