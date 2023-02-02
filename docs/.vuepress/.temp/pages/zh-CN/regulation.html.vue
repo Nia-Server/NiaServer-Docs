@@ -1,6 +1,6 @@
 <template><div><h1 id="📝nia服务器规章制度v3-1" tabindex="-1"><a class="header-anchor" href="#📝nia服务器规章制度v3-1" aria-hidden="true">#</a> 📝NIA服务器规章制度v3.1</h1>
 <hr>
-<p>更新时间 : 2022.12-27</p>
+<p>更新时间 : 2022.12.27</p>
 <p>编写：NIA服务器运营团队</p>
 <p>审批 :鸽子腐竹</p>
 <p>当前版本：3.1</p>

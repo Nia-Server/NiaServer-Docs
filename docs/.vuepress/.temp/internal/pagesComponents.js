@@ -11,6 +11,8 @@ export const pagesComponents = {
   "v-7c1a6266": defineAsyncComponent(() => import(/* webpackChunkName: "v-7c1a6266" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/en-US/index.html.vue")),
   // path: /en-US/start.html
   "v-22ab049d": defineAsyncComponent(() => import(/* webpackChunkName: "v-22ab049d" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/en-US/start.html.vue")),
+  // path: /zh-CN/About.html
+  "v-72ab6b6c": defineAsyncComponent(() => import(/* webpackChunkName: "v-72ab6b6c" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/zh-CN/About.html.vue")),
   // path: /zh-CN/deploy.html
   "v-af418158": defineAsyncComponent(() => import(/* webpackChunkName: "v-af418158" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/zh-CN/deploy.html.vue")),
   // path: /zh-CN/developers.html
@@ -27,8 +29,6 @@ export const pagesComponents = {
   "v-2622951e": defineAsyncComponent(() => import(/* webpackChunkName: "v-2622951e" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/zh-CN/regulation.html.vue")),
   // path: /zh-CN/specialThanks.html
   "v-fef3e816": defineAsyncComponent(() => import(/* webpackChunkName: "v-fef3e816" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/zh-CN/specialThanks.html.vue")),
-  // path: /zh-CN/start.html
-  "v-c661eb16": defineAsyncComponent(() => import(/* webpackChunkName: "v-c661eb16" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/zh-CN/start.html.vue")),
   // path: /zh-CN/update.html
   "v-f199d69c": defineAsyncComponent(() => import(/* webpackChunkName: "v-f199d69c" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/zh-CN/update.html.vue")),
   // path: /en-US/plugins/KillItem.html
