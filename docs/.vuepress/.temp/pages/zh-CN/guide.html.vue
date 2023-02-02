@@ -2,6 +2,17 @@
 <div class="custom-container warning"><p class="custom-container-title">编写中页面提醒</p>
 <p>本页面仍处于编写状态中，内容可能不全面，会对阅读造成一定的影响！</p>
 </div>
+<h3 id="游玩前准备" tabindex="-1"><a class="header-anchor" href="#游玩前准备" aria-hidden="true">#</a> 游玩前准备</h3>
+<p>在游玩服务器前，您需要加入服务器相关群聊，<strong>否则您将无法正常游玩本服务器!</strong></p>
+<p><a href="https://jq.qq.com/?_wv=1027&amp;k=qsGBYtfP" target="_blank" rel="noopener noreferrer">请点击本行字加入服务器官方审核群<ExternalLinkIcon/></a></p>
+<p>若审核群无法正常加入，您可以通过<a href="https://qm.qq.com/cgi-bin/qm/qr?k=7mnlY_HJbyNa8zZ94amitHNMmayXDyHS&amp;noverify=0&amp;personal_qrcode_source=4" target="_blank" rel="noopener noreferrer">添加服主QQ<ExternalLinkIcon/></a>进行询问</p>
+<div class="custom-container tip"><p class="custom-container-title">以下为服务器官方认证群聊，请注意辨识</p>
+<p>服务器主群：724360499</p>
+<p>服务器审核群：371417932</p>
+<p>服务器备份群：258515673</p>
+<p>服务器OP招募群：543363488</p>
+<p>服主QQ：1020317403</p>
+</div>
 <h3 id="安装游戏" tabindex="-1"><a class="header-anchor" href="#安装游戏" aria-hidden="true">#</a> 安装游戏</h3>
 <p>首先，你应当下载服务器当前对应的基岩版我的世界</p>
 <p>基岩版几乎支持全平台，你可以根据自己的设备前往<strong>Miscrosoft Store（WIN10）、App Store（IOS）、Google Play（Android）</strong> 购买相应的我的世界基岩版并下载</p>
@@ -11,7 +22,7 @@
 <h3 id="申请白名单" tabindex="-1"><a class="header-anchor" href="#申请白名单" aria-hidden="true">#</a> 申请白名单</h3>
 <p>加入服务器官方群聊（某些特殊时期服务器可能会开启审核，此时需要您填写一个简单的问卷，提交后才可以获得主群链接），进入服务器群聊之后，根据<strong>群公告</strong>的相关指示发送特定内容即可成功添加白名单</p>
 <h3 id="进入服务器" tabindex="-1"><a class="header-anchor" href="#进入服务器" aria-hidden="true">#</a> 进入服务器</h3>
-<p>根据群公告的ip地址以及端口，填入相关位置，即可进入服务器！</p>
+<p>根据群公告的ip地址以及端口，点开主页面-游戏-服务器-添加服务器，输入<strong>服务器群群公告</strong>提供的ip及端口，（名称随便填）点击保存即可，然后直接点击这个服务器就可以加入游玩啦!</p>
 <h3 id="部分无法进入服务器的情况以及解决方法" tabindex="-1"><a class="header-anchor" href="#部分无法进入服务器的情况以及解决方法" aria-hidden="true">#</a> 部分无法进入服务器的情况以及解决方法</h3>
 <ul>
 <li>使用移动网络（流量）进入服务器，却显示没有连接互联网</li>

@@ -9,6 +9,8 @@ export const pagesData = {
   "v-7c1a6266": () => import(/* webpackChunkName: "v-7c1a6266" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/en-US/index.html.js").then(({ data }) => data),
   // path: /en-US/start.html
   "v-22ab049d": () => import(/* webpackChunkName: "v-22ab049d" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/en-US/start.html.js").then(({ data }) => data),
+  // path: /zh-CN/About.html
+  "v-72ab6b6c": () => import(/* webpackChunkName: "v-72ab6b6c" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/zh-CN/About.html.js").then(({ data }) => data),
   // path: /zh-CN/deploy.html
   "v-af418158": () => import(/* webpackChunkName: "v-af418158" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/zh-CN/deploy.html.js").then(({ data }) => data),
   // path: /zh-CN/developers.html
@@ -25,8 +27,6 @@ export const pagesData = {
   "v-2622951e": () => import(/* webpackChunkName: "v-2622951e" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/zh-CN/regulation.html.js").then(({ data }) => data),
   // path: /zh-CN/specialThanks.html
   "v-fef3e816": () => import(/* webpackChunkName: "v-fef3e816" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/zh-CN/specialThanks.html.js").then(({ data }) => data),
-  // path: /zh-CN/start.html
-  "v-c661eb16": () => import(/* webpackChunkName: "v-c661eb16" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/zh-CN/start.html.js").then(({ data }) => data),
   // path: /zh-CN/update.html
   "v-f199d69c": () => import(/* webpackChunkName: "v-f199d69c" */"E:/GIT/NiaServer-Docs/docs/.vuepress/.temp/pages/zh-CN/update.html.js").then(({ data }) => data),
   // path: /en-US/plugins/KillItem.html

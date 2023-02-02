@@ -108,7 +108,7 @@ export default defineUserConfig({
             {
               text: '服务器相关文档',
               collapsible: true,
-              children: ['/zh-CN/start.md','/zh-CN/guide.md','/zh-CN/regulation.md','/zh-CN/Illustrated.md','/zh-CN/update.md','/zh-CN/history.md','/zh-CN/map.md'],
+              children: ['/zh-CN/About.md','/zh-CN/guide.md','/zh-CN/regulation.md','/zh-CN/Illustrated.md','/zh-CN/update.md','/zh-CN/history.md','/zh-CN/map.md'],
             },
             {
               text: '如何部署服务器',
