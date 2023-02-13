@@ -20,7 +20,9 @@
 <h3 id="进入游戏" tabindex="-1"><a class="header-anchor" href="#进入游戏" aria-hidden="true">#</a> 进入游戏</h3>
 <p>在安装好游戏后，进入游戏你应当首先登录Xbox账号，没有的话可以免费注册一个，然后记下自己的Xboxid</p>
 <h3 id="申请白名单" tabindex="-1"><a class="header-anchor" href="#申请白名单" aria-hidden="true">#</a> 申请白名单</h3>
-<p>加入服务器官方群聊（某些特殊时期服务器可能会开启审核，此时需要您填写一个简单的问卷，提交后才可以获得主群链接），进入服务器群聊之后，根据<strong>群公告</strong>的相关指示发送特定内容即可成功添加白名单</p>
+<p>加入服务器官方群聊（某些特殊时期服务器可能会开启审核，此时需要您填写一个简单的问卷，提交后才可以获得主群链接），进入服务器群聊之后，请首先发送 <strong>#申请白名</strong> 然后发送您的XboxID，最后发送 <strong>#确定</strong> 即可成功添加白名单！</p>
+<h3 id="浏览服务器图鉴" tabindex="-1"><a class="header-anchor" href="#浏览服务器图鉴" aria-hidden="true">#</a> 浏览服务器图鉴</h3>
+<p>服务器是空岛玩法，在您正式进入服务器游玩之前我们推荐您先前往<a href="https://docs.mcnia.top/zh-CN/Illustrated.html" target="_blank" rel="noopener noreferrer">服务器图鉴<ExternalLinkIcon/></a>查看各种空岛样式，了解基本玩法后再前往服务器游玩！</p>
 <h3 id="进入服务器" tabindex="-1"><a class="header-anchor" href="#进入服务器" aria-hidden="true">#</a> 进入服务器</h3>
 <p>根据群公告的ip地址以及端口，点开主页面-游戏-服务器-添加服务器，输入<strong>服务器群群公告</strong>提供的ip及端口，（名称随便填）点击保存即可，然后直接点击这个服务器就可以加入游玩啦!</p>
 <h3 id="部分无法进入服务器的情况以及解决方法" tabindex="-1"><a class="header-anchor" href="#部分无法进入服务器的情况以及解决方法" aria-hidden="true">#</a> 部分无法进入服务器的情况以及解决方法</h3>
