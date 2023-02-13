@@ -146,6 +146,13 @@ export const searchIndex = [
       },
       {
         "level": 3,
+        "title": "浏览服务器图鉴",
+        "slug": "浏览服务器图鉴",
+        "link": "#浏览服务器图鉴",
+        "children": []
+      },
+      {
+        "level": 3,
         "title": "进入服务器",
         "slug": "进入服务器",
         "link": "#进入服务器",
