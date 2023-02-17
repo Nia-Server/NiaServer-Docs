@@ -27,7 +27,7 @@ title: 📜服务器图鉴
 
 一些空岛无法获取的资源可以在商店里购买  
 
-哦对了，在这个大陆，你需要使用一种叫做**能源币**的东西来进行交易  
+哦对了，在这个大陆，你需要使用一种叫做[**能源币**](https://docs.mcnia.top/zh-CN/Illustrated.html#%F0%9F%92%B5%E8%B4%A7%E5%B8%81%E7%B3%BB%E7%BB%9F)的东西来进行交易  
 
 至于获取能源币的方式：  
 
@@ -40,6 +40,10 @@ title: 📜服务器图鉴
 使用能源币升级[**氧气装备**](https://docs.mcnia.top/zh-CN/Illustrated.html#%F0%9F%A4%96-%E5%91%BC%E5%90%B8%E8%A3%85%E5%A4%87-%E8%AE%BE%E5%AE%9A)，这会使你氧气容量上限增加，氧气消耗速度也会变慢。  
 
 如何获取氧气呢？[点击这里](https://docs.mcnia.top/zh-CN/Illustrated.html#%F0%9F%A4%BF%E5%A6%82%E4%BD%95%E8%8E%B7%E5%BE%97%E6%B0%A7%E6%B0%94)  
+
+另外，服务器采用了极其先进的正态分布算法来计算[**物价指数**](https://docs.mcnia.top/zh-CN/Illustrated.html#%F0%9F%92%B5%E8%B4%A7%E5%B8%81%E7%B3%BB%E7%BB%9F)  
+
+~~或许可以借助这个东西赚个差价呢~~  
 
 那么...  
 
