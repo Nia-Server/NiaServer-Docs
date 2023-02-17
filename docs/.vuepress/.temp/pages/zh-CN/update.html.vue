@@ -1,7 +1,18 @@
 <template><div><h1 id="📎服务器更新日志-编写中" tabindex="-1"><a class="header-anchor" href="#📎服务器更新日志-编写中" aria-hidden="true">#</a> 📎服务器更新日志（编写中...）</h1>
-<div class="custom-container tip"><p class="custom-container-title">注意</p>
-<p>NIA服务器V4已于2023-01-27正式公测！</p>
-</div>
+<h2 id="🎈2023-2-2-betav4-2-11更新日志" tabindex="-1"><a class="header-anchor" href="#🎈2023-2-2-betav4-2-11更新日志" aria-hidden="true">#</a> 🎈2023/2/2 BetaV4.2.11更新日志</h2>
+<p>【新增】</p>
+<p>1.增强对部分作弊项目的检测</p>
+<p>2.服务器版本更新至1.19.60</p>
+<p>3.服务器封禁插件对接云黑</p>
+<p>4.新增home功能，快来设定属于自己的家吧！</p>
+<p>5.服务器主菜单新增设置个人传送点功能</p>
+<p>【调整】</p>
+<p>服务器音乐资源包删除部分音乐</p>
+<p>【优化】</p>
+<p>1.调整了插件部分对玩家死亡的检测方式</p>
+<p>2.优化了插件在特定场景下的性能表现</p>
+<p>3.服务器插件适配1.19.60</p>
+<p>4.服务器addons包适配1.19.60的API</p>
 <h2 id="🎈2023-2-2-betav4-2-2更新日志" tabindex="-1"><a class="header-anchor" href="#🎈2023-2-2-betav4-2-2更新日志" aria-hidden="true">#</a> 🎈2023/2/2 BetaV4.2.2更新日志</h2>
 <p>【新增】</p>
 <p>点歌插件，让我们在服务器一起点歌吧！</p>

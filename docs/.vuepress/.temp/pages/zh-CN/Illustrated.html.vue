@@ -3,7 +3,7 @@
 <p>本页面仍处于编写状态中，内容可能不全面，会对阅读造成一定的影响！</p>
 </div>
 <div class="custom-container warning"><p class="custom-container-title">变动中数据提醒</p>
-<p>以下数据均基于NIA V4.1.30，数据仍会出现较大变动，具体请以正式服为准</p>
+<p>以下数据均基于NIA V4.2.11，数据仍会出现较大变动，具体请以正式服为准</p>
 </div>
 <blockquote>
 <p>NIA服务器V4版本的基本设定，你可以在这里查询到任何你想知道的关于服务器的设定！</p>

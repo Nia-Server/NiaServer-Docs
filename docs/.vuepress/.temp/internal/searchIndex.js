@@ -132,9 +132,9 @@ export const searchIndex = [
       },
       {
         "level": 3,
-        "title": "进入游戏",
-        "slug": "进入游戏",
-        "link": "#进入游戏",
+        "title": "进入游戏&&注册XboxID",
+        "slug": "进入游戏-注册xboxid",
+        "link": "#进入游戏-注册xboxid",
         "children": []
       },
       {
@@ -351,6 +351,13 @@ export const searchIndex = [
   {
     "title": "📎服务器更新日志",
     "headers": [
+      {
+        "level": 2,
+        "title": "🎈2023/2/2 BetaV4.2.11更新日志",
+        "slug": "🎈2023-2-2-betav4-2-11更新日志",
+        "link": "#🎈2023-2-2-betav4-2-11更新日志",
+        "children": []
+      },
       {
         "level": 2,
         "title": "🎈2023/2/2 BetaV4.2.2更新日志",
