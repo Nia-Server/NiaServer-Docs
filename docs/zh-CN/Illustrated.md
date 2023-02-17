@@ -21,18 +21,18 @@ title: 📜服务器图鉴
 
 ### 🚨基本玩法
 
-选择自己中意的空岛，在岛上开始你的生存~
-至于获取资源嘛...了解一下[“随机矿场”](https://docs.mcnia.top/zh-CN/Illustrated.html#%F0%9F%92%8E%E9%9A%8F%E6%9C%BA%E7%9F%BF%E5%9C%BA)？
-一些空岛无法获取的资源可以在商店里购买
-哦对了，在这个大陆，你需要使用一种叫做“能源币”的东西来进行交易
-至于获取能源币的方式：
--如果你是肝帝，那么你可以掏空随机矿场，卖矿！（但这里你需要注意的是：矿物回收是有数量限制的）
--如果你是懒狗，那么你可以通过~~要饭~~卖其他物品来获取能源币。
-在获取资源的过程中，你要时刻关注自己的[氧气值](https://docs.mcnia.top/zh-CN/Illustrated.html#%F0%9F%AB%A7%E6%B0%A7%E6%B0%94%E5%80%BC%E8%AE%BE%E5%AE%9A)
-使用能源币升级[氧气装备](https://docs.mcnia.top/zh-CN/Illustrated.html#%F0%9F%A4%96-%E5%91%BC%E5%90%B8%E8%A3%85%E5%A4%87-%E8%AE%BE%E5%AE%9A)，这会使你氧气容量上限增加，氧气消耗速度也会变慢。
-如何获取氧气呢？[点击这里]（https://docs.mcnia.top/zh-CN/Illustrated.html#%F0%9F%A4%BF%E5%A6%82%E4%BD%95%E8%8E%B7%E5%BE%97%E6%B0%A7%E6%B0%94）
-那么...
-前面的区域，就请你自己探索吧！
+选择自己中意的空岛，在岛上开始你的生存~  
+至于获取资源嘛...了解一下[“随机矿场”](https://docs.mcnia.top/zh-CN/Illustrated.html#%F0%9F%92%8E%E9%9A%8F%E6%9C%BA%E7%9F%BF%E5%9C%BA)？  
+一些空岛无法获取的资源可以在商店里购买  
+哦对了，在这个大陆，你需要使用一种叫做“能源币”的东西来进行交易  
+至于获取能源币的方式：  
+-如果你是肝帝，那么你可以掏空随机矿场，卖矿！（但这里你需要注意的是：矿物回收是有数量限制的）  
+-如果你是懒狗，那么你可以通过~~要饭~~卖其他物品来获取能源币。  
+在获取资源的过程中，你要时刻关注自己的[氧气值](https://docs.mcnia.top/zh-CN/Illustrated.html#%F0%9F%AB%A7%E6%B0%A7%E6%B0%94%E5%80%BC%E8%AE%BE%E5%AE%9A)  
+使用能源币升级[氧气装备](https://docs.mcnia.top/zh-CN/Illustrated.html#%F0%9F%A4%96-%E5%91%BC%E5%90%B8%E8%A3%85%E5%A4%87-%E8%AE%BE%E5%AE%9A)，这会使你氧气容量上限增加，氧气消耗速度也会变慢。  
+如何获取氧气呢？[点击这里]（https://docs.mcnia.top/zh-CN/Illustrated.html#%F0%9F%A4%BF%E5%A6%82%E4%BD%95%E8%8E%B7%E5%BE%97%E6%B0%A7%E6%B0%94）  
+那么...  
+前面的区域，就请你自己探索吧！  
 
 ### 🗻所有空岛类型
 
