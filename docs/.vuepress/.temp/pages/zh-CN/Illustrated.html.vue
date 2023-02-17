@@ -9,9 +9,23 @@
 <p>NIA服务器V4版本的基本设定，你可以在这里查询到任何你想知道的关于服务器的设定！</p>
 </blockquote>
 <h3 id="🧊服务器背景故事设定" tabindex="-1"><a class="header-anchor" href="#🧊服务器背景故事设定" aria-hidden="true">#</a> 🧊服务器背景故事设定</h3>
-<p>敬请期待</p>
+<p>敬请期待 <s>其实是没人写</s></p>
 <h3 id="🚨基本玩法" tabindex="-1"><a class="header-anchor" href="#🚨基本玩法" aria-hidden="true">#</a> 🚨基本玩法</h3>
-<p>敬请期待</p>
+<p><RouterLink to="/zh-CN/Illustrated.html#%E4%B8%9B%E6%9E%97%E5%B2%9B-%E4%BD%9C%E8%80%85lonely">选择符合自己<s>xp</s>的空岛</RouterLink>，在岛上开始你的生存~</p>
+<p>在这里你肯定要运用一些空岛生存技巧，在这里我就不多介绍了</p>
+<p>至于获取资源嘛...了解一下<RouterLink to="/zh-CN/Illustrated.html#%F0%9F%92%8E%E9%9A%8F%E6%9C%BA%E7%9F%BF%E5%9C%BA"><strong>随机矿场</strong></RouterLink>？</p>
+<p>一些空岛无法获取的资源可以在商店里购买</p>
+<p>哦对了，在这个大陆，你需要使用一种叫做<RouterLink to="/zh-CN/Illustrated.html#%F0%9F%92%B5%E8%B4%A7%E5%B8%81%E7%B3%BB%E7%BB%9F"><strong>能源币</strong></RouterLink>的东西来进行交易</p>
+<p>至于获取能源币的方式：</p>
+<p>-如果你是肝帝，那么你可以掏空随机矿场，卖矿！（但这里你需要注意的是：矿物回收是有数量限制的）</p>
+<p>-如果你是懒狗，那么你可以通过 <s>要饭</s> 卖其他物品来获取能源币。</p>
+<p>在获取资源的过程中，你要时刻关注自己的<RouterLink to="/zh-CN/Illustrated.html#%F0%9F%A4%96%E5%91%BC%E5%90%B8%E8%A3%85%E5%A4%87%E8%AE%BE%E5%AE%9A"><strong>氧气值</strong></RouterLink></p>
+<p>使用能源币升级<RouterLink to="/zh-CN/Illustrated.html#%F0%9F%A4%96%E5%91%BC%E5%90%B8%E8%A3%85%E5%A4%87%E8%AE%BE%E5%AE%9A"><strong>氧气装备</strong></RouterLink>，这会使你氧气容量上限增加，氧气消耗速度也会变慢。</p>
+<p>如何获取氧气呢？<RouterLink to="/zh-CN/Illustrated.html#%F0%9F%A4%BF%E5%A6%82%E4%BD%95%E8%8E%B7%E5%BE%97%E6%B0%A7%E6%B0%94">点击这里</RouterLink></p>
+<p>另外，服务器采用了极其先进的正态分布算法来计算<RouterLink to="/zh-CN/Illustrated.html#%F0%9F%92%B5%E8%B4%A7%E5%B8%81%E7%B3%BB%E7%BB%9F"><strong>物价指数</strong></RouterLink></p>
+<p><s>或许可以借助这个东西赚个差价呢</s></p>
+<p>那么...</p>
+<p><strong>前面的区域，就请你自己探索吧！</strong></p>
 <h3 id="🗻所有空岛类型" tabindex="-1"><a class="header-anchor" href="#🗻所有空岛类型" aria-hidden="true">#</a> 🗻所有空岛类型</h3>
 <h4 id="丛林岛-作者-lonely" tabindex="-1"><a class="header-anchor" href="#丛林岛-作者-lonely" aria-hidden="true">#</a> 丛林岛 作者@lonely</h4>
 <p>丛林风格的空岛，拥有较大的空间以及资源，岛上甚至还有两只羊！是萌新开始空岛生存的不二之选!</p>
