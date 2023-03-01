@@ -86,13 +86,6 @@ export const searchIndex = [
         "slug": "服务器理念",
         "link": "#服务器理念",
         "children": []
-      },
-      {
-        "level": 3,
-        "title": "服务器部分原创项目开源链接",
-        "slug": "服务器部分原创项目开源链接",
-        "link": "#服务器部分原创项目开源链接",
-        "children": []
       }
     ],
     "path": "/zh-CN/About.html",
@@ -622,16 +615,3 @@ export const searchIndex = [
     "extraFields": []
   }
 ]
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updateSearchIndex) {
-    __VUE_HMR_RUNTIME__.updateSearchIndex(searchIndex)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ searchIndex }) => {
-    __VUE_HMR_RUNTIME__.updateSearchIndex(searchIndex)
-  })
-}

@@ -3,8 +3,8 @@ home: true
 heroImage: /logo.png
 heroImageDark: /logoDark.png
 actions:
-  - text: 立即游玩
-    link: /zh-CN/start
+  - text: 关于我们
+    link: /zh-CN/About
     type: primary
   - text: 开始阅读
     link: /zh-CN/guide
