@@ -1,4 +1,4 @@
-<template><div><h1 id="📎服务器更新日志-编写中" tabindex="-1"><a class="header-anchor" href="#📎服务器更新日志-编写中" aria-hidden="true">#</a> 📎服务器更新日志（编写中...）</h1>
+<template><div><h1 id="📎服务器更新日志" tabindex="-1"><a class="header-anchor" href="#📎服务器更新日志" aria-hidden="true">#</a> 📎服务器更新日志</h1>
 <h2 id="🎈2023-2-2-betav4-2-11更新日志" tabindex="-1"><a class="header-anchor" href="#🎈2023-2-2-betav4-2-11更新日志" aria-hidden="true">#</a> 🎈2023/2/2 BetaV4.2.11更新日志</h2>
 <p>【新增】</p>
 <p>1.增强对部分作弊项目的检测</p>
