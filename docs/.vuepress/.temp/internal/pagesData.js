@@ -35,12 +35,20 @@ export const pagesData = {
   "v-5dbb9ea4": () => import(/* webpackChunkName: "v-5dbb9ea4" */"D:/NiaServer-Docs/docs/.vuepress/.temp/pages/en-US/plugins/Ntrade.html.js").then(({ data }) => data),
   // path: /zh-CN/develop/start.html
   "v-2b5d9367": () => import(/* webpackChunkName: "v-2b5d9367" */"D:/NiaServer-Docs/docs/.vuepress/.temp/pages/zh-CN/develop/start.html.js").then(({ data }) => data),
+<<<<<<< HEAD
   // path: /zh-CN/open-source/generate-skyisland.html
   "v-a0639328": () => import(/* webpackChunkName: "v-a0639328" */"D:/NiaServer-Docs/docs/.vuepress/.temp/pages/zh-CN/open-source/generate-skyisland.html.js").then(({ data }) => data),
+=======
+>>>>>>> main
   // path: /zh-CN/plugins/KillItem.html
   "v-458ff81b": () => import(/* webpackChunkName: "v-458ff81b" */"D:/NiaServer-Docs/docs/.vuepress/.temp/pages/zh-CN/plugins/KillItem.html.js").then(({ data }) => data),
   // path: /zh-CN/plugins/Ntrade.html
   "v-0cab3dd6": () => import(/* webpackChunkName: "v-0cab3dd6" */"D:/NiaServer-Docs/docs/.vuepress/.temp/pages/zh-CN/plugins/Ntrade.html.js").then(({ data }) => data),
+<<<<<<< HEAD
+=======
+  // path: /zh-CN/open-source/generate-skyisland.html
+  "v-a0639328": () => import(/* webpackChunkName: "v-a0639328" */"D:/NiaServer-Docs/docs/.vuepress/.temp/pages/zh-CN/open-source/generate-skyisland.html.js").then(({ data }) => data),
+>>>>>>> main
   // path: /404.html
   "v-3706649a": () => import(/* webpackChunkName: "v-3706649a" */"D:/NiaServer-Docs/docs/.vuepress/.temp/pages/404.html.js").then(({ data }) => data),
 }
