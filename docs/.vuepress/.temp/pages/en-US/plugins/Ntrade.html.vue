@@ -19,7 +19,7 @@
 <h3 id="modify-the-configuration-file" tabindex="-1"><a class="header-anchor" href="#modify-the-configuration-file" aria-hidden="true">#</a> Modify the configuration file</h3>
 <p>Please refer to the following to modify the configuration file</p>
 <p>Configuration file location: <code v-pre>plugins/Ntrade/config.json</code></p>
-<div class="language-json ext-json line-numbers-mode"><pre v-pre class="language-json"><code><span class="token punctuation">{</span>
+<div class="language-json line-numbers-mode" data-ext="json"><pre v-pre class="language-json"><code><span class="token punctuation">{</span>
     <span class="token property">"MarketID"</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token comment">//Market ID, do not change under normal circumstances</span>
     <span class="token property">"llmoney"</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token comment">// whether to enable llmoney economy, 0 (false) is not enabled, 1 (true) is enabled</span>
     <span class="token property">"MoneyScoresBoardName"</span><span class="token operator">:</span> <span class="token string">"money"</span><span class="token punctuation">,</span> <span class="token comment">// If for scoreboard economy, the corresponding scoreboard name</span>

@@ -19,7 +19,7 @@
 <h3 id="修改配置文件" tabindex="-1"><a class="header-anchor" href="#修改配置文件" aria-hidden="true">#</a> 修改配置文件</h3>
 <p>请参考以下内容修改配置文件</p>
 <p>配置文件位置：<code v-pre>plugins/Ntrade/config.json</code></p>
-<div class="language-json ext-json line-numbers-mode"><pre v-pre class="language-json"><code><span class="token punctuation">{</span>
+<div class="language-json line-numbers-mode" data-ext="json"><pre v-pre class="language-json"><code><span class="token punctuation">{</span>
     <span class="token property">"marketID"</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>  <span class="token comment">//市场ID，正常情况下不要更改</span>
     <span class="token property">"llmoney"</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>   <span class="token comment">//是否启用llmoney经济，0（false）为不启用，1（true）为启用</span>
     <span class="token property">"MoneyScoresBoardName"</span><span class="token operator">:</span> <span class="token string">"money"</span><span class="token punctuation">,</span>  <span class="token comment">//如果为计分板经济，相应的计分板名称</span>

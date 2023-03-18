@@ -12,7 +12,7 @@
 <p>首先我们要在游戏中添加一个名为<code v-pre>IslandData</code>的计分板，<strong>并且添加一个名为<code v-pre>num</code>的虚拟对象并将其的值设定为1</strong>！</p>
 <p>这里的<code v-pre>IslandData</code>计分板是用于存储空岛相关数据的一个积分板，其中<code v-pre>num</code>为当前空岛的数量。</p>
 <p>然后这里为了方便后续的编写，我自定义了几个函数。</p>
-<div class="language-javascript ext-js line-numbers-mode"><pre v-pre class="language-javascript"><code><span class="token comment">//一些自定义函数</span>
+<div class="language-javascript line-numbers-mode" data-ext="js"><pre v-pre class="language-javascript"><code><span class="token comment">//一些自定义函数</span>
 
 <span class="token doc-comment comment">/**
  * 将Msg消息广播至整个游戏
@@ -40,7 +40,7 @@
 <span class="token punctuation">}</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>我这里生成的空岛是以坐标(cX,cY,cZ)为圆心，空岛按照一个个同心圆排列，每个空岛在该圆上的距离相等，从而最大限度的利用了空间。</p>
 <p>以下的脚本我基本注释已经做的很清楚了，请自行查看。</p>
-<div class="language-javascript ext-js line-numbers-mode"><pre v-pre class="language-javascript"><code><span class="token comment">//定义一些常数</span>
+<div class="language-javascript line-numbers-mode" data-ext="js"><pre v-pre class="language-javascript"><code><span class="token comment">//定义一些常数</span>
 <span class="token keyword">const</span> <span class="token constant">R</span> <span class="token operator">=</span> <span class="token number">100</span><span class="token punctuation">;</span>  <span class="token comment">//空岛间距/初始半径</span>
 <span class="token keyword">const</span> <span class="token constant">CX</span> <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token keyword">const</span> <span class="token constant">CY</span> <span class="token operator">=</span> <span class="token number">50</span><span class="token punctuation">;</span>

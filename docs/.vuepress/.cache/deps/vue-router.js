@@ -1,6 +1,6 @@
 import {
   setupDevtoolsPlugin
-} from "./chunk-K4CIJFXJ.js";
+} from "./chunk-4CJWLCJU.js";
 import {
   computed,
   defineComponent,
@@ -18,8 +18,8 @@ import {
   unref,
   watch,
   watchEffect
-} from "./chunk-5SU3EEBB.js";
-import "./chunk-X4BJ3H6D.js";
+} from "./chunk-WO3HABPH.js";
+import "./chunk-QZMSF73E.js";
 
 // node_modules/vue-router/dist/vue-router.mjs
 var isBrowser = typeof window !== "undefined";
@@ -910,7 +910,9 @@ function createRouterMatcher(routes, globalOptions) {
         }
       }
       originalRecord = originalRecord || matcher;
-      insertMatcher(matcher);
+      if (matcher.record.components && Object.keys(matcher.record.components).length || matcher.record.name || matcher.record.redirect) {
+        insertMatcher(matcher);
+      }
     }
     return originalMatcher ? () => {
       removeRoute(originalMatcher);
@@ -1743,9 +1745,9 @@ function addDevtools(app, router, matcher) {
             value: failure
           }
         };
-        data.status = formatDisplay("\u274C");
+        data.status = formatDisplay("❌");
       } else {
-        data.status = formatDisplay("\u2705");
+        data.status = formatDisplay("✅");
       }
       data.from = formatRouteLocation(from, "Current Location during this navigation");
       data.to = formatRouteLocation(to, "Target location");
@@ -2482,7 +2484,7 @@ export {
   viewDepthKey
 };
 /*!
-  * vue-router v4.1.5
+  * vue-router v4.1.6
   * (c) 2022 Eduardo San Martin Morote
   * @license MIT
   */

@@ -2,7 +2,7 @@ import {
   isArray,
   isFunction,
   isString
-} from "./chunk-X4BJ3H6D.js";
+} from "./chunk-QZMSF73E.js";
 
 // node_modules/@vuepress/shared/dist/index.js
 var resolveHeadIdentifier = ([
@@ -58,6 +58,13 @@ var isLinkExternal = (link, base = "/") => {
 var isLinkMailto = (link) => /^mailto:/.test(link);
 var isLinkTel = (link) => /^tel:/.test(link);
 var isPlainObject = (val) => Object.prototype.toString.call(val) === "[object Object]";
+var omit = (obj, ...keys) => {
+  const result = { ...obj };
+  for (const key of keys) {
+    delete result[key];
+  }
+  return result;
+};
 var removeEndingSlash = (str) => str.replace(/\/$/, "");
 var removeLeadingSlash = (str) => str.replace(/^\//, "");
 var resolveLocalePath = (locales, routePath) => {
@@ -90,6 +97,7 @@ export {
   isLinkTel,
   isPlainObject,
   isString,
+  omit,
   removeEndingSlash,
   removeLeadingSlash,
   resolveHeadIdentifier,
