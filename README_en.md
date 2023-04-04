@@ -2,7 +2,10 @@
 
 ##### Language: English | [简体中文](README.md)
 
-[NIA Server Documentation Station](https://docs.mcnia.top/) related documents
+![status](https://img.shields.io/github/actions/workflow/status/NIANIANKNIA/NiaServer-Docs/docs.yml?style=for-the-badge)
+![GitHub last commit](https://img.shields.io/github/last-commit/NIANIANKNIA/NiaServer-Docs?style=for-the-badge)
+
+[NIA Server Documentation Station](https://docs.mcnia.com/) related documents
 
 The documentation site is based on [Vuepress](https://v2.vuepress.vuejs.org/)
 
