@@ -250,6 +250,10 @@ const MainGUI = {
 
 #### 商店菜单
 
+商店菜单的相关文件在`development_behavior_packs/scripts/menu/shop.js`里
+
+您可以根据自己的需求按照下方的例子进行自行更改！
+
 ##### 售卖物品菜单
 
 配置示例
