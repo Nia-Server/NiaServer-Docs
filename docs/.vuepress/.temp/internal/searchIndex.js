@@ -97,6 +97,13 @@ export const searchIndex = [
     "headers": [
       {
         "level": 3,
+        "title": "配置服务器运行环境",
+        "slug": "配置服务器运行环境",
+        "link": "#配置服务器运行环境",
+        "children": []
+      },
+      {
+        "level": 3,
         "title": "下载对应版本的行为包",
         "slug": "下载对应版本的行为包",
         "link": "#下载对应版本的行为包",
@@ -121,27 +128,6 @@ export const searchIndex = [
         "title": "修改菜单文件",
         "slug": "修改菜单文件",
         "link": "#修改菜单文件",
-        "children": []
-      },
-      {
-        "level": 3,
-        "title": "（可选）根据需求删除多余文件",
-        "slug": "可选-根据需求删除多余文件",
-        "link": "#可选-根据需求删除多余文件",
-        "children": []
-      },
-      {
-        "level": 3,
-        "title": "（可选）本地测试",
-        "slug": "可选-本地测试",
-        "link": "#可选-本地测试",
-        "children": []
-      },
-      {
-        "level": 3,
-        "title": "部署到服务器上",
-        "slug": "部署到服务器上",
-        "link": "#部署到服务器上",
         "children": []
       }
     ],
@@ -382,6 +368,13 @@ export const searchIndex = [
     "headers": [
       {
         "level": 2,
+        "title": "🎈2023/4/1 v4.4.1(ver1.1.0)更新日志",
+        "slug": "🎈2023-4-1-v4-4-1-ver1-1-0-更新日志",
+        "link": "#🎈2023-4-1-v4-4-1-ver1-1-0-更新日志",
+        "children": []
+      },
+      {
+        "level": 2,
         "title": "🎈2023/2/2 BetaV4.2.11更新日志",
         "slug": "🎈2023-2-2-betav4-2-11更新日志",
         "link": "#🎈2023-2-2-betav4-2-11更新日志",
@@ -507,74 +500,16 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "🎛️技术规范",
-    "headers": [
-      {
-        "level": 3,
-        "title": "服务器计分板注意事项",
-        "slug": "服务器计分板注意事项",
-        "link": "#服务器计分板注意事项",
-        "children": []
-      },
-      {
-        "level": 3,
-        "title": "部分计分板作用说明",
-        "slug": "部分计分板作用说明",
-        "link": "#部分计分板作用说明",
-        "children": []
-      },
-      {
-        "level": 3,
-        "title": "\"C:\"开头计分板",
-        "slug": "c-开头计分板",
-        "link": "#c-开头计分板",
-        "children": []
-      },
-      {
-        "level": 3,
-        "title": "\"R:\"开头计分板",
-        "slug": "r-开头计分板",
-        "link": "#r-开头计分板",
-        "children": []
-      },
-      {
-        "level": 3,
-        "title": "CDK（兑换码）技术规范",
-        "slug": "cdk-兑换码-技术规范",
-        "link": "#cdk-兑换码-技术规范",
-        "children": []
-      },
-      {
-        "level": 3,
-        "title": "服务器Tag标签注意事项",
-        "slug": "服务器tag标签注意事项",
-        "link": "#服务器tag标签注意事项",
-        "children": []
-      }
-    ],
-    "path": "/zh-CN/develop/start.html",
+    "title": "🎁兑换码系统",
+    "headers": [],
+    "path": "/zh-CN/develop/cdk.html",
     "pathLocale": "/",
     "extraFields": []
   },
   {
-    "title": "⛳生成空岛",
-    "headers": [
-      {
-        "level": 3,
-        "title": "❓什么是Gametest？",
-        "slug": "❓什么是gametest",
-        "link": "#❓什么是gametest",
-        "children": []
-      },
-      {
-        "level": 3,
-        "title": "🚃开始编写脚本开始生成空岛吧！",
-        "slug": "🚃开始编写脚本开始生成空岛吧",
-        "link": "#🚃开始编写脚本开始生成空岛吧",
-        "children": []
-      }
-    ],
-    "path": "/zh-CN/open-source/generate-skyisland.html",
+    "title": "🎛️如何开发",
+    "headers": [],
+    "path": "/zh-CN/develop/start.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -644,6 +579,28 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "⛳生成空岛",
+    "headers": [
+      {
+        "level": 3,
+        "title": "❓什么是Gametest？",
+        "slug": "❓什么是gametest",
+        "link": "#❓什么是gametest",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "🚃开始编写脚本开始生成空岛吧！",
+        "slug": "🚃开始编写脚本开始生成空岛吧",
+        "link": "#🚃开始编写脚本开始生成空岛吧",
+        "children": []
+      }
+    ],
+    "path": "/zh-CN/open-source/generate-skyisland.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "",
     "headers": [],
     "path": "/404.html",
@@ -651,16 +608,3 @@ export const searchIndex = [
     "extraFields": []
   }
 ]
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updateSearchIndex) {
-    __VUE_HMR_RUNTIME__.updateSearchIndex(searchIndex)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ searchIndex }) => {
-    __VUE_HMR_RUNTIME__.updateSearchIndex(searchIndex)
-  })
-}

@@ -1,4 +1,4 @@
-<template><div><h1 id="📣游玩指南-编写中" tabindex="-1"><a class="header-anchor" href="#📣游玩指南-编写中" aria-hidden="true">#</a> 📣游玩指南（编写中...）</h1>
+<template><div><h1 id="📣游玩指南" tabindex="-1"><a class="header-anchor" href="#📣游玩指南" aria-hidden="true">#</a> 📣游玩指南</h1>
 <h3 id="游玩前准备" tabindex="-1"><a class="header-anchor" href="#游玩前准备" aria-hidden="true">#</a> 游玩前准备</h3>
 <p>在游玩服务器前，您需要加入服务器相关群聊，<strong>否则您将无法正常游玩本服务器!</strong></p>
 <p><a href="https://jq.qq.com/?_wv=1027&amp;k=qsGBYtfP" target="_blank" rel="noopener noreferrer">请点击本行字加入服务器官方审核群<ExternalLinkIcon/></a></p>

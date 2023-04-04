@@ -1,4 +1,19 @@
 <template><div><h1 id="📎服务器更新日志" tabindex="-1"><a class="header-anchor" href="#📎服务器更新日志" aria-hidden="true">#</a> 📎服务器更新日志</h1>
+<h2 id="🎈2023-4-1-v4-4-1-ver1-1-0-更新日志" tabindex="-1"><a class="header-anchor" href="#🎈2023-4-1-v4-4-1-ver1-1-0-更新日志" aria-hidden="true">#</a> 🎈2023/4/1 v4.4.1(ver1.1.0)更新日志</h2>
+<p>【适配】</p>
+<p>BDS &amp;&amp; Minecraft BedRock-1.19.73.01</p>
+<p>Liteloader 2.12.3</p>
+<p>【新增】</p>
+<p>高等级呼吸装备可以自由开关夜视效果</p>
+<p>【调整】</p>
+<p>1.使用1.19.70+的新API，插件在部分场景理论性能表现更好</p>
+<p>2.服务器主菜单界面变化</p>
+<p>【BUG修复】</p>
+<p>1.在新版本无法关闭“欢迎使用控件自定义”界面的bug</p>
+<p>2.部分情况出现误报“违规使用自由视角”的bug</p>
+<p>3.CDK兑换码修改属性后不生效的bug</p>
+<p>4.无法正常生成空岛的bug</p>
+<p>5.标题栏无法正常显示的bug</p>
 <h2 id="🎈2023-2-2-betav4-2-11更新日志" tabindex="-1"><a class="header-anchor" href="#🎈2023-2-2-betav4-2-11更新日志" aria-hidden="true">#</a> 🎈2023/2/2 BetaV4.2.11更新日志</h2>
 <p>【新增】</p>
 <p>1.增强对部分作弊项目的检测</p>

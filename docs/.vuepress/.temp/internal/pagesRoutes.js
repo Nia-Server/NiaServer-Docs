@@ -16,9 +16,10 @@ export const pagesRoutes = [
   ["v-f199d69c","/zh-CN/update.html",{"title":"📎服务器更新日志"},["/zh-CN/update","/zh-CN/update.md"]],
   ["v-6fd4d61a","/en-US/plugins/KillItem.html",{"title":"🚯KillItem tutorial"},["/en-US/plugins/KillItem","/en-US/plugins/KillItem.md"]],
   ["v-5dbb9ea4","/en-US/plugins/Ntrade.html",{"title":"📦Ntrade tutorial"},["/en-US/plugins/Ntrade","/en-US/plugins/Ntrade.md"]],
-  ["v-2b5d9367","/zh-CN/develop/start.html",{"title":"🎛️技术规范"},["/zh-CN/develop/start","/zh-CN/develop/start.md"]],
-  ["v-a0639328","/zh-CN/open-source/generate-skyisland.html",{"title":"⛳生成空岛"},["/zh-CN/open-source/generate-skyisland","/zh-CN/open-source/generate-skyisland.md"]],
+  ["v-4028bec2","/zh-CN/develop/cdk.html",{"title":"🎁兑换码系统"},["/zh-CN/develop/cdk","/zh-CN/develop/cdk.md"]],
+  ["v-2b5d9367","/zh-CN/develop/start.html",{"title":"🎛️如何开发"},["/zh-CN/develop/start","/zh-CN/develop/start.md"]],
   ["v-458ff81b","/zh-CN/plugins/KillItem.html",{"title":"🚯KillItem使用教程"},["/zh-CN/plugins/KillItem","/zh-CN/plugins/KillItem.md"]],
   ["v-0cab3dd6","/zh-CN/plugins/Ntrade.html",{"title":"📦Ntrade使用教程"},["/zh-CN/plugins/Ntrade","/zh-CN/plugins/Ntrade.md"]],
+  ["v-a0639328","/zh-CN/open-source/generate-skyisland.html",{"title":"⛳生成空岛"},["/zh-CN/open-source/generate-skyisland","/zh-CN/open-source/generate-skyisland.md"]],
   ["v-3706649a","/404.html",{"title":""},["/404"]],
 ]

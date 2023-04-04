@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-4028bec2","path":"/zh-CN/develop/cdk.html","title":"🎁兑换码系统","lang":"zh-CN","frontmatter":{"lang":"zh-CN","title":"🎁兑换码系统"},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"zh-CN/develop/cdk.md"}');export{e as data};

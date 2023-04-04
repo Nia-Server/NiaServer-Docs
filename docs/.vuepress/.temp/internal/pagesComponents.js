@@ -35,14 +35,16 @@ export const pagesComponents = {
   "v-6fd4d61a": defineAsyncComponent(() => import(/* webpackChunkName: "v-6fd4d61a" */"D:/NiaServer-Docs/docs/.vuepress/.temp/pages/en-US/plugins/KillItem.html.vue")),
   // path: /en-US/plugins/Ntrade.html
   "v-5dbb9ea4": defineAsyncComponent(() => import(/* webpackChunkName: "v-5dbb9ea4" */"D:/NiaServer-Docs/docs/.vuepress/.temp/pages/en-US/plugins/Ntrade.html.vue")),
+  // path: /zh-CN/develop/cdk.html
+  "v-4028bec2": defineAsyncComponent(() => import(/* webpackChunkName: "v-4028bec2" */"D:/NiaServer-Docs/docs/.vuepress/.temp/pages/zh-CN/develop/cdk.html.vue")),
   // path: /zh-CN/develop/start.html
   "v-2b5d9367": defineAsyncComponent(() => import(/* webpackChunkName: "v-2b5d9367" */"D:/NiaServer-Docs/docs/.vuepress/.temp/pages/zh-CN/develop/start.html.vue")),
-  // path: /zh-CN/open-source/generate-skyisland.html
-  "v-a0639328": defineAsyncComponent(() => import(/* webpackChunkName: "v-a0639328" */"D:/NiaServer-Docs/docs/.vuepress/.temp/pages/zh-CN/open-source/generate-skyisland.html.vue")),
   // path: /zh-CN/plugins/KillItem.html
   "v-458ff81b": defineAsyncComponent(() => import(/* webpackChunkName: "v-458ff81b" */"D:/NiaServer-Docs/docs/.vuepress/.temp/pages/zh-CN/plugins/KillItem.html.vue")),
   // path: /zh-CN/plugins/Ntrade.html
   "v-0cab3dd6": defineAsyncComponent(() => import(/* webpackChunkName: "v-0cab3dd6" */"D:/NiaServer-Docs/docs/.vuepress/.temp/pages/zh-CN/plugins/Ntrade.html.vue")),
+  // path: /zh-CN/open-source/generate-skyisland.html
+  "v-a0639328": defineAsyncComponent(() => import(/* webpackChunkName: "v-a0639328" */"D:/NiaServer-Docs/docs/.vuepress/.temp/pages/zh-CN/open-source/generate-skyisland.html.vue")),
   // path: /404.html
   "v-3706649a": defineAsyncComponent(() => import(/* webpackChunkName: "v-3706649a" */"D:/NiaServer-Docs/docs/.vuepress/.temp/pages/404.html.vue")),
 }

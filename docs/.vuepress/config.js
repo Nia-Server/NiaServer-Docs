@@ -123,7 +123,7 @@ export default defineUserConfig({
             {
               text: '服务器开发文档',
               collapsible: true,
-              children: ['/zh-CN/develop/start.md'],
+              children: ['/zh-CN/develop/start.md','/zh-CN/develop/cdk.md'],
             },
             {
               text: '开发者&特别鸣谢',
