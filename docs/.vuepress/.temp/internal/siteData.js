@@ -1,1 +1,0 @@
-export const siteData = JSON.parse("{\"base\":\"/\",\"lang\":\"en-US\",\"title\":\"\",\"description\":\"\",\"head\":[[\"link\",{\"rel\":\"icon\",\"href\":\"/1.jpg\"}]],\"locales\":{\"/\":{\"lang\":\"zh-CN\",\"title\":\"NIA服务器文档站\",\"description\":\"v4.0\"},\"/en-US/\":{\"lang\":\"en-US\",\"title\":\"NIA Server Docs\",\"description\":\"v4.0\"}}}")

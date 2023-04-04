@@ -1,22 +1,10 @@
 import { defineUserConfig } from 'vuepress'
 import { defaultTheme } from 'vuepress'
-import { searchPlugin } from '@vuepress/plugin-search'
+
 
 export default defineUserConfig({
   head: [['link', { rel: 'icon', href: '/1.jpg' }]],
-  plugins: [
-    searchPlugin({
-      getExtraFields: (page) => page.frontmatter.tags ?? [],
-      locales: {
-        '/': {
-          placeholder: '搜索',
-        },
-        '/en-US/': {
-          placeholder: 'Serch',
-        }
-      }
-    })
-  ],
+
   locales: {
     // 键名是该语言所属的子路径
     // 作为特例，默认语言可以使用 '/' 作为其路径。
