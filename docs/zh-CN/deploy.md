@@ -27,9 +27,13 @@ title: 🖥️部署指南
 
 将下载的行为包或者资源包分别放到服务器根目录下的`development_behavior_packs`文件夹，`development_resource_packs`文件夹里
 
-然后在`worlds/MAPNAME`目录下添加`world_behavior_packs.json`与`world_resource_packs.json`文件
+您可以选择下载release中的`world_behavior_packs.json`与`world_resource_packs.json`文件，并将其放置至`worlds/MAPNAME`目录下
 
-注：这里路径的`MAPNAME`指的是自己的地图名称，并不是真的叫`MAPNAME`
+**注：这里路径的`MAPNAME`指的是自己的地图名称，并不是真的叫`MAPNAME`，而是你自己的地图名字！**
+
+（不推荐）或者您也可以选择自行在`worlds/MAPNAME`目录下添加`world_behavior_packs.json`与`world_resource_packs.json`文件
+
+**注：这里路径的`MAPNAME`指的是自己的地图名称，并不是真的叫`MAPNAME`，而是你自己的地图名字！**
 
 文件内容分别为
 
@@ -382,3 +386,28 @@ var RecycleData = [
     }
 ]
 ```
+
+### 配置外部依赖服务器&&机器人
+
+### 修改服务器permissions.json文件
+
+将文件内容更改为下列内容
+
+```json
+{
+  "allowed_modules": [
+    "@minecraft/server-gametest",
+    "@minecraft/server",
+    "@minecraft/server-ui",
+    "@minecraft/server-admin",
+    "@minecraft/server-editor",
+    "@minecraft/server-net"
+  ]
+}
+```
+
+### 开启服务器
+
+1.首先开启依赖服务器，等机器人成功发送“机器人已启动！”后进行下一步
+
+2.开启基岩版服务器
