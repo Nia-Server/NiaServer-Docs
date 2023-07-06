@@ -19,16 +19,11 @@ title: 🤖Http-BOT
 
 ## API一览表
 
-### [GET]检查依赖服务器状态（开发中）
-
-`/CheckServer`
+### [GET] `/CheckServer`（开发中）
 
 返回当前`NIAHttpBOT`的状态，多用于检测依赖服务器有没有正常开启
 
-### [GET]获取当前时间（开发中）
-
-
-`/GetTime`
+### [GET] `/GetTime`（开发中）
 
 获取当前时间，返回形如"2019-01-28 12:53"的字符串
 
@@ -47,11 +42,9 @@ const reqGetTime = http.get(`http://127.0.0.1:${port}/GetTime`)
 ```
 
 
-### [POST]检查一个文件是否存在
+### [POST] `/CheckFile`
 
-`/CheckFile`
-
-目标文件存在则返回`true`，不存在则返回`false`
+检查一个文件是否存在，目标文件存在则返回`true`，不存在则返回`false`
 
 使用示例
 ```js
@@ -73,11 +66,9 @@ http.request(reqCheckFile).then((response) => {
 })
 ```
 
-### [POST]删除一个文件（开发中）
+### [POST] `/DeleteFile`（开发中）
 
-`/DeleteFile`
-
-删除成功返回`success`，删除失败则返回`fail`
+删除一个文件，删除成功返回`success`，删除失败则返回`fail`
 
 使用示例
 ```js
@@ -98,13 +89,12 @@ const reqDeleteFile = new HttpRequest(`http://127.0.0.1:${port}/DeleteFile`);
 ```
 
 
-### [POST]创建一个JSON文件
+### [POST] `/CreateNewJsonFile`
 
-`/CreateNewJsonFile`
-
-创建成功返回`success`，创建失败则返回`失败原因`
+创建一个JSON文件，创建成功返回`success`，创建失败则返回`失败原因`
 
 | 失败原因内容 | 对应中文 | 解决办法 |
+| :----: | :----: | :----: |
 | Data parsing failed | 对象数据解析失败 | 请检查发送的对象数据格式是否正确 |
 | Incorrect data format, please recheck and send again. | 错误的数据格式 | 请检查发送的对象数据格式是否同示例一样（包括大小写） |
 
@@ -130,11 +120,10 @@ http.request(reqCreateNewJsonFile).then((response) => {
 ```
 
 
-### [POST]获取JSON文件数据
+### [POST] `/GetJsonFileData`
 
-`/GetJsonFileData`
 
-获取成功则返回json格式的数据，删除失败则返回`fail`
+获取JSON文件数据，获取成功则返回json格式的数据，删除失败则返回`fail`
 
 使用示例
 ```js
@@ -154,13 +143,12 @@ const reqGetFileData = new HttpRequest(`http://127.0.0.1:${port}/GetFileData`);
     })
 ```
 
-### [POST]覆盖JSON文件内容
+### [POST] `/OverwriteJsonFileData`
 
-`/OverwriteJsonFileData`
-
-覆盖成功则返回`success`，覆盖失败则返回`失败原因`
+覆盖JSON文件内容，覆盖成功则返回`success`，覆盖失败则返回`失败原因`
 
 | 失败原因内容 | 对应中文 | 解决办法 |
+| :----: | :----: | :----: |
 | Data parsing failed | 对象数据解析失败 | 请检查发送的对象数据格式是否正确 |
 | Incorrect data format, please recheck and send again. | 错误的数据格式 | 请检查发送的对象数据格式是否同示例一样（包括大小写） |
 
@@ -184,12 +172,22 @@ http.request(reqOverwriteJsonFile).then((response) => {
 })
 ```
 
-### [POST]向目标文件写入一行内容（开发中）
+### [POST] `/WriteLineToFile`（开发中）
 
-### [POST]向目标文件删除一行内容（开发中）
+向目标文件写入一行内容
 
-### [POST]覆盖文件内容（开发中）
+### [POST] `/DeleteLineFromFile`（开发中）
 
-### [POST]检查目标文件夹是否存在（开发中）
+向目标文件删除一行内容
 
-### [POST]创建一个文件夹（开发中）
+### [POST] `/OverwriteFileData`（开发中）
+
+覆盖文件内容
+
+### [POST] `/CheckDir`（开发中）
+
+检查目标文件夹是否存在
+
+### [POST] `/CreateDir`（开发中）
+
+创建一个文件夹
