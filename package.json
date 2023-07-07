@@ -1,0 +1,12 @@
+{
+	"devDependencies": {
+		"vuepress": "2.0.0-beta.64",
+		"@vuepress/client": "2.0.0-beta.64",
+		"vue": "^3.3.4"
+	},
+
+	"scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  }
+}
