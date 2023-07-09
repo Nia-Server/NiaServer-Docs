@@ -55,6 +55,18 @@ title: 🤖Http-BOT
 
 ## 配置文件
 
+```cfg
+# ip地址，一般为不用改
+IPAddress = "127.0.0.1"
+
+# 端口，需与行为包端口保持一致
+Port = 10086
+
+#是否启用DOS指令功能
+UseCmd = false
+
+```
+
 ## API一览表
 
 ### [GET] `/CheckServer`（开发中）
@@ -79,12 +91,49 @@ const reqGetTime = http.get(`http://127.0.0.1:${port}/GetTime`)
     })
 ```
 
+### [POST] `/RunCMD`
+
+执行DOS命令
+
+::: warning 警告
+由于API涉及服务器安全性问题，本功能默认关闭，请在确定做好准备的条件下修改配置文件后启用本功能！
+:::
+
+可以实现的功能：
+
+- [创建文件夹](https://learn.microsoft.com/zh-cn/windows-server/administration/windows-commands/mkdir)
+- [删除文件](https://learn.microsoft.com/zh-cn/windows-server/administration/windows-commands/del)
+- [向NIAHttpBOT显示一行输出](https://learn.microsoft.com/zh-cn/windows-server/administration/windows-commands/echo)
+
+如需了解更多DOS指令，请前往[微软官方文档站](https://learn.microsoft.com/zh-cn/windows-server/administration/windows-commands/windows-commands)查看
+
+使用示例
+```js
+const port = 3000
+const reqRunCmd = new HttpRequest(`http://127.0.0.1:${port}/RunCmd`);
+    reqRunCmd.body = "del 123.txt"
+    reqRunCmd.method = HttpRequestMethod.POST;
+    reqRunCmd.headers = [
+        new HttpHeader("Content-Type", "text/plain"),
+    ];
+http.request(reqRunCmd).then((response) => {
+    if (response.status == 200 && response.body == "success") {
+        console.log("Dos command executed successfully!")
+    } else if (response.status == 200 && response.body != "success") {
+        console.error(response.body)
+    } else {
+        console.error("Dependent server connection failed! Check whether the dependent server started successfully.")
+    }
+})
+```
+
 
 ### [POST] `/CheckFile`
 
 检查一个文件是否存在，目标文件存在则返回`true`，不存在则返回`false`
 
 使用示例
+
 ```js
 const port = 3000
 const reqCheckFile = new HttpRequest(`http://127.0.0.1:${port}/CheckFile`);
@@ -104,31 +153,61 @@ http.request(reqCheckFile).then((response) => {
 })
 ```
 
-### [POST] `/DeleteFile`（开发中）
+### [POST] `/CheckDir`
 
-::: warning 警告
-请谨慎使用本API，可能会由于错误删除导致文件无法恢复！
-:::
-
-删除一个文件，删除成功返回`success`，删除失败则返回`fail`
+检查目标文件夹是否存在，目标文件夹存在则返回`true`，不存在则返回`false`
 
 使用示例
+
 ```js
 const port = 3000
-const reqDeleteFile = new HttpRequest(`http://127.0.0.1:${port}/DeleteFile`);
-    reqDeleteFile.body = "./test/FileName.json"
-    reqDeleteFile.method = HttpRequestMethod.POST;
-    reqDeleteFile.headers = [
+const reqCheckDir = new HttpRequest(`http://127.0.0.1:${port}/CheckDir`);
+    reqCheckDir.body = "./A"
+    reqCheckDir.method = HttpRequestMethod.POST;
+    reqCheckDir.headers = [
         new HttpHeader("Content-Type", "text/plain"),
     ];
-    http.request(reqDeleteFile).then((response) => {
-        if (response.status == 200 && response.body == "success") {
-            console.log("Target file deleted successfully!")
-        } else {
-            console.error("Dependent server connection failed! Check whether the dependent server started successfully.")
-        }
-    })
+http.request(reqCheckDir).then((response) => {
+    if (response.status == 200 && response.body == "true") {
+        console.log("Target folder exists.")
+    } else if (response.status == 200 && response.body == "false") {
+        console.error("The target folder does not exist")
+    } else {
+        console.error("Dependent server connection failed! Check whether the dependent server started successfully.")
+    }
+})
 ```
+
+### [POST] `/CreateNewFile`
+
+创建一个文件，创建成功返回`success`，创建失败则返回`失败原因`
+
+| 失败原因内容 | 对应中文 | 解决办法 |
+| :----: | :----: | :----: |
+| Data parsing failed | 对象数据解析失败 | 请检查发送的对象数据格式是否正确 |
+| Incorrect data format, please recheck and send again. | 错误的数据格式 | 请检查发送的对象数据格式是否同示例一样（包括大小写） |
+
+使用示例
+
+```js
+const port = 3000
+const reqCreateNewFile = new HttpRequest(`http://127.0.0.1:${port}/CreateNewFile`);
+    reqCreateNewFile.body = JSON.stringify({"fileName":"test.txt","content":"这是第一行\n这是第二行"})
+    reqCreateNewFile.method = HttpRequestMethod.POST;
+    reqCreateNewFile.headers = [
+        new HttpHeader("Content-Type", "text/plain"),
+    ];
+http.request(reqCreateNewFile).then((response) => {
+    if (response.status == 200 && response.body == "success") {
+        console.log("File created successfully!")
+    } else if (response.status == 200 && response.body != "success") {
+        console.error(response.body)
+    } else {
+        console.error("Dependent server connection failed! Check whether the dependent server started successfully.")
+    }
+})
+```
+
 
 
 ### [POST] `/CreateNewJsonFile`
@@ -171,7 +250,7 @@ http.request(reqCreateNewJsonFile).then((response) => {
 ```js
 const port = 3000
 const reqGetFileData = new HttpRequest(`http://127.0.0.1:${port}/GetFileData`);
-    reqGetFileData.body = "./test/FileName.json"
+    reqGetFileData.body = "FileName.json"
     reqGetFileData.method = HttpRequestMethod.POST;
     reqGetFileData.headers = [
         new HttpHeader("Content-Type", "text/plain"),
@@ -183,6 +262,35 @@ const reqGetFileData = new HttpRequest(`http://127.0.0.1:${port}/GetFileData`);
             console.error("Dependent server connection failed! Check whether the dependent server started successfully.")
         }
     })
+```
+
+### [POST] `/OverwriteFileData`
+
+覆盖文件内容，覆盖成功则返回`success`，覆盖失败则返回`失败原因`
+
+| 失败原因内容 | 对应中文 | 解决办法 |
+| :----: | :----: | :----: |
+| Data parsing failed | 对象数据解析失败 | 请检查发送的对象数据格式是否正确 |
+| Incorrect data format, please recheck and send again. | 错误的数据格式 | 请检查发送的对象数据格式是否同示例一样（包括大小写） |
+
+使用示例
+```js
+const port = 3000
+const reqOverwriteFile = new HttpRequest(`http://127.0.0.1:${port}/OverwriteJsonFile`);
+    reqOverwriteFile.body = JSON.stringify({"fileName":"FileName.txt","content": "这是第一行\n这是第二行"})
+    reqOverwriteFile.method = HttpRequestMethod.POST;
+    reqOverwriteFile.headers = [
+        new HttpHeader("Content-Type", "text/plain"),
+    ];
+http.request(reqOverwriteJsonFile).then((response) => {
+    if (response.status == 200 && response.body == "success") {
+        console.log("Overwrite file data successfully!")
+    } else if (response.status == 200 && response.body != "success") {
+        console.error(response.body)
+    } else {
+        console.error("Dependent server connection failed! Check whether the dependent server started successfully.")
+    }
+})
 ```
 
 ### [POST] `/OverwriteJsonFileData`
@@ -214,30 +322,30 @@ http.request(reqOverwriteJsonFile).then((response) => {
 })
 ```
 
-### [POST] `/RunCMD`(开发中)
 
-执行cmd命令
 
-::: warning 警告
-由于API涉及服务器安全性问题，本功能默认关闭，请在确定做好准备的条件下修改配置文件后启用本功能！
-:::
+### [POST] `WriteLineToFileta`
 
-### [POST] `/WriteLineToFile`（开发中）
+向目标文件最后写入如一行内容，成功则返回`success`，失败则返回`失败原因`
 
-向目标文件写入一行内容
+使用示例
+```js
+const port = 3000
+const reqWriteLineToFile = new HttpRequest(`http://127.0.0.1:${port}/WriteLineToFile`);
+    reqWriteLineToFile.body = JSON.stringify({"fileName":"123.txt","content": "这是一行测试内容" + "\n"})
+    reqWriteLineToFile.method = HttpRequestMethod.POST;
+    reqWriteLineToFile.headers = [
+        new HttpHeader("Content-Type", "text/plain"),
+    ];
+http.request(reqWriteLineToFile).then((response) => {
+    if (response.status == 200 && response.body == "success") {
+        console.log("Overwrite file data successfully!")
+    } else if (response.status == 200 && response.body != "success") {
+        console.error(response.body)
+    } else {
+        console.error("Dependent server connection failed! Check whether the dependent server started successfully.")
+    }
+})
+```
 
-### [POST] `/DeleteLineFromFile`（开发中）
 
-向目标文件删除一行内容
-
-### [POST] `/OverwriteFileData`（开发中）
-
-覆盖文件内容
-
-### [POST] `/CheckDir`（开发中）
-
-检查目标文件夹是否存在
-
-### [POST] `/CreateDir`（开发中）
-
-创建一个文件夹
