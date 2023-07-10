@@ -91,7 +91,7 @@ reqServerStarted.then((response) => {
 })
 ```
 
-### [POST] `/RunCMD`
+### [POST] `/RunCmd`
 
 执行DOS命令
 
