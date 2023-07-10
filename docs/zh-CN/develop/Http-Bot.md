@@ -82,13 +82,13 @@ UseCmd = false
 ```js
 const port = 3000
 const reqGetTime = http.get(`http://127.0.0.1:${port}/GetTime`)
-    reqServerStarted.then((response) => {
-        if (response.status == 200) {
-            console.log(response.body)
-        } else {
-            console.error("Dependent server connection failed! Check whether the dependent server started successfully.")
-        }
-    })
+reqServerStarted.then((response) => {
+    if (response.status == 200) {
+        console.log(response.body)
+    } else {
+        console.error("Dependent server connection failed! Check whether the dependent server started successfully.")
+    }
+})
 ```
 
 ### [POST] `/RunCMD`
@@ -119,8 +119,6 @@ const reqRunCmd = new HttpRequest(`http://127.0.0.1:${port}/RunCmd`);
 http.request(reqRunCmd).then((response) => {
     if (response.status == 200 && response.body == "success") {
         console.log("Dos command executed successfully!")
-    } else if (response.status == 200 && response.body != "success") {
-        console.error(response.body)
     } else {
         console.error("Dependent server connection failed! Check whether the dependent server started successfully.")
     }
@@ -182,10 +180,10 @@ http.request(reqCheckDir).then((response) => {
 
 创建一个文件，创建成功返回`success`，创建失败则返回`失败原因`
 
-| 失败原因内容 | 对应中文 | 解决办法 |
-| :----: | :----: | :----: |
-| Data parsing failed | 对象数据解析失败 | 请检查发送的对象数据格式是否正确 |
-| Incorrect data format, please recheck and send again. | 错误的数据格式 | 请检查发送的对象数据格式是否同示例一样（包括大小写） |
+| 失败原因内容 | 解决办法 |
+| :----: | :----: |
+| Data parsing failed | 请检查发送的对象数据格式是否正确 |
+| Incorrect data format, please recheck and send again. | 请检查发送的对象数据格式是否同示例一样（包括大小写） |
 
 使用示例
 
@@ -214,10 +212,10 @@ http.request(reqCreateNewFile).then((response) => {
 
 创建一个JSON文件，创建成功返回`success`，创建失败则返回`失败原因`
 
-| 失败原因内容 | 对应中文 | 解决办法 |
-| :----: | :----: | :----: |
-| Data parsing failed | 对象数据解析失败 | 请检查发送的对象数据格式是否正确 |
-| Incorrect data format, please recheck and send again. | 错误的数据格式 | 请检查发送的对象数据格式是否同示例一样（包括大小写） |
+| 失败原因内容 | 解决办法 |
+| :----: | :----: |
+| Data parsing failed | 请检查发送的对象数据格式是否正确 |
+| Incorrect data format, please recheck and send again. | 请检查发送的对象数据格式是否同示例一样（包括大小写） |
 
 使用示例
 
@@ -249,34 +247,36 @@ http.request(reqCreateNewJsonFile).then((response) => {
 使用示例
 ```js
 const port = 3000
-const reqGetFileData = new HttpRequest(`http://127.0.0.1:${port}/GetFileData`);
-    reqGetFileData.body = "FileName.json"
-    reqGetFileData.method = HttpRequestMethod.POST;
-    reqGetFileData.headers = [
+const reqGetJsonFileData = new HttpRequest(`http://127.0.0.1:${port}/GetJsonFileData`);
+    reqGetJsonFileData.body = "market.json"
+    reqGetJsonFileData.method = HttpRequestMethod.POST;
+    reqGetJsonFileData.headers = [
         new HttpHeader("Content-Type", "text/plain"),
     ];
-    http.request(reqDeleteFile).then((response) => {
-        if (response.status == 200 && response.body != "fail") {
-            console.log("Get file data successfully!")
-        } else {
-            console.error("Dependent server connection failed! Check whether the dependent server started successfully.")
-        }
-    })
+http.request(reqGetJsonFileData).then((response) => {
+    if (response.status == 200 && response.body != "The target file does not exist") {
+        console.log("Get file data successfully! File data:" + response.body)
+    } else if (response.status == 200 && response.body == "The target file does not exist") {
+        console.error("The target file does not exist")
+    } else {
+        console.error("Dependent server connection failed! Check whether the dependent server started successfully.")
+    }
+})
 ```
 
-### [POST] `/OverwriteFileData`
+### [POST] `/OverwriteFile`
 
 覆盖文件内容，覆盖成功则返回`success`，覆盖失败则返回`失败原因`
 
-| 失败原因内容 | 对应中文 | 解决办法 |
-| :----: | :----: | :----: |
-| Data parsing failed | 对象数据解析失败 | 请检查发送的对象数据格式是否正确 |
-| Incorrect data format, please recheck and send again. | 错误的数据格式 | 请检查发送的对象数据格式是否同示例一样（包括大小写） |
+| 失败原因内容 | 解决办法 |
+| :----: | :----: |
+| Data parsing failed | 请检查发送的对象数据格式是否正确 |
+| Incorrect data format, please recheck and send again. | 请检查发送的对象数据格式是否同示例一样（包括大小写） |
 
 使用示例
 ```js
 const port = 3000
-const reqOverwriteFile = new HttpRequest(`http://127.0.0.1:${port}/OverwriteJsonFile`);
+const reqOverwriteFile = new HttpRequest(`http://127.0.0.1:${port}/OverwriteFile`);
     reqOverwriteFile.body = JSON.stringify({"fileName":"FileName.txt","content": "这是第一行\n这是第二行"})
     reqOverwriteFile.method = HttpRequestMethod.POST;
     reqOverwriteFile.headers = [
@@ -293,14 +293,14 @@ http.request(reqOverwriteJsonFile).then((response) => {
 })
 ```
 
-### [POST] `/OverwriteJsonFileData`
+### [POST] `/OverwriteJsonFile`
 
 覆盖JSON文件内容，覆盖成功则返回`success`，覆盖失败则返回`失败原因`
 
-| 失败原因内容 | 对应中文 | 解决办法 |
-| :----: | :----: | :----: |
-| Data parsing failed | 对象数据解析失败 | 请检查发送的对象数据格式是否正确 |
-| Incorrect data format, please recheck and send again. | 错误的数据格式 | 请检查发送的对象数据格式是否同示例一样（包括大小写） |
+| 失败原因内容 | 解决办法 |
+| :----: | :----: |
+| Data parsing failed | 请检查发送的对象数据格式是否正确 |
+| Incorrect data format, please recheck and send again. | 请检查发送的对象数据格式是否同示例一样（包括大小写） |
 
 使用示例
 ```js
@@ -324,9 +324,16 @@ http.request(reqOverwriteJsonFile).then((response) => {
 
 
 
-### [POST] `WriteLineToFileta`
+### [POST] `/WriteLineToFile`
 
 向目标文件最后写入如一行内容，成功则返回`success`，失败则返回`失败原因`
+
+| 失败原因内容 | 解决办法 |
+| :----: | :----: |
+| Data parsing failed | 请检查发送的对象数据格式是否正确 |
+| Incorrect data format, please recheck and send again. | 请检查发送的对象数据格式是否同示例一样（包括大小写） |
+
+**注意增加换行符，否则不会换行！**
 
 使用示例
 ```js
@@ -347,5 +354,7 @@ http.request(reqWriteLineToFile).then((response) => {
     }
 })
 ```
+## 使用示例
 
+[玩家交易市场（制作中）](https://github.com/NIANIANKNIA/NIASERVER-V4/blob/dev/development_behavior_packs/NIA_V4.0_BP/scripts/market.js)
 
