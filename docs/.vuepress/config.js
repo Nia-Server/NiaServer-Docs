@@ -63,6 +63,11 @@ export default defineUserConfig({
               collapsible: true,
               children: ['/en-US/plugins/Ntrade.md','/en-US/plugins/KillItem.md'],
             },
+            {
+              text: 'Development',
+              collapsible: true,
+              children: ['/en-US/develop/Http-Bot.md','/en-US/plugins/KillItem.md'],
+            }
           ]
         }
       },
