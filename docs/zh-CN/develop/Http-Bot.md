@@ -13,6 +13,8 @@ title: 🤖Http-BOT
 
 由于目前我的世界的Script-api无法实现诸如文件读写等功能,为此我们特此基于C++开发了`NIA-Http-Bot`用来实现更多功能，从而赋予Script-api更多可能
 
+***
+
 ## 使用前注意事项
 
 1.本项目基于**HTTP**进行通讯，故当前Minecraft版本应当注意启用**minecraft/server-net**模块（该模块只能运行在服务器上）
@@ -22,6 +24,8 @@ title: 🤖Http-BOT
 3.如果您在使用期间遇到了问题/有建议，您可以前往**NIASERVER-V4**的[issues](https://github.com/NIANIANKNIA/NIASERVER-V4/issues)进行反馈！
 
 4.由于涉及**HTTP**通讯，请在使用过程中注意服务器防火墙设置，以免对服务器安全造成威胁！
+
+***
 
 ## 使用/开发教程
 
@@ -53,6 +57,8 @@ title: 🤖Http-BOT
 
 5.开始开发！
 
+***
+
 ## 配置文件
 
 ```cfg
@@ -66,6 +72,8 @@ Port = 10086
 UseCmd = false
 
 ```
+
+***
 
 ## API一览表
 
@@ -117,7 +125,7 @@ const reqRunCmd = new HttpRequest(`http://127.0.0.1:${port}/RunCmd`);
         new HttpHeader("Content-Type", "text/plain"),
     ];
 http.request(reqRunCmd).then((response) => {
-    if (response.status == 200 && response.body == "success") {
+    if (response.status == 200) {
         console.log("Dos command executed successfully!")
     } else {
         console.error("Dependent server connection failed! Check whether the dependent server started successfully.")
@@ -128,7 +136,7 @@ http.request(reqRunCmd).then((response) => {
 
 ### [POST] `/CheckFile`
 
-检查一个文件是否存在，目标文件存在则返回`true`，不存在则返回`false`
+检查一个文件是否存在，目标文件存在则返回`true`,状态码为`200`，不存在则返回`false`，状态码为`400`
 
 使用示例
 
@@ -141,9 +149,9 @@ const reqCheckFile = new HttpRequest(`http://127.0.0.1:${port}/CheckFile`);
         new HttpHeader("Content-Type", "text/plain"),
     ];
 http.request(reqCheckFile).then((response) => {
-    if (response.status == 200 && response.body == "true") {
+    if (response.status == 200) {
         console.log("Target file exists.")
-    } else if (response.status == 200 && response.body == "false") {
+    } else if (response.status == 400) {
         console.error("The target file does not exist")
     } else {
         console.error("Dependent server connection failed! Check whether the dependent server started successfully.")
@@ -153,7 +161,7 @@ http.request(reqCheckFile).then((response) => {
 
 ### [POST] `/CheckDir`
 
-检查目标文件夹是否存在，目标文件夹存在则返回`true`，不存在则返回`false`
+检查目标文件夹是否存在，目标文件夹存在则返回`true`，状态码为`200`，不存在则返回`false`，状态码为`400`
 
 使用示例
 
@@ -166,9 +174,9 @@ const reqCheckDir = new HttpRequest(`http://127.0.0.1:${port}/CheckDir`);
         new HttpHeader("Content-Type", "text/plain"),
     ];
 http.request(reqCheckDir).then((response) => {
-    if (response.status == 200 && response.body == "true") {
+    if (response.status == 200) {
         console.log("Target folder exists.")
-    } else if (response.status == 200 && response.body == "false") {
+    } else if (response.status == 400) {
         console.error("The target folder does not exist")
     } else {
         console.error("Dependent server connection failed! Check whether the dependent server started successfully.")
@@ -178,12 +186,8 @@ http.request(reqCheckDir).then((response) => {
 
 ### [POST] `/CreateNewFile`
 
-创建一个文件，创建成功返回`success`，创建失败则返回`失败原因`
+创建一个文件，创建成功返回`success`，状态码为`200`，创建失败则返回`失败原因`，状态码为`400`
 
-| 失败原因内容 | 解决办法 |
-| :----: | :----: |
-| Data parsing failed | 请检查发送的对象数据格式是否正确 |
-| Incorrect data format, please recheck and send again. | 请检查发送的对象数据格式是否同示例一样（包括大小写） |
 
 使用示例
 
@@ -196,9 +200,9 @@ const reqCreateNewFile = new HttpRequest(`http://127.0.0.1:${port}/CreateNewFile
         new HttpHeader("Content-Type", "text/plain"),
     ];
 http.request(reqCreateNewFile).then((response) => {
-    if (response.status == 200 && response.body == "success") {
+    if (response.status == 200) {
         console.log("File created successfully!")
-    } else if (response.status == 200 && response.body != "success") {
+    } else if (response.status == 400) {
         console.error(response.body)
     } else {
         console.error("Dependent server connection failed! Check whether the dependent server started successfully.")
@@ -210,12 +214,7 @@ http.request(reqCreateNewFile).then((response) => {
 
 ### [POST] `/CreateNewJsonFile`
 
-创建一个JSON文件，创建成功返回`success`，创建失败则返回`失败原因`
-
-| 失败原因内容 | 解决办法 |
-| :----: | :----: |
-| Data parsing failed | 请检查发送的对象数据格式是否正确 |
-| Incorrect data format, please recheck and send again. | 请检查发送的对象数据格式是否同示例一样（包括大小写） |
+创建一个JSON文件，创建成功返回`success`，状态码为`200`，创建失败则返回`失败原因`，状态码为`400`
 
 使用示例
 
@@ -228,9 +227,9 @@ const reqCreateNewJsonFile = new HttpRequest(`http://127.0.0.1:${port}/CreateNew
         new HttpHeader("Content-Type", "text/plain"),
     ];
 http.request(reqCreateNewJsonFile).then((response) => {
-    if (response.status == 200 && response.body == "success") {
+    if (response.status == 200) {
         console.log("File created successfully!")
-    } else if (response.status == 200 && response.body != "success") {
+    } else if (response.status == 400) {
         console.error(response.body)
     } else {
         console.error("Dependent server connection failed! Check whether the dependent server started successfully.")
@@ -242,7 +241,7 @@ http.request(reqCreateNewJsonFile).then((response) => {
 ### [POST] `/GetJsonFileData`
 
 
-获取JSON文件数据，获取成功则返回json格式的数据，删除失败则返回`fail`
+获取JSON文件数据，获取成功则返回json格式的数据，状态码为`200`，删除失败则返回`fail`，状态码为`400`
 
 使用示例
 ```js
@@ -254,9 +253,9 @@ const reqGetJsonFileData = new HttpRequest(`http://127.0.0.1:${port}/GetJsonFile
         new HttpHeader("Content-Type", "text/plain"),
     ];
 http.request(reqGetJsonFileData).then((response) => {
-    if (response.status == 200 && response.body != "The target file does not exist") {
+    if (response.status == 200) {
         console.log("Get file data successfully! File data:" + response.body)
-    } else if (response.status == 200 && response.body == "The target file does not exist") {
+    } else if (response.status == 400) {
         console.error("The target file does not exist")
     } else {
         console.error("Dependent server connection failed! Check whether the dependent server started successfully.")
@@ -266,12 +265,7 @@ http.request(reqGetJsonFileData).then((response) => {
 
 ### [POST] `/OverwriteFile`
 
-覆盖文件内容，覆盖成功则返回`success`，覆盖失败则返回`失败原因`
-
-| 失败原因内容 | 解决办法 |
-| :----: | :----: |
-| Data parsing failed | 请检查发送的对象数据格式是否正确 |
-| Incorrect data format, please recheck and send again. | 请检查发送的对象数据格式是否同示例一样（包括大小写） |
+覆盖文件内容，覆盖成功则返回`success`，状态码为`200`，覆盖失败则返回`失败原因`，状态码为`400`
 
 使用示例
 ```js
@@ -282,10 +276,10 @@ const reqOverwriteFile = new HttpRequest(`http://127.0.0.1:${port}/OverwriteFile
     reqOverwriteFile.headers = [
         new HttpHeader("Content-Type", "text/plain"),
     ];
-http.request(reqOverwriteJsonFile).then((response) => {
-    if (response.status == 200 && response.body == "success") {
+http.request(reqOverwriteFile).then((response) => {
+    if (response.status == 200) {
         console.log("Overwrite file data successfully!")
-    } else if (response.status == 200 && response.body != "success") {
+    } else if (response.status == 400) {
         console.error(response.body)
     } else {
         console.error("Dependent server connection failed! Check whether the dependent server started successfully.")
@@ -295,12 +289,8 @@ http.request(reqOverwriteJsonFile).then((response) => {
 
 ### [POST] `/OverwriteJsonFile`
 
-覆盖JSON文件内容，覆盖成功则返回`success`，覆盖失败则返回`失败原因`
+覆盖JSON文件内容，覆盖成功则返回`success`，状态码为`200`，覆盖失败则返回`失败原因`，状态码为`200`
 
-| 失败原因内容 | 解决办法 |
-| :----: | :----: |
-| Data parsing failed | 请检查发送的对象数据格式是否正确 |
-| Incorrect data format, please recheck and send again. | 请检查发送的对象数据格式是否同示例一样（包括大小写） |
 
 使用示例
 ```js
@@ -312,9 +302,9 @@ const reqOverwriteJsonFile = new HttpRequest(`http://127.0.0.1:${port}/Overwrite
         new HttpHeader("Content-Type", "text/plain"),
     ];
 http.request(reqOverwriteJsonFile).then((response) => {
-    if (response.status == 200 && response.body == "success") {
+    if (response.status == 200) {
         console.log("Overwrite file data successfully!")
-    } else if (response.status == 200 && response.body != "success") {
+    } else if (response.status == 400) {
         console.error(response.body)
     } else {
         console.error("Dependent server connection failed! Check whether the dependent server started successfully.")
@@ -326,12 +316,7 @@ http.request(reqOverwriteJsonFile).then((response) => {
 
 ### [POST] `/WriteLineToFile`
 
-向目标文件最后写入如一行内容，成功则返回`success`，失败则返回`失败原因`
-
-| 失败原因内容 | 解决办法 |
-| :----: | :----: |
-| Data parsing failed | 请检查发送的对象数据格式是否正确 |
-| Incorrect data format, please recheck and send again. | 请检查发送的对象数据格式是否同示例一样（包括大小写） |
+向目标文件最后写入如一行内容，成功则返回`success`，状态码为`200`，失败则返回`失败原因`，状态码为`400`
 
 **注意增加换行符，否则不会换行！**
 
@@ -345,16 +330,145 @@ const reqWriteLineToFile = new HttpRequest(`http://127.0.0.1:${port}/WriteLineTo
         new HttpHeader("Content-Type", "text/plain"),
     ];
 http.request(reqWriteLineToFile).then((response) => {
-    if (response.status == 200 && response.body == "success") {
+    if (response.status == 200) {
         console.log("Overwrite file data successfully!")
-    } else if (response.status == 200 && response.body != "success") {
+    } else if (response.status == 400) {
         console.error(response.body)
     } else {
         console.error("Dependent server connection failed! Check whether the dependent server started successfully.")
     }
 })
 ```
+
+***
+
 ## 使用示例
+
+**建议使用的方法**
+
+创建`./API/filesystem.js`文件，内容如下
+
+```js
+import {world,system} from '@minecraft/server';
+import {http,HttpRequestMethod,HttpRequest,HttpHeader} from '@minecraft/server-net';
+//端口
+const port = 10086
+//地址
+const server_url = "http://127.0.0.1"
+
+export class ExternalFS {
+    /**
+     * @function 获取json文件内容
+     * @param {String} filename
+     * @return {Object | Number} 获取成功返回json数据，文件不存在返回0，服务器连接失败返回-1
+     */
+    getJSONFileData(filename) {
+        const reqGetJsonFileData = new HttpRequest(`${server_url}:${port}/GetJsonFileData`)
+        .setBody(filename)
+        .setMethod(HttpRequestMethod.POST)
+        .addHeader("Content-Type", "text/plain");
+        return new Promise(async (resolve) => {
+            const response = await http.request(reqGetJsonFileData);
+            if (response.status == 200) {
+                resolve(JSON.parse(response.body));
+            } else if (response.status == 400) {
+                resolve(0);
+            } else {
+                resolve(-1);
+            }
+        })
+    }
+
+    /**
+     * @function 创建json文件
+     * @param {String} filename
+     * @param {Object} filecontent
+     * @return {Object | Number} 创建成功返回success，创建失败返回0，服务器连接失败返回-1
+     */
+    CreateNewJsonFile(filename,filecontent) {
+        const reqCreateNewJsonFile = new HttpRequest(`${server_url}:${port}/CreateNewJsonFile`)
+        .setBody(JSON.stringify({"fileName":filename,"fileContent":filecontent}))
+        .setMethod(HttpRequestMethod.POST)
+        .addHeader("Content-Type", "text/plain")
+        return new Promise(async (resolve) => {
+            const response = http.request(reqCreateNewJsonFile);
+            if (response.status == 200) {
+                resolve(response.body);
+            } else if (response.status == 400) {
+                resolve(0);
+            } else {
+                resolve(-1);
+            }
+        });
+    }
+
+    /**
+     * 覆写json文件
+     * @param {String} filename
+     * @param {Object} filecontent
+     * @return {Object | Number} 覆写成功返回success，覆写失败返回0，服务器连接失败返回-1
+     */
+    OverwriteJsonFile(filename,filecontent) {
+        const reqOverwriteJsonFile = new HttpRequest(`${server_url}:${port}/OverwriteJsonFile`)
+        .setBody(JSON.stringify({"fileName":filename,"fileData":filecontent}))
+        .setMethod(HttpRequestMethod.POST)
+        .addHeader("Content-Type", "text/plain");
+        return new Promise(async (resolve) => {
+            const response = http.request(reqOverwriteJsonFile);
+            if (response.status == 200) {
+                resolve(response.body);
+            } else if (response.status == 400) {
+                resolve(0);
+            } else {
+                resolve(-1);
+            }
+        })
+    }
+}
+
+
+```
+
+然后我们可以直接调用即可，不用反复写
+
+调用示例(截取自玩家交易市场部分代码)
+
+```js
+import { world } from '@minecraft/server';
+import { log } from './customFunction';
+import { ExternalFS } from './API/filesystem';
+
+//违禁物品，等后期接入配置文件
+const fs = new ExternalFS();
+const port = 10086
+var MarketData = [-1]
+
+
+//服务器启动监听&&获得玩家市场数据
+world.afterEvents.worldInitialize.subscribe(() => {
+    fs.getJSONFileData("market.json").then((result) => {
+        //文件不存在
+        if (result === 0) {
+            fs.CreateNewJsonFile("market.json",[]).then((result) => {
+                if (result === "success") {
+                    MarketData = [];
+                    log("玩家市场文件不存在，已成功创建！");
+                } else if (result === -1) {
+                    console.error("[NIA V4] 依赖服务器连接失败！请检查依赖服务器是否成功启动，以及端口是否设置正确！");
+                }
+            });
+        } else if (result === -1) {
+            console.error("[NIA V4] 依赖服务器连接失败！请检查依赖服务器是否成功启动，以及端口是否设置正确！");
+        } else {
+            //文件存在且服务器连接成功
+            MarketData = result;
+            log("玩家市场数据获取成功！")
+        }
+    })
+})
+```
+
+**实际应用**
 
 [玩家交易市场（制作中）](https://github.com/NIANIANKNIA/NIASERVER-V4/blob/dev/development_behavior_packs/NIA_V4.0_BP/scripts/market.js)
 

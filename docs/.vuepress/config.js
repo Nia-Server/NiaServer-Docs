@@ -66,7 +66,7 @@ export default defineUserConfig({
             {
               text: 'Development',
               collapsible: true,
-              children: ['/en-US/develop/Http-Bot.md','/en-US/plugins/KillItem.md'],
+              children: ['/en-US/develop/Http-Bot.md'],
             }
           ]
         }
