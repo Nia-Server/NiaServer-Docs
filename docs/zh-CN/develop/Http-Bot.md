@@ -223,7 +223,7 @@ http.request(reqCreateNewFile).then((response) => {
 ```js
 const port = 3000
 const reqCreateNewJsonFile = new HttpRequest(`http://127.0.0.1:${port}/CreateNewJsonFile`);
-    reqCreateNewJsonFile.body = JSON.stringify({"fileName":"market111.json","fileContent":{"a":10}})
+    reqCreateNewJsonFile.body = JSON.stringify({"fileName":"market111.json","content":{"a":10}})
     reqCreateNewJsonFile.method = HttpRequestMethod.Post;
     reqCreateNewJsonFile.headers = [
         new HttpHeader("Content-Type", "text/plain"),
@@ -239,11 +239,36 @@ http.request(reqCreateNewJsonFile).then((response) => {
 })
 ```
 
+### [POST] `/GetFileData`
+
+
+获取文件数据，获取成功则返回文件数据（类型为字符串），状态码为`200`，获取失败则返回`fail`，状态码为`400`
+
+使用示例
+```js
+const port = 3000
+const reqGetFileData = new HttpRequest(`http://127.0.0.1:${port}/GetFileData`);
+    reqGetFileData.body = "text.txt"
+    reqGetFileData.method = HttpRequestMethod.Post;
+    reqGetFileData.headers = [
+        new HttpHeader("Content-Type", "text/plain"),
+    ];
+http.request(reqGetFileData).then((response) => {
+    if (response.status == 200) {
+        console.log("Get file data successfully! File data:" + response.body)
+    } else if (response.status == 400) {
+        console.error("The target file does not exist")
+    } else {
+        console.error("Dependent server connection failed! Check whether the dependent server started successfully.")
+    }
+})
+```
+
 
 ### [POST] `/GetJsonFileData`
 
 
-获取JSON文件数据，获取成功则返回json格式的数据，状态码为`200`，删除失败则返回`fail`，状态码为`400`
+获取JSON文件数据，获取成功则返回json格式的数据，状态码为`200`，获取失败则返回`fail`，状态码为`400`
 
 使用示例
 ```js
@@ -298,7 +323,7 @@ http.request(reqOverwriteFile).then((response) => {
 ```js
 const port = 3000
 const reqOverwriteJsonFile = new HttpRequest(`http://127.0.0.1:${port}/OverwriteJsonFile`);
-    reqOverwriteJsonFile.body = JSON.stringify({"fileName":"FileName.json","fileData":{"a":"呵呵呵呵"}})
+    reqOverwriteJsonFile.body = JSON.stringify({"fileName":"FileName.json","content":{"a":"呵呵呵呵"}})
     reqOverwriteJsonFile.method = HttpRequestMethod.Post;
     reqOverwriteJsonFile.headers = [
         new HttpHeader("Content-Type", "text/plain"),
@@ -350,21 +375,49 @@ http.request(reqWriteLineToFile).then((response) => {
 
 创建`./API/filesystem.js`文件，内容如下
 
+(目前写了一些常用的功能，更多功能将在后续更新)
+
+[点击下载示例文件](https://github.com/NIANIANKNIA/NIASERVER-V4/blob/dev/development_behavior_packs/NIA_V4.0_BP/scripts/API/filesystem.js)
+
+
+
 ```js
 import {world,system} from '@minecraft/server';
 import {http,HttpRequestMethod,HttpRequest,HttpHeader} from '@minecraft/server-net';
-//端口
+
 const port = 10086
-//地址
 const server_url = "http://127.0.0.1"
 
 export class ExternalFS {
+
+    /**
+     * @function 获取文件内容
+     * @param {String} filename
+     * @return {String | Number} 获取成功返回文件数据，文件不存在返回0，服务器连接失败返回-1
+     */
+    GetFileData(filename) {
+        const reqGetFileData = new HttpRequest(`${server_url}:${port}/GetFileData`)
+        .setBody(filename)
+        .setMethod(HttpRequestMethod.Post)
+        .addHeader("Content-Type", "text/plain");
+        return new Promise(async (resolve) => {
+            const response = await http.request(reqGetFileData);
+            if (response.status == 200) {
+                resolve(JSON.parse(response.body));
+            } else if (response.status == 400) {
+                resolve(0);
+            } else {
+                resolve(-1);
+            }
+        })
+    }
+
     /**
      * @function 获取json文件内容
      * @param {String} filename
      * @return {Object | Number} 获取成功返回json数据，文件不存在返回0，服务器连接失败返回-1
      */
-    getJSONFileData(filename) {
+    GetJSONFileData(filename) {
         const reqGetJsonFileData = new HttpRequest(`${server_url}:${port}/GetJsonFileData`)
         .setBody(filename)
         .setMethod(HttpRequestMethod.Post)
@@ -382,6 +435,29 @@ export class ExternalFS {
     }
 
     /**
+     * @function 创建新文件
+     * @param {String} filename
+     * @param {String} filecontent
+     * @return {Object | Number} 创建成功返回success，创建失败返回0，服务器连接失败返回-1
+     */
+    CreateNewFile(filename,filecontent) {
+        const reqCreateNewFile = new HttpRequest(`${server_url}:${port}/CreateNewFile`)
+        .setBody(JSON.stringify({"fileName":filename,"content":filecontent}))
+        .setMethod(HttpRequestMethod.Post)
+        .addHeader("Content-Type", "text/plain")
+        return new Promise(async (resolve) => {
+            const response = http.request(reqCreateNewFile);
+            if (response.status == 200) {
+                resolve(response.body);
+            } else if (response.status == 400) {
+                resolve(0);
+            } else {
+                resolve(-1);
+            }
+        });
+    }
+
+    /**
      * @function 创建json文件
      * @param {String} filename
      * @param {Object} filecontent
@@ -389,7 +465,7 @@ export class ExternalFS {
      */
     CreateNewJsonFile(filename,filecontent) {
         const reqCreateNewJsonFile = new HttpRequest(`${server_url}:${port}/CreateNewJsonFile`)
-        .setBody(JSON.stringify({"fileName":filename,"fileContent":filecontent}))
+        .setBody(JSON.stringify({"fileName":filename,"content":filecontent}))
         .setMethod(HttpRequestMethod.Post)
         .addHeader("Content-Type", "text/plain")
         return new Promise(async (resolve) => {
@@ -405,6 +481,29 @@ export class ExternalFS {
     }
 
     /**
+     * 覆写文件
+     * @param {String} filename
+     * @param {String} filecontent
+     * @return {Object | Number} 覆写成功返回success，覆写失败返回0，服务器连接失败返回-1
+     */
+    OverwriteFile(filename,filecontent) {
+        const reqOverwriteFile = new HttpRequest(`${server_url}:${port}/OverwriteFile`)
+        .setBody(JSON.stringify({"fileName":filename,"content":filecontent}))
+        .setMethod(HttpRequestMethod.Post)
+        .addHeader("Content-Type", "text/plain");
+        return new Promise(async (resolve) => {
+            const response = http.request(reqOverwriteFile);
+            if (response.status == 200) {
+                resolve(response.body);
+            } else if (response.status == 400) {
+                resolve(0);
+            } else {
+                resolve(-1);
+            }
+        })
+    }
+
+    /**
      * 覆写json文件
      * @param {String} filename
      * @param {Object} filecontent
@@ -412,11 +511,34 @@ export class ExternalFS {
      */
     OverwriteJsonFile(filename,filecontent) {
         const reqOverwriteJsonFile = new HttpRequest(`${server_url}:${port}/OverwriteJsonFile`)
-        .setBody(JSON.stringify({"fileName":filename,"fileData":filecontent}))
+        .setBody(JSON.stringify({"fileName":filename,"content":filecontent}))
         .setMethod(HttpRequestMethod.Post)
         .addHeader("Content-Type", "text/plain");
         return new Promise(async (resolve) => {
             const response = http.request(reqOverwriteJsonFile);
+            if (response.status == 200) {
+                resolve(response.body);
+            } else if (response.status == 400) {
+                resolve(0);
+            } else {
+                resolve(-1);
+            }
+        })
+    }
+
+    /**
+     * 向特定文件写入一行内容
+     * @param {String} filename
+     * @param {String} filecontent
+     * @return {Object | Number} 覆写成功返回success，覆写失败返回0，服务器连接失败返回-1
+     */
+    WriteLineToFile(filename,filecontent) {
+        const reqWriteLineToFile = new HttpRequest(`${server_url}:${port}/WriteLineToFile`)
+        .setBody(JSON.stringify({"fileName":filename,"content":filecontent}))
+        .setMethod(HttpRequestMethod.Post)
+        .addHeader("Content-Type", "text/plain");
+        return new Promise(async (resolve) => {
+            const response = http.request(reqWriteLineToFile);
             if (response.status == 200) {
                 resolve(response.body);
             } else if (response.status == 400) {
