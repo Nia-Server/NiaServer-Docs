@@ -382,13 +382,32 @@ http.request(reqWriteLineToFile).then((response) => {
 
 
 ```js
-import {world,system} from '@minecraft/server';
 import {http,HttpRequestMethod,HttpRequest,HttpHeader} from '@minecraft/server-net';
 
 const port = 10086
 const server_url = "http://127.0.0.1"
 
 export class ExternalFS {
+
+    /**
+     * @function 执行DOS命令
+     * @param {String} cmd
+     * @return {String | Number} 获取成功返回success，服务器连接失败返回-1
+     */
+    RunCmd(cmd) {
+        const reqRunCmd = new HttpRequest(`${server_url}:${port}/RunCmd`)
+        .setBody(cmd)
+        .setMethod(HttpRequestMethod.Post)
+        .addHeader("Content-Type", "text/plain");
+        return new Promise(async (resolve) => {
+            const response = await http.request(reqRunCmd);
+            if (response.status == 200) {
+                resolve(response.body);
+            } else {
+                resolve(-1);
+            }
+        })
+    }
 
     /**
      * @function 获取文件内容
@@ -438,7 +457,7 @@ export class ExternalFS {
      * @function 创建新文件
      * @param {String} filename
      * @param {String} filecontent
-     * @return {Object | Number} 创建成功返回success，创建失败返回0，服务器连接失败返回-1
+     * @return {String | Number} 创建成功返回success，创建失败返回0，服务器连接失败返回-1
      */
     CreateNewFile(filename,filecontent) {
         const reqCreateNewFile = new HttpRequest(`${server_url}:${port}/CreateNewFile`)
@@ -446,7 +465,7 @@ export class ExternalFS {
         .setMethod(HttpRequestMethod.Post)
         .addHeader("Content-Type", "text/plain")
         return new Promise(async (resolve) => {
-            const response = http.request(reqCreateNewFile);
+            const response = await http.request(reqCreateNewFile);
             if (response.status == 200) {
                 resolve(response.body);
             } else if (response.status == 400) {
@@ -461,7 +480,7 @@ export class ExternalFS {
      * @function 创建json文件
      * @param {String} filename
      * @param {Object} filecontent
-     * @return {Object | Number} 创建成功返回success，创建失败返回0，服务器连接失败返回-1
+     * @return {String | Number} 创建成功返回success，创建失败返回0，服务器连接失败返回-1
      */
     CreateNewJsonFile(filename,filecontent) {
         const reqCreateNewJsonFile = new HttpRequest(`${server_url}:${port}/CreateNewJsonFile`)
@@ -469,7 +488,7 @@ export class ExternalFS {
         .setMethod(HttpRequestMethod.Post)
         .addHeader("Content-Type", "text/plain")
         return new Promise(async (resolve) => {
-            const response = http.request(reqCreateNewJsonFile);
+            const response = await http.request(reqCreateNewJsonFile);
             if (response.status == 200) {
                 resolve(response.body);
             } else if (response.status == 400) {
@@ -484,7 +503,7 @@ export class ExternalFS {
      * 覆写文件
      * @param {String} filename
      * @param {String} filecontent
-     * @return {Object | Number} 覆写成功返回success，覆写失败返回0，服务器连接失败返回-1
+     * @return {String | Number} 覆写成功返回success，覆写失败返回0，服务器连接失败返回-1
      */
     OverwriteFile(filename,filecontent) {
         const reqOverwriteFile = new HttpRequest(`${server_url}:${port}/OverwriteFile`)
@@ -492,7 +511,7 @@ export class ExternalFS {
         .setMethod(HttpRequestMethod.Post)
         .addHeader("Content-Type", "text/plain");
         return new Promise(async (resolve) => {
-            const response = http.request(reqOverwriteFile);
+            const response = await http.request(reqOverwriteFile);
             if (response.status == 200) {
                 resolve(response.body);
             } else if (response.status == 400) {
@@ -507,7 +526,7 @@ export class ExternalFS {
      * 覆写json文件
      * @param {String} filename
      * @param {Object} filecontent
-     * @return {Object | Number} 覆写成功返回success，覆写失败返回0，服务器连接失败返回-1
+     * @return {String | Number} 覆写成功返回success，覆写失败返回0，服务器连接失败返回-1
      */
     OverwriteJsonFile(filename,filecontent) {
         const reqOverwriteJsonFile = new HttpRequest(`${server_url}:${port}/OverwriteJsonFile`)
@@ -515,7 +534,7 @@ export class ExternalFS {
         .setMethod(HttpRequestMethod.Post)
         .addHeader("Content-Type", "text/plain");
         return new Promise(async (resolve) => {
-            const response = http.request(reqOverwriteJsonFile);
+            const response = await http.request(reqOverwriteJsonFile);
             if (response.status == 200) {
                 resolve(response.body);
             } else if (response.status == 400) {
@@ -530,7 +549,7 @@ export class ExternalFS {
      * 向特定文件写入一行内容
      * @param {String} filename
      * @param {String} filecontent
-     * @return {Object | Number} 覆写成功返回success，覆写失败返回0，服务器连接失败返回-1
+     * @return {String | Number} 覆写成功返回success，覆写失败返回0，服务器连接失败返回-1
      */
     WriteLineToFile(filename,filecontent) {
         const reqWriteLineToFile = new HttpRequest(`${server_url}:${port}/WriteLineToFile`)
@@ -538,7 +557,7 @@ export class ExternalFS {
         .setMethod(HttpRequestMethod.Post)
         .addHeader("Content-Type", "text/plain");
         return new Promise(async (resolve) => {
-            const response = http.request(reqWriteLineToFile);
+            const response = await http.request(reqWriteLineToFile);
             if (response.status == 200) {
                 resolve(response.body);
             } else if (response.status == 400) {
@@ -549,6 +568,8 @@ export class ExternalFS {
         })
     }
 }
+
+
 
 
 ```
