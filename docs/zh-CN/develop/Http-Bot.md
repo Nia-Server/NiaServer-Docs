@@ -5,9 +5,11 @@ title: 🤖Http-BOT
 # 🤖Http-BOT
 
 
-::: warning 编写中页面提醒
-本页面仍处于编写状态中，内容可能不全面，会对阅读造成一定的影响！
+::: warning 版本提示
+以下所有api均基于最新构建的版本（见下方RELEASE）
 :::
+
+[![Latest Release](https://img.shields.io/github/v/release/NIANIANKNIA/NIASERVER-V4?include_prereleases&style=for-the-badge)](https://github.com/NIANIANKNIA/NIASERVER-V4/releases/)
 
 ## 为什么开发？
 
@@ -77,11 +79,11 @@ UseCmd = false
 
 ## API一览表
 
-### [GET] `/CheckServer`（开发中）
+### [GET] `/CheckServer`（开发中，未上线）
 
 返回当前`NIAHttpBOT`的状态，多用于检测依赖服务器有没有正常开启
 
-### [GET] `/GetTime`（开发中）
+### [GET] `/GetTime`（开发中，未上线）
 
 获取当前时间，返回形如"2019-01-28 12:53"的字符串
 
@@ -120,7 +122,7 @@ reqServerStarted.then((response) => {
 const port = 3000
 const reqRunCmd = new HttpRequest(`http://127.0.0.1:${port}/RunCmd`);
     reqRunCmd.body = "del 123.txt"
-    reqRunCmd.method = HttpRequestMethod.POST;
+    reqRunCmd.method = HttpRequestMethod.Post;
     reqRunCmd.headers = [
         new HttpHeader("Content-Type", "text/plain"),
     ];
@@ -144,7 +146,7 @@ http.request(reqRunCmd).then((response) => {
 const port = 3000
 const reqCheckFile = new HttpRequest(`http://127.0.0.1:${port}/CheckFile`);
     reqCheckFile.body = "FileName.json"
-    reqCheckFile.method = HttpRequestMethod.POST;
+    reqCheckFile.method = HttpRequestMethod.Post;
     reqCheckFile.headers = [
         new HttpHeader("Content-Type", "text/plain"),
     ];
@@ -169,7 +171,7 @@ http.request(reqCheckFile).then((response) => {
 const port = 3000
 const reqCheckDir = new HttpRequest(`http://127.0.0.1:${port}/CheckDir`);
     reqCheckDir.body = "./A"
-    reqCheckDir.method = HttpRequestMethod.POST;
+    reqCheckDir.method = HttpRequestMethod.Post;
     reqCheckDir.headers = [
         new HttpHeader("Content-Type", "text/plain"),
     ];
@@ -195,7 +197,7 @@ http.request(reqCheckDir).then((response) => {
 const port = 3000
 const reqCreateNewFile = new HttpRequest(`http://127.0.0.1:${port}/CreateNewFile`);
     reqCreateNewFile.body = JSON.stringify({"fileName":"test.txt","content":"这是第一行\n这是第二行"})
-    reqCreateNewFile.method = HttpRequestMethod.POST;
+    reqCreateNewFile.method = HttpRequestMethod.Post;
     reqCreateNewFile.headers = [
         new HttpHeader("Content-Type", "text/plain"),
     ];
@@ -222,7 +224,7 @@ http.request(reqCreateNewFile).then((response) => {
 const port = 3000
 const reqCreateNewJsonFile = new HttpRequest(`http://127.0.0.1:${port}/CreateNewJsonFile`);
     reqCreateNewJsonFile.body = JSON.stringify({"fileName":"market111.json","fileContent":{"a":10}})
-    reqCreateNewJsonFile.method = HttpRequestMethod.POST;
+    reqCreateNewJsonFile.method = HttpRequestMethod.Post;
     reqCreateNewJsonFile.headers = [
         new HttpHeader("Content-Type", "text/plain"),
     ];
@@ -248,7 +250,7 @@ http.request(reqCreateNewJsonFile).then((response) => {
 const port = 3000
 const reqGetJsonFileData = new HttpRequest(`http://127.0.0.1:${port}/GetJsonFileData`);
     reqGetJsonFileData.body = "market.json"
-    reqGetJsonFileData.method = HttpRequestMethod.POST;
+    reqGetJsonFileData.method = HttpRequestMethod.Post;
     reqGetJsonFileData.headers = [
         new HttpHeader("Content-Type", "text/plain"),
     ];
@@ -272,7 +274,7 @@ http.request(reqGetJsonFileData).then((response) => {
 const port = 3000
 const reqOverwriteFile = new HttpRequest(`http://127.0.0.1:${port}/OverwriteFile`);
     reqOverwriteFile.body = JSON.stringify({"fileName":"FileName.txt","content": "这是第一行\n这是第二行"})
-    reqOverwriteFile.method = HttpRequestMethod.POST;
+    reqOverwriteFile.method = HttpRequestMethod.Post;
     reqOverwriteFile.headers = [
         new HttpHeader("Content-Type", "text/plain"),
     ];
@@ -297,7 +299,7 @@ http.request(reqOverwriteFile).then((response) => {
 const port = 3000
 const reqOverwriteJsonFile = new HttpRequest(`http://127.0.0.1:${port}/OverwriteJsonFile`);
     reqOverwriteJsonFile.body = JSON.stringify({"fileName":"FileName.json","fileData":{"a":"呵呵呵呵"}})
-    reqOverwriteJsonFile.method = HttpRequestMethod.POST;
+    reqOverwriteJsonFile.method = HttpRequestMethod.Post;
     reqOverwriteJsonFile.headers = [
         new HttpHeader("Content-Type", "text/plain"),
     ];
@@ -325,7 +327,7 @@ http.request(reqOverwriteJsonFile).then((response) => {
 const port = 3000
 const reqWriteLineToFile = new HttpRequest(`http://127.0.0.1:${port}/WriteLineToFile`);
     reqWriteLineToFile.body = JSON.stringify({"fileName":"123.txt","content": "这是一行测试内容" + "\n"})
-    reqWriteLineToFile.method = HttpRequestMethod.POST;
+    reqWriteLineToFile.method = HttpRequestMethod.Post;
     reqWriteLineToFile.headers = [
         new HttpHeader("Content-Type", "text/plain"),
     ];
@@ -365,7 +367,7 @@ export class ExternalFS {
     getJSONFileData(filename) {
         const reqGetJsonFileData = new HttpRequest(`${server_url}:${port}/GetJsonFileData`)
         .setBody(filename)
-        .setMethod(HttpRequestMethod.POST)
+        .setMethod(HttpRequestMethod.Post)
         .addHeader("Content-Type", "text/plain");
         return new Promise(async (resolve) => {
             const response = await http.request(reqGetJsonFileData);
@@ -388,7 +390,7 @@ export class ExternalFS {
     CreateNewJsonFile(filename,filecontent) {
         const reqCreateNewJsonFile = new HttpRequest(`${server_url}:${port}/CreateNewJsonFile`)
         .setBody(JSON.stringify({"fileName":filename,"fileContent":filecontent}))
-        .setMethod(HttpRequestMethod.POST)
+        .setMethod(HttpRequestMethod.Post)
         .addHeader("Content-Type", "text/plain")
         return new Promise(async (resolve) => {
             const response = http.request(reqCreateNewJsonFile);
@@ -411,7 +413,7 @@ export class ExternalFS {
     OverwriteJsonFile(filename,filecontent) {
         const reqOverwriteJsonFile = new HttpRequest(`${server_url}:${port}/OverwriteJsonFile`)
         .setBody(JSON.stringify({"fileName":filename,"fileData":filecontent}))
-        .setMethod(HttpRequestMethod.POST)
+        .setMethod(HttpRequestMethod.Post)
         .addHeader("Content-Type", "text/plain");
         return new Promise(async (resolve) => {
             const response = http.request(reqOverwriteJsonFile);
@@ -435,7 +437,6 @@ export class ExternalFS {
 
 ```js
 import { world } from '@minecraft/server';
-import { log } from './customFunction';
 import { ExternalFS } from './API/filesystem';
 
 //违禁物品，等后期接入配置文件
@@ -452,17 +453,17 @@ world.afterEvents.worldInitialize.subscribe(() => {
             fs.CreateNewJsonFile("market.json",[]).then((result) => {
                 if (result === "success") {
                     MarketData = [];
-                    log("玩家市场文件不存在，已成功创建！");
+                    console.log("玩家市场文件不存在，已成功创建！");
                 } else if (result === -1) {
-                    console.error("[NIA V4] 依赖服务器连接失败！请检查依赖服务器是否成功启动，以及端口是否设置正确！");
+                    console.error("依赖服务器连接失败！请检查依赖服务器是否成功启动，以及端口是否设置正确！");
                 }
             });
         } else if (result === -1) {
-            console.error("[NIA V4] 依赖服务器连接失败！请检查依赖服务器是否成功启动，以及端口是否设置正确！");
+            console.error("依赖服务器连接失败！请检查依赖服务器是否成功启动，以及端口是否设置正确！");
         } else {
             //文件存在且服务器连接成功
             MarketData = result;
-            log("玩家市场数据获取成功！")
+            console.log("玩家市场数据获取成功！")
         }
     })
 })
