@@ -33,7 +33,7 @@ title: 🤖Http-BOT
 
 由于**minecraft/server-net**模块在本地存档中无法启用，所以我们应当在本地搭建一个服务器环境用于开发
 
-1.前往我的世界官网[下载BDS](**minecraft/server-net**模块)，并将下好的服务端解压
+1.前往我的世界官网[下载BDS](https://www.minecraft.net/en-us/download/server/bedrock)，并将下好的服务端解压
 
 2.安装行为包
 
@@ -241,10 +241,10 @@ http.request(reqCreateNewJsonFile).then((response) => {
 
 ### [POST] `/GetFileData`
 
-
 获取文件数据，获取成功则返回文件数据（类型为字符串），状态码为`200`，获取失败则返回`fail`，状态码为`400`
 
 使用示例
+
 ```js
 const port = 3000
 const reqGetFileData = new HttpRequest(`http://127.0.0.1:${port}/GetFileData`);
@@ -295,6 +295,7 @@ http.request(reqGetJsonFileData).then((response) => {
 覆盖文件内容，覆盖成功则返回`success`，状态码为`200`，覆盖失败则返回`失败原因`，状态码为`400`
 
 使用示例
+
 ```js
 const port = 3000
 const reqOverwriteFile = new HttpRequest(`http://127.0.0.1:${port}/OverwriteFile`);
@@ -318,8 +319,8 @@ http.request(reqOverwriteFile).then((response) => {
 
 覆盖JSON文件内容，覆盖成功则返回`success`，状态码为`200`，覆盖失败则返回`失败原因`，状态码为`200`
 
-
 使用示例
+
 ```js
 const port = 3000
 const reqOverwriteJsonFile = new HttpRequest(`http://127.0.0.1:${port}/OverwriteJsonFile`);
@@ -345,9 +346,10 @@ http.request(reqOverwriteJsonFile).then((response) => {
 
 向目标文件最后写入如一行内容，成功则返回`success`，状态码为`200`，失败则返回`失败原因`，状态码为`400`
 
-**注意增加换行符，否则不会换行！**
+**注意增加换行符（\n），否则不会换行！**
 
 使用示例
+
 ```js
 const port = 3000
 const reqWriteLineToFile = new HttpRequest(`http://127.0.0.1:${port}/WriteLineToFile`);
@@ -367,8 +369,6 @@ http.request(reqWriteLineToFile).then((response) => {
 })
 ```
 
-***
-
 ## 使用示例
 
 **建议使用的方法**
@@ -378,7 +378,6 @@ http.request(reqWriteLineToFile).then((response) => {
 (目前写了一些常用的功能，更多功能将在后续更新)
 
 [点击下载示例文件](https://github.com/NIANIANKNIA/NIASERVER-V4/blob/dev/development_behavior_packs/NIA_V4.0_BP/scripts/API/filesystem.js)
-
 
 
 ```js
@@ -500,7 +499,7 @@ export class ExternalFS {
     }
 
     /**
-     * 覆写文件
+     * @function 覆写文件
      * @param {String} filename
      * @param {String} filecontent
      * @return {String | Number} 覆写成功返回success，覆写失败返回0，服务器连接失败返回-1
@@ -523,7 +522,7 @@ export class ExternalFS {
     }
 
     /**
-     * 覆写json文件
+     * @function 覆写json文件
      * @param {String} filename
      * @param {Object} filecontent
      * @return {String | Number} 覆写成功返回success，覆写失败返回0，服务器连接失败返回-1
@@ -546,10 +545,10 @@ export class ExternalFS {
     }
 
     /**
-     * 向特定文件写入一行内容
+     * @function 向特定文件写入一行内容
      * @param {String} filename
      * @param {String} filecontent
-     * @return {String | Number} 覆写成功返回success，覆写失败返回0，服务器连接失败返回-1
+     * @return {String | Number} 写入成功返回success，覆写失败返回0，服务器连接失败返回-1
      */
     WriteLineToFile(filename,filecontent) {
         const reqWriteLineToFile = new HttpRequest(`${server_url}:${port}/WriteLineToFile`)
