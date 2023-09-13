@@ -5,11 +5,10 @@
 ![status](https://img.shields.io/github/actions/workflow/status/NIANIANKNIA/NiaServer-Docs/docs.yml?style=for-the-badge)
 ![GitHub last commit](https://img.shields.io/github/last-commit/NIANIANKNIA/NiaServer-Docs?style=for-the-badge)
 
-国内网站：https://docs.mcnia.top
 
-国外网站（github-page）：https://docs.mcnia.com
+网站链接（github-page）：https://docs.mcnia.com
 
-[NIA服务器文档站](https://docs.mcnia.top/)相关文件
+[NIA服务器文档站](https://docs.mcnia.com/)相关文件
 
 文档站基于[Vuepress](https://v2.vuepress.vuejs.org/)建设
 
