@@ -267,6 +267,9 @@ http.request(reqGetFileData).then((response) => {
 
 ### [POST] `/GetJsonFileData`
 
+::: warning 警告
+json文件应当没有任何语法错误/注释，否则将无法正确读取json数据！，详细请查看[#json文件读取注意事项](#json文件读取注意事项)
+:::
 
 获取JSON文件数据，获取成功则返回json格式的数据，状态码为`200`，获取失败则返回`fail`，状态码为`400`
 
@@ -367,6 +370,38 @@ http.request(reqWriteLineToFile).then((response) => {
         console.error("Dependent server connection failed! Check whether the dependent server started successfully.")
     }
 })
+```
+
+## 附加说明
+
+### JSON文件读取注意事项
+
+**json文件应当没有任何语法错误/注释，否则将无法正确读取json数据！**
+
+以下是错误示例：
+
+多了一个`,`产生了语法错误！
+```json
+{
+    "key":value,
+}
+```
+
+不能进行注释，否则会导致无法正确读取！
+```json
+{
+    //这是一行注释，这会导致无法正常读取！
+    "key":value
+}
+```
+
+错误的使用了中文的标点符号导致语法错误！
+```json
+{
+    //这是一行注释，这会导致无法正常读取！
+    "key1":value，
+    "key2"：value
+}
 ```
 
 ## 使用示例
