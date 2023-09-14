@@ -268,7 +268,7 @@ http.request(reqGetFileData).then((response) => {
 ### [POST] `/GetJsonFileData`
 
 ::: warning 警告
-json文件应当没有任何语法错误/注释，否则将无法正确读取json数据！，详细请查看[#json文件读取注意事项](#json文件读取注意事项)
+json文件应当没有任何语法错误/注释，否则将无法正确读取json数据！，详细请查看[json文件读取注意事项](#json文件读取注意事项)
 :::
 
 获取JSON文件数据，获取成功则返回json格式的数据，状态码为`200`，获取失败则返回`fail`，状态码为`400`
