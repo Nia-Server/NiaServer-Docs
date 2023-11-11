@@ -123,6 +123,14 @@ title: 📜服务器图鉴
 
 玩家双方可以通过菜单进入pvp系统，双方自行选择pvp模式后，在开始
 
+### （测试内容）合成表
+
+| 1 | 2 | 3 |  | 合成所得 |
+| :----:| :----: | :----: | :----: | :----: |
+| ![island1](/items/sword/dark_sword.png) | ![island1](/items/sword/dark_sword.png) | ![island1](/items/sword/dark_sword.png) |  |  |
+| ![island1](/items/sword/dark_sword.png) | ![island1](/items/sword/dark_sword.png) | ![island1](/items/sword/dark_sword.png) | => | ![island1](/items/sword/dark_sword.png) |
+| ![island1](/items/sword/dark_sword.png) | ![island1](/items/sword/dark_sword.png) | ![island1](/items/sword/dark_sword.png) |  |  |
+
 ::: warning 过时页面提醒
 下方页面部分内容过时，仅供参考！
 :::
