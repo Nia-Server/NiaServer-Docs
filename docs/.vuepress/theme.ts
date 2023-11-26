@@ -1,4 +1,5 @@
 import { hopeTheme } from "vuepress-theme-hope";
+import { docsearchPlugin } from "@vuepress/plugin-docsearch";
 import { enNavbar, zhNavbar } from "./navbar/index.js";
 import { enSidebar, zhSidebar } from "./sidebar/index.js";
 
@@ -56,6 +57,12 @@ export default hopeTheme({
 
   },
 
+  navbarLayout: {
+    start: ["Brand"],
+    center: ["Links"],
+    end: ["Language", "Repo", "Outlook", "Search"],
+  },
+
 
   plugins: {
     // You should generate and use your own comment service
@@ -69,6 +76,8 @@ export default hopeTheme({
 
     // All features are enabled for demo, only preserve features you need here
     mdEnhance: {
+
+
       align: true,
       attrs: true,
 
@@ -138,6 +147,13 @@ export default hopeTheme({
       // install @vue/repl before enabling it
       // vuePlayground: true,
     },
+
+    copyright: {
+      author: "NIA服务器",
+      license: "CC-BY-NC-SA-4.0",
+      global: true,
+    },
+
 
     // uncomment these if you want a pwa
     // pwa: {

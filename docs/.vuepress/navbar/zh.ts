@@ -12,7 +12,7 @@ export const zhNavbar = navbar([
     text: "服务器相关",
     icon: "server",
     prefix: "/server/",
-    children: ['README','update','history','developers','specialThanks','map']
+    children: ['README','changelog','history','developers','specialThanks','map']
   },
   {
     text: "开发者文档",

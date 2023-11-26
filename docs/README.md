@@ -14,9 +14,23 @@ actions:
 
 highlights:
 
+  - header: 全平台服务器
+    description: 可以在全平台游玩的服务器！随时随地，想玩就玩！
+    image: /mc_icons/promo_chicken.png
+    features:
+      - title: 基岩版服务器
+        icon: server
+        details: 服务器基于官方BDS开发，支持在Android、iOS、Windows等可下载BDS平台游玩
+        link: /dev/Http-BOT
+
+      - title: 随官方版本更新
+        icon: file-code
+        details: 得益于基岩版的特性，服务器随官方版本更新而更新，随时为您提供最新的游戏体验
+        link: /server
+
   - header: 原版生存内容扩展
     description: 我们基于原版生存进行了大量内容扩展，让你的生存体验更加丰富！
-
+    image: /mc_icons/Scaffolding.png
     bgImageStyle:
       background-repeat: repeat
       background-size: initial
@@ -30,6 +44,8 @@ highlights:
 
 
   - header: 开放的开发环境
+    description: 我们提供了开放的开发环境，让你可以自由的开发属于你自己的服务器！
+    image: /mc_icons/promo_creeper.png
     features:
       - title: Http-BOT
         icon: server
@@ -48,6 +64,8 @@ highlights:
       - title: 基于script-api开发
         icon: file-lines
         details: 基于官方的script-api开发，随官方更新而更新，不用担心版本问题
+
+
 
 
 ---

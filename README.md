@@ -12,6 +12,8 @@
 
 文档站基于[Vuepress](https://v2.vuepress.vuejs.org/)建设
 
+使用[VuePress-theme-hope](https://theme-hope.vuejs.press/)主题
+
 文档站主要用于NIA服务器部分文档的展示！
 
 也欢迎各位积极编写&&更正本文档！
