@@ -2,7 +2,7 @@
 
 ##### 语言：[English](README_en.md) | 简体中文
 
-![status](https://img.shields.io/github/actions/workflow/status/NIANIANKNIA/NiaServer-Docs/docs.yml?style=for-the-badge)
+![status](https://img.shields.io/github/actions/workflow/status/NIANIANKNIA/NiaServer-Docs/deploy-docs.yml?style=for-the-badge)
 ![GitHub last commit](https://img.shields.io/github/last-commit/NIANIANKNIA/NiaServer-Docs?style=for-the-badge)
 
 
