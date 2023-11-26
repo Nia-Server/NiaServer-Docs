@@ -1,5 +1,6 @@
 ---
 home: true
+title: Home
 heroImage: /logo.png
 heroImageDark: /logoDark.png
 tagline: Coming soon...
@@ -8,7 +9,7 @@ actions:
     link: https://github.com/NIANIANKNIA/NiaServer-Docs
     type: primary
   - text: Start
-    link: /en-US/About
+    link: /en-US/server
     type: secondary
 features:
 - title: 📝Rules and regulations
