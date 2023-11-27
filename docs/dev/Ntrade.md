@@ -5,6 +5,9 @@ title: 📦Ntrade使用教程
 
 # 📦Ntrade使用教程
 
+::: warning Ntrade目前已经停止维护，不再提供任何技术支持，请尽量不要使用该插件，目前该项目已被基于script-api的插件NIASERVER-V4中的market.js替代！
+:::
+
 ### 插件作用
 
 用于实现玩家间交易的一个插件

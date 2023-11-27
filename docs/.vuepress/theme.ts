@@ -57,12 +57,8 @@ export default hopeTheme({
 
   },
 
-  navbarLayout: {
-    start: ["Brand"],
-    center: ["Links"],
-    end: ["Language", "Repo", "Outlook", "Search"],
-  },
-
+  themeColor: true,
+  fullscreen: true,
 
   plugins: {
     // You should generate and use your own comment service

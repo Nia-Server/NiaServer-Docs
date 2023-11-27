@@ -37,10 +37,16 @@ highlights:
     features:
       - title: 地形生成修改
         icon: mound
-        details: 为了匹配扩展之后的游戏内容，我们修改了部分生物的行为
+        details: 全新的地形生成，让整个游戏世界更加丰富多彩
       - title: 生物修改
         icon: fish
         details: 为了匹配扩展之后的游戏内容，我们修改了部分生物的行为
+      - title: 圈地系统
+        icon: fence
+        details: 全方位保护你的领地，让你的领地不再受到外界的侵扰
+      - title: 交易市场
+        icon: emerald
+        details: 为了方便玩家之间的交易，我们提供了交易市场，让你可以更加方便的交易
 
 
   - header: 开放的开发环境

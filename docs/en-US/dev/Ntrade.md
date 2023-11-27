@@ -5,6 +5,9 @@ title: 📦Ntrade tutorial
 
 # 📦Ntrade usage tutorial
 
+::: warning Ntrade has stopped maintenance and no longer provides any technical support. Please try not to use this plug-in. The project has been replaced by market.js in the script-api-based plug-in NIASERVER-V4!
+:::
+
 ### Plugin function
 
 A plugin for interplayer transactions

@@ -3,7 +3,7 @@ lang: en-US
 title: ⛳About Server
 ---
 
-# ⛳关于本服务器
+# ⛳About Server
 
 [![NIAV4](/NIASERVER-V4.svg)](https://github.com/NIANIANKNIA/NIASERVER-V4)
 
