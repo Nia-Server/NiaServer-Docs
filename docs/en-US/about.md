@@ -33,4 +33,4 @@ Welcome everyone to actively write && correct this document!
 
 You can fork the warehouse first and then PR again after making changes. I will check every one!
 
-**Finally, thank you for all your contributions to this document site! **
+**Finally, thank you for all your contributions to this document site!**
