@@ -9,7 +9,7 @@ title: 🤖Http-BOT
 以下所有api均基于最新构建的版本（见下方RELEASE）
 :::
 
-[![Latest Release](https://img.shields.io/github/v/release/NIANIANKNIA/NIASERVER-V4?include_prereleases&style=for-the-badge)](https://github.com/NIANIANKNIA/NIASERVER-V4/releases/)
+[![Latest Release](https://img.shields.io/github/v/release/NIANIANKNIA/NiaServer-Core?include_prereleases&style=for-the-badge)](https://github.com/NIANIANKNIA/NiaServer-Core/releases/)
 
 ## 为什么开发？
 
@@ -21,9 +21,9 @@ title: 🤖Http-BOT
 
 1.本项目基于**HTTP**进行通讯，故当前Minecraft版本应当注意启用**minecraft/server-net**模块（该模块只能运行在服务器上）
 
-2.您可以前往**NIASERVER-V4**项目地址的[release](https://github.com/NIANIANKNIA/NIASERVER-V4/releases)下载最新release构建的**NIAHttpBOT.exe**来获取最新版的`NIA-Http-Bot`
+2.您可以前往**NiaServer-Core**项目地址的[release](https://github.com/NIANIANKNIA/NiaServer-Core/releases)下载最新release构建的**NIAHttpBOT.exe**来获取最新版的`NIA-Http-Bot`
 
-3.如果您在使用期间遇到了问题/有建议，您可以前往**NIASERVER-V4**的[issues](https://github.com/NIANIANKNIA/NIASERVER-V4/issues)进行反馈！
+3.如果您在使用期间遇到了问题/有建议，您可以前往**NiaServer-Core**的[issues](https://github.com/NIANIANKNIA/NiaServer-Core/issues)进行反馈！
 
 4.由于涉及**HTTP**通讯，请在使用过程中注意服务器防火墙设置，以免对服务器安全造成威胁！
 
@@ -416,7 +416,7 @@ http.request(reqWriteLineToFile).then((response) => {
 
 (目前写了一些常用的功能，更多功能将在后续更新)
 
-[点击下载示例文件](https://github.com/NIANIANKNIA/NIASERVER-V4/blob/dev/development_behavior_packs/NIA_V4.0_BP/scripts/API/filesystem.js)
+[点击下载示例文件](https://github.com/NIANIANKNIA/NiaServer-Core/blob/dev/development_behavior_packs/NIA_V4.0_BP/scripts/API/filesystem.js)
 
 
 ```js
@@ -652,5 +652,5 @@ world.afterEvents.worldInitialize.subscribe(() => {
 
 **实际应用**
 
-[玩家交易市场（制作中）](https://github.com/NIANIANKNIA/NIASERVER-V4/blob/dev/development_behavior_packs/NIA_V4.0_BP/scripts/market.js)
+[玩家交易市场（制作中）](https://github.com/NIANIANKNIA/NiaServer-Core/blob/dev/development_behavior_packs/NIA_V4.0_BP/scripts/market.js)
 

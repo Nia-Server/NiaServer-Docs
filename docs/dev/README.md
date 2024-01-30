@@ -12,6 +12,10 @@ title: 🖥️部署指南
 页面内容已与目前版本脱离，仅供参考，具体部署请方法请等待后续更新！
 :::
 
+### 写在前面
+
+该服务器是基岩版服务器，你可以在**Windows/Linux**环境下部署服务器
+
 ### 配置服务器运行环境
 
 首先我们应当下载[BDS服务器端](https://www.minecraft.net/en-us/download/server/bedrock)
@@ -21,9 +25,9 @@ title: 🖥️部署指南
 
 ### 下载对应版本的行为包
 
-请自行前往**Github**的[release](https://github.com/NIANIANKNIA/NIASERVER-V4/releases)界面按照需求下载相应的行为包或资源包。
+请自行前往**Github**的[release](https://github.com/NIANIANKNIA/NiaServer-Core/releases)界面按照需求下载相应的行为包或资源包。
 
-国内用户如果打不开可以前往**Gitee**的[release](https://gitee.com/nianianknia/NIASERVER-V4/releases)界面按照需求下载相应的行为包或资源包。
+国内用户如果打不开可以前往**Gitee**的[release](https://gitee.com/nianianknia/NiaServer-Core/releases)界面按照需求下载相应的行为包或资源包。
 
 **务必按照自己服务器版本下载对应的版本，否则有很大概率因为版本不一致导致行为包无法正常使用**
 

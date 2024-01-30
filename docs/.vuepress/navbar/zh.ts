@@ -32,12 +32,11 @@ export const zhNavbar = navbar([
       {
         text: '如何编辑本文档站',
         link: 'https://www.mcnia.top/howtoedit'
+      },
+      {
+        text: "获取授权ID",
+        link: "https://getid.mcnia.top",
       }
     ],
-  },
-  {
-    text: "获取授权ID",
-    icon: "id-card",
-    link: "https://operate.mcnia.top",
-  },
+  }
 ]);

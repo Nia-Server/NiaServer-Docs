@@ -8,7 +8,7 @@ title: 🤖Http-BOT
 All the APIs below are based on the latest build (see RELEASE below)
 :::
 
-[![Latest Release](https://img.shields.io/github/v/release/NIANIANKNIA/NIASERVER-V4?include_prereleases&style=for-the-badge)](https://github.com/NIANIANKNIA/NIASERVER-V4/releases/)
+[![Latest Release](https://img.shields.io/github/v/release/NIANIANKNIA/NiaServer-Core?include_prereleases&style=for-the-badge)](https://github.com/NIANIANKNIA/NiaServer-Core/releases/)
 
 
 ## Why develop?
@@ -19,9 +19,9 @@ Since the current Minecraft Script-api cannot implement functions such as file r
 
 1. This project communicates based on **HTTP**, so the current Minecraft version should pay attention to enable the **minecraft/server-net** module (this module can only run on the server)
 
-2. You can go to the [release](https://github.com/NIANIANKNIA/NIASERVER-V4/releases) of the **NIASERVER-V4** project address to download the **NIAHttpBOT.exe** built by the latest release to get the latest version of `NIA-Http-Bot`
+2. You can go to the [release](https://github.com/NIANIANKNIA/NiaServer-Core/releases) of the **NiaServer-Core** project address to download the **NIAHttpBOT.exe** built by the latest release to get the latest version of `NIA-Http-Bot`
 
-3. If you encounter problems/have suggestions during use, you can go to [issues](https://github.com/NIANIANKNIA/NIASERVER-V4/issues) of **NIASERVER-V4** to give feedback!
+3. If you encounter problems/have suggestions during use, you can go to [issues](https://github.com/NIANIANKNIA/NiaServer-Core/issues) of **NiaServer-Core** to give feedback!
 
 4. Since it involves **HTTP** communication, please pay attention to the server firewall settings during use, so as not to pose a threat to server security!
 
@@ -364,7 +364,7 @@ Create the `./API/filesystem.js` file with the following content
 
 (Currently written some commonly used functions, more functions will be updated later)
 
-[Click to download sample file](https://github.com/NIANIANKNIA/NIASERVER-V4/blob/dev/development_behavior_packs/NIA_V4.0_BP/scripts/API/filesystem.js)
+[Click to download sample file](https://github.com/NIANIANKNIA/NiaServer-Core/blob/dev/development_behavior_packs/NIA_V4.0_BP/scripts/API/filesystem.js)
 
 ```js
 import {http,HttpRequestMethod,HttpRequest,HttpHeader} from '@minecraft/server-net';

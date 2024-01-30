@@ -5,10 +5,10 @@ title: ⛳关于本服务器
 
 # ⛳关于本服务器
 
-[![NIAV4](/NIASERVER-V4.svg)](https://github.com/NIANIANKNIA/NIASERVER-V4)
+[![NIAV4](/NiaServer-Core.svg)](https://github.com/NIANIANKNIA/NiaServer-Core)
 
 
-NIA服务器所有自制addons/插件均已在[**Github**](https://github.com/NIANIANKNIA/NIASERVER-V4)上开源，您可以点击[**release**](https://github.com/NIANIANKNIA/NIASERVER-V4/releases/latest)快速跳转下载页面！
+NIA服务器所有自制addons/插件均已在[**Github**](https://github.com/NIANIANKNIA/NiaServer-Core)上开源，您可以点击[**release**](https://github.com/NIANIANKNIA/NiaServer-Core/releases/latest)快速跳转下载页面！
 
 
 ### 创建时间

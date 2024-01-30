@@ -21,9 +21,9 @@ title: 🖥️部署指南
 
 ### 下载对应版本的行为包
 
-请自行前往**Github**的[release](https://github.com/NIANIANKNIA/NIASERVER-V4/releases)界面按照需求下载相应的行为包或资源包。
+请自行前往**Github**的[release](https://github.com/NIANIANKNIA/NiaServer-Core/releases)界面按照需求下载相应的行为包或资源包。
 
-国内用户如果打不开可以前往**Gitee**的[release](https://gitee.com/nianianknia/NIASERVER-V4/releases)界面按照需求下载相应的行为包或资源包。
+国内用户如果打不开可以前往**Gitee**的[release](https://gitee.com/nianianknia/NiaServer-Core/releases)界面按照需求下载相应的行为包或资源包。
 
 **务必按照自己服务器版本下载对应的版本，否则有很大概率因为版本不一致导致行为包无法正常使用**
 
