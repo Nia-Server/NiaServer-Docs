@@ -19,13 +19,13 @@ title: 🤖Http-BOT
 
 ## 使用前注意事项
 
-1.本项目基于**HTTP**进行通讯，故当前Minecraft版本应当注意启用**minecraft/server-net**模块（该模块只能运行在服务器上）
+1.本项目基于**http**进行通讯，故当前Minecraft版本应当注意启用**minecraft/server-net**模块（该模块只能运行在服务器上）
 
 2.您可以前往**NiaServer-Core**项目地址的[release](https://github.com/NIANIANKNIA/NiaServer-Core/releases)下载最新release构建的**NIAHttpBOT.exe**来获取最新版的`NIA-Http-Bot`
 
 3.如果您在使用期间遇到了问题/有建议，您可以前往**NiaServer-Core**的[issues](https://github.com/NIANIANKNIA/NiaServer-Core/issues)进行反馈！
 
-4.由于涉及**HTTP**通讯，请在使用过程中注意服务器防火墙设置，以免对服务器安全造成威胁！
+4.由于**采用的是http通讯，而非https**，我们**非常不推荐**您将NIAHttpBOT与基岩版服务端分开放置于两台服务器上，这是非常不安全的操作！请务必**将NiaHttpBOT与基岩版服务端放置于同一台服务器之上**，并**注意防火墙设置**，不要开放使用过程中涉及的两个端口，以免对服务器安全造成威胁！
 
 ***
 
