@@ -20,7 +20,7 @@ highlights:
     features:
       - title: 基岩版服务器
         icon: server
-        details: 服务器基于官方BDS开发，支持在Android、iOS、Windows等可下载BDS平台游玩
+        details: 服务器基于官方BDS开发，支持在Android、iOS、Windows等可下载Minecraft Bedrock(我的世界基岩版)平台游玩
         link: /dev/Http-BOT
 
       - title: 随官方版本更新

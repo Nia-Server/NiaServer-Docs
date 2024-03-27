@@ -13,7 +13,7 @@ title: 🖥️部署指南
 
 该服务器是基岩版服务器，你可以在**Windows/Linux**环境下部署服务器
 
-### 配置服务器运行环境
+### 一、配置服务器运行环境
 
 首先我们应当下载[BDS服务器端](https://www.minecraft.net/en-us/download/server/bedrock)
 
@@ -22,7 +22,7 @@ title: 🖥️部署指南
 此时我们应当注意服务器版本，从而下载相匹配的行为包
 
 
-### 下载对应版本的行为包&&NIAHttpBOT
+### 二、下载对应版本的行为包&&NIAHttpBOT
 
 ::: info 提示
 这里的NIAHttpBOT.exe仅可在Windows环境下运行，Linux用户请自行下载仓库到本地自行编译
@@ -34,19 +34,19 @@ title: 🖥️部署指南
 
 **务必按照自己服务器版本下载对应的版本，否则有很大概率因为版本不一致导致行为包无法正常使用**
 
-### 放置相应位置并增加文件
+### 三、放置相应位置并增加文件
 
 将下载的行为包(bp)或者资源包(rp)分别解压到服务器根目录下的`development_behavior_packs`文件夹、`development_resource_packs`文件夹里
 
 解压成功之后路径应当形同`/development_behavior_packs/NIAServer-Core-1.5.0-BP/*`等
 
-您可以选择下载release中的`world_behavior_packs.json`与`world_resource_packs.json`文件，并将其放置至`worlds/[MAPNAME]`目录下
+您可以选择下载release中的`world_behavior_packs.json`与`world_resource_packs.json`文件，并将其放置至`worlds/<Map>`目录下
 
-**注：这里路径的`[MAPNAME]`指的是自己的地图名称，并不是真的叫`[MAPNAME]`，而是你自己的地图名字！**
+**注：这里路径的`<Map>`指的是自己的地图名称，并不是真的叫`<Map>`，而是你自己的地图名字！**
 
-（不推荐）或者您也可以选择自行在`worlds/MAPNAME`目录下添加`world_behavior_packs.json`与`world_resource_packs.json`文件
+（不推荐）或者您也可以选择自行在`worlds/<Map>`目录下添加`world_behavior_packs.json`与`world_resource_packs.json`文件
 
-**注：这里路径的`MAPNAME`指的是自己的地图名称，并不是真的叫`MAPNAME`，而是你自己的地图名字！**
+**注：这里路径的`<Map>`指的是自己的地图名称，并不是真的叫`<Map>`，而是你自己的地图名字！**
 
 文件内容分别为
 
@@ -120,7 +120,7 @@ title: 🖥️部署指南
 ]
 ```
 
-### 配置NIAHttpBOT
+### 四、配置NIAHttpBOT
 
 1.在服务器根目录下创建一个名为NIAHttpBOT的文件夹，并将下载好的NIAHttpBOT.exe放到文件夹之中（未来所有的涉及的文件操作都将在这个文件夹下进行）
 
@@ -153,7 +153,7 @@ UseCmd = false
 
 ```
 
-### 检查是否正确配置
+### 五、检查是否正确配置
 
 如果上述步骤正确配置，此时先启动**NIAHttpBOT.exe**，再启动**bedrock_server.exe**，就可以看到控制台输出如下信息：
 
@@ -161,7 +161,7 @@ UseCmd = false
 
 此时你可以继续修改服务器配置文件，以适配自己的服务器
 
-### 修改配置文件
+### 六、修改配置文件
 
 ::: warning 注意
 请使用诸如[notepad--](https://gitee.com/cxasm/notepad--)等文本编辑器进行更改，请不要使用自带的记事本进行更改!
@@ -170,11 +170,7 @@ UseCmd = false
 配置文件位于`development_behavior_packs/scripts/config.js`，请勿自行修改其他文件，否则可能导致行为包无法正常使用
 
 
-- `ServerMode`--服务器模式
-
-可选参数：`Island`（默认）、`Survival`
-
-- `MENUITEM`--打开服务器菜单所使用的物品
+- `MENUITEM`--打开服务器菜单所使用的物品ID
 
 - `OPTAG`--管理员标签
 
@@ -184,21 +180,46 @@ UseCmd = false
 
 打开管理员面板输入的密码
 
-- `islandCfg`--空岛相关配置项目
+- `HttpCfg`--Nia-HttpBot相关配置
 
-`R`--空岛之间间距
+    - `IPAddress`--Nia-HttpBot监听地址
 
-`CX`--中心点X坐标
+    - `Port`--Nia-HttpBot监听端口
 
-`CY`--中心点Y坐标
+- `LandCfg`--领地系统相关配置
 
-`CZ`--中心点Z坐标
+    - `Distance`--领地计算索引值基准距离
+
+    为了保证服务器的流畅运行,`DISTANSE`参数应满足：`DISTANSE * DISTANCE` 等于或稍稍小于 `MAX_SQUARE`，否则可能会导致插件包运行超时而引发“hang”报错
+
+    - `MaxSquare`--领地最大面积
+
+    - `MinSquare`--领地最小面积
+
+    以上两者面积计算均只计算xz平面所占面积
+
+    - `MaxLandNum`--单人最多圈地数量
+
+    - `Price_2D`--2d领地单面积价格
+
+    - `Price_3D`--3d领地单块价格
+
+    - `XRange`--领地X轴范围
+
+    - `ZRange`--领地Z轴范围
+
+    - `YRange`--领地Y轴范围
+
+- `MarketCfg`--交易市场相关配置
+
+    - `BanItems`--禁止交易的物品
+
 
 配置示例
 
 ```javascript
 const config = {
-    "ServerMode": "Island",
+    "version": "1.0.0",
     "MENUITEM": "minecraft:clock",
     "USERandomDATA": true,
     "MoneyScoreboardName": "money",
@@ -206,16 +227,32 @@ const config = {
     "TimeScoreboardName":"time",
     "OPTAG": "op",
     "OPMENUPassword": "123456",
-    "islandCfg": {
-        "R":  1000,
-        "CX": 402,
-        "CY": 100,
-        "CZ": 547
+    "MapFolder":"..\\..\\..\\worlds\\NEWTEST",
+    "BackupFolder":"\\backup",
+    "HttpCfg": {
+        "IPAddress": "http://127.0.0.1",
+        "Port": 10086
+    },
+    "LandCfg": {
+        "Distance": 100,
+        "MaxSquare": 10000,
+        "MinSquare": 100,
+        "Price_2D": 300,
+        "Price_3D": 3,
+        "XRange": [-100000,100000],
+        "ZRange": [-100000,100000],
+        "YRange": [-64,256]
+    },
+    "MarketCfg": {
+        "BanItems" : ["minecraft:paper","minecraft:clock"]
     }
 }
+
 ```
 
-### 修改菜单文件
+至此服务器基本配置基本完毕，以下配置项目为可选配置项目
+
+### 七、修改菜单文件
 
 这里的菜单指的是服务器的主菜单、服务器商店菜单等...
 
@@ -277,10 +314,8 @@ const config = {
 | :----:| :----: |
 | 设置界面 | SetupGUI |
 | 商店界面 | ShopGUI |
-| 氧气系统界面 | OxygenGUI |
 | 传送系统界面 | TpaGUI |
 | 兑换码系统界面 | CdkGUI |
-| 飞行系统界面 | FlyGUI |
 | 转账系统界面 | TransferGUI |
 | 管理系统界面 | OpGUI |
 

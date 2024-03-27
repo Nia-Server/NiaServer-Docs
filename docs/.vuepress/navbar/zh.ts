@@ -19,7 +19,7 @@ export const zhNavbar = navbar([
     text: "开发者文档",
     icon: "code",
     prefix: "/dev/",
-    children: ['README','Http-Bot','shop_data','Ntrade','KillItem'],
+    children: ['README','Http-Bot','Shop','Ntrade','KillItem'],
   },
   {
     text: "其他链接",
