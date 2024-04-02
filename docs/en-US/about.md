@@ -1,10 +1,10 @@
 ---
 lang: en-US
 icon: info
-title: About this website
+title: About
 ---
 
-# 📜About this website
+# 📜About
 
 ::: warning Most of the English part of this document site uses Google Translate. If you feel that some parts of this document are inaccurate, you can click the "Edit this page" button on the page that you want to edit to submit an edit on Github!
 :::
@@ -14,12 +14,12 @@ title: About this website
 
 
 
-## 📇Website construction status
+## 📇Status
 
 ![status](https://img.shields.io/github/actions/workflow/status/NIANIANKNIA/NiaServer-Docs/deploy-docs.yml?style=for-the-badge)
 ![GitHub last commit](https://img.shields.io/github/last-commit/NIANIANKNIA/NiaServer-Docs?style=for-the-badge)
 
-## 🧵Basic information of the website
+## 🧵Basic informatio
 
 The website is deployed based on github-page and built using [VuePress](https://v2.vuepress.vuejs.org/)
 
