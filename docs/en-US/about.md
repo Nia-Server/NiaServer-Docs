@@ -19,7 +19,7 @@ title: About
 ![status](https://img.shields.io/github/actions/workflow/status/NIANIANKNIA/NiaServer-Docs/deploy-docs.yml?style=for-the-badge)
 ![GitHub last commit](https://img.shields.io/github/last-commit/NIANIANKNIA/NiaServer-Docs?style=for-the-badge)
 
-## 🧵Basic informatio
+## 🧵Basic information
 
 The website is deployed based on github-page and built using [VuePress](https://v2.vuepress.vuejs.org/)
 
