@@ -9,7 +9,7 @@ title: 🤖Http-BOT
 以下所有api均基于最新构建的版本（见下方RELEASE）
 :::
 
-[![Latest Release](https://img.shields.io/github/v/release/NIANIANKNIA/NiaServer-Core?include_prereleases&style=for-the-badge)](https://github.com/NIANIANKNIA/NiaServer-Core/releases/)
+[![Latest Release](https://img.shields.io/github/v/release/Nia-Server/NiaServer-Core?include_prereleases&style=for-the-badge)](https://github.com/Nia-Server/NiaServer-Core/releases/)
 
 ## 为什么开发？
 
@@ -17,19 +17,30 @@ title: 🤖Http-BOT
 
 ***
 
+## 功能特性
+
+- 基于http可以实现对特定文件进行读写、创建以及删除等功能
+- 基于http搭配**NiaServer-Core**以及**LLONEBot**可以实现QQ机器人与服务器联动功能
+
+***
+
 ## 使用前注意事项
 
 1.本项目基于**http**进行通讯，故当前Minecraft版本应当注意启用**minecraft/server-net**模块（该模块只能运行在服务器上）
 
-2.您可以前往**NiaServer-Core**项目地址的[release](https://github.com/NIANIANKNIA/NiaServer-Core/releases)下载最新release构建的**NIAHttpBOT.exe**来获取最新版的`NIA-Http-Bot`
+2.您可以前往**NiaServer-Core**项目地址的[release](https://github.com/Nia-Server/NiaServer-Core/releases)下载最新release构建的**NIAHttpBOT.exe**来获取最新版的`NIA-Http-Bot`
 
-3.如果您在使用期间遇到了问题/有建议，您可以前往**NiaServer-Core**的[issues](https://github.com/NIANIANKNIA/NiaServer-Core/issues)进行反馈！
+3.如果您在使用期间遇到了问题/有建议，您可以前往**NiaServer-Core**的[issues](https://github.com/Nia-Server/NiaServer-Core/issues)进行反馈！
 
 4.由于**采用的是http通讯，而非https**，我们**非常不推荐**您将NIAHttpBOT与基岩版服务端分开放置于两台服务器上，这是非常不安全的操作！请务必**将NiaHttpBOT与基岩版服务端放置于同一台服务器之上**，并**注意防火墙设置**，不要开放使用过程中涉及的两个端口，以免对服务器安全造成威胁！
 
 ***
 
 ## 使用/开发教程
+
+::: info 提示
+这里使用的是LLONEBot，事实上，我们是基于onebot-v11进行的开发，只要您所使用的机器人遵循这个接口，即可使用！
+:::
 
 由于**minecraft/server-net**模块在本地存档中无法启用，所以我们应当在本地搭建一个服务器环境用于开发
 
@@ -57,7 +68,13 @@ title: 🤖Http-BOT
 
 4.下载最新release构建的**NIAHttpBOT.exe**来获取最新版的`NIA-Http-Bot`
 
-5.开始开发！
+5.根据自己的平台，下载最新的[NTQQ](https://im.qq.com/pcqq/index.shtml)，后根据[LLONEBot安装教程](https://llonebot.github.io/zh-CN/guide/getting-started)安装相应的机器人框架
+
+6.安装后，打开机器人设置界面，**启用HTTP服务**，**HTTP服务监听端口**与下述配置文件中**ClientPort**保持一致，**启用HTTP事件上报**，上报地址如果是下述配置项目则为`http://127.0.0.1:10086/qqEvent`，机器人至此配置完毕
+
+7.启动**NIAHttpBOT.exe**
+
+8.开始开发！
 
 ***
 
@@ -67,39 +84,29 @@ title: 🤖Http-BOT
 # ip地址，一般为不用改
 IPAddress = "127.0.0.1"
 
-# 端口，需与行为包端口保持一致
-Port = 10086
+# 服务器端口，需与行为包端口保持一致
+ServerPort = 10086
 
 #是否启用DOS指令功能
 UseCmd = false
+
+#是否启用QQ机器人相关功能
+UseQQBot = true
+
+# 客户端端口，需要与机器人设置的监听Http端口一致
+ClientPort = 10023
+
+# QQ机器人事件上报地址
+Locate = "/qqEvent"
+
+# 监听QQ群
+QQGroup = "123456789"
 
 ```
 
 ***
 
 ## API一览表
-
-### [GET] `/CheckServer`（开发中，未上线）
-
-返回当前`NIAHttpBOT`的状态，多用于检测依赖服务器有没有正常开启
-
-### [GET] `/GetTime`（开发中，未上线）
-
-获取当前时间，返回形如"2019-01-28 12:53"的字符串
-
-使用示例
-
-```js
-const port = 3000
-const reqGetTime = http.get(`http://127.0.0.1:${port}/GetTime`)
-reqServerStarted.then((response) => {
-    if (response.status == 200) {
-        console.log(response.body)
-    } else {
-        console.error("Dependent server connection failed! Check whether the dependent server started successfully.")
-    }
-})
-```
 
 ### [POST] `/RunCmd`
 
@@ -416,7 +423,7 @@ http.request(reqWriteLineToFile).then((response) => {
 
 (目前写了一些常用的功能，更多功能将在后续更新)
 
-[点击下载示例文件](https://github.com/NIANIANKNIA/NiaServer-Core/blob/dev/development_behavior_packs/NIA_V4.0_BP/scripts/API/filesystem.js)
+[点击下载示例文件](https://github.com/Nia-Server/NiaServer-Core/blob/dev/development_behavior_packs/NIA_V4.0_BP/scripts/API/filesystem.js)
 
 
 ```js
