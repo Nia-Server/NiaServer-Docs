@@ -66,15 +66,32 @@ title: 🤖Http-BOT
 
 即可启用
 
-4.下载最新release构建的**NIAHttpBOT.exe**来获取最新版的`NIA-Http-Bot`
+4.Windows平台下下载最新release构建的**NIAHttpBOT.exe**来获取最新版的`NIAHttp-Bot`，Linux平台下载最新release构建的**NIAHttpBOT**来获取最新版的`NIAHttp-Bot`
 
 5.根据自己的平台，下载最新的[NTQQ](https://im.qq.com/pcqq/index.shtml)，后根据[LLONEBot安装教程](https://llonebot.github.io/zh-CN/guide/getting-started)安装相应的机器人框架
 
 6.安装后，打开机器人设置界面，**启用HTTP服务**，**HTTP服务监听端口**与下述配置文件中**ClientPort**保持一致，**启用HTTP事件上报**，上报地址如果是下述配置项目则为`http://127.0.0.1:10086/qqEvent`，机器人至此配置完毕
 
-7.启动**NIAHttpBOT.exe**
+7.Windows平台点击**NIAHttpBOT.exe**启动;Linux平台在终端输入`./NIAHttpBOT`来启动！
+
+在Linux如果出项**权限不够**的提示，这个错误是因为你试图运行的文件没有执行权限。你可以使用 `chmod` 命令来给文件添加执行权限。以下是具体的步骤：
+
+7.1. 打开终端
+
+7.2. 使用 `cd` 命令导航到文件所在的目录
+
+7.3. 运行 `chmod +x NIAHttpBOT` 命令给文件添加执行权限
+
+这是具体的命令：
+
+```bash
+chmod +x NIAHttpBOT
+```
+
+然后你就可以使用 `./NIAHttpBOT` 命令来运行你的程序了。
 
 8.开始开发！
+
 
 ***
 
