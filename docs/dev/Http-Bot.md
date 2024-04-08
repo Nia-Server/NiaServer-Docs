@@ -66,15 +66,32 @@ title: 🤖Http-BOT
 
 即可启用
 
-4.下载最新release构建的**NIAHttpBOT.exe**来获取最新版的`NIA-Http-Bot`
+4.Windows平台下下载最新release构建的**NIAHttpBOT.exe**来获取最新版的`NIAHttp-Bot`，Linux平台下载最新release构建的**NIAHttpBOT**来获取最新版的`NIAHttp-Bot`
 
 5.根据自己的平台，下载最新的[NTQQ](https://im.qq.com/pcqq/index.shtml)，后根据[LLONEBot安装教程](https://llonebot.github.io/zh-CN/guide/getting-started)安装相应的机器人框架
 
 6.安装后，打开机器人设置界面，**启用HTTP服务**，**HTTP服务监听端口**与下述配置文件中**ClientPort**保持一致，**启用HTTP事件上报**，上报地址如果是下述配置项目则为`http://127.0.0.1:10086/qqEvent`，机器人至此配置完毕
 
-7.启动**NIAHttpBOT.exe**
+7.Windows平台点击**NIAHttpBOT.exe**启动;Linux平台在终端输入`./NIAHttpBOT`来启动！
+
+在Linux如果出项**权限不够**的提示，这个错误是因为你试图运行的文件没有执行权限。你可以使用 `chmod` 命令来给文件添加执行权限。以下是具体的步骤：
+
+7.1. 打开终端
+
+7.2. 使用 `cd` 命令导航到文件所在的目录
+
+7.3. 运行 `chmod +x NIAHttpBOT` 命令给文件添加执行权限
+
+这是具体的命令：
+
+```bash
+chmod +x NIAHttpBOT
+```
+
+然后你就可以使用 `./NIAHttpBOT` 命令来运行你的程序了。
 
 8.开始开发！
+
 
 ***
 
@@ -95,9 +112,7 @@ UseQQBot = true
 
 # 客户端端口，需要与机器人设置的监听Http端口一致
 ClientPort = 10023
-
-# QQ机器人事件上报地址
-Locate = "/qqEvent"
+https://github.com/Nia-Server/NiaServer-Docs
 
 # 监听QQ群
 QQGroup = "123456789"
@@ -105,8 +120,58 @@ QQGroup = "123456789"
 ```
 
 ***
+## QQ-BOT 相关指令
 
-## API一览表
+### 一般指令
+
+#### 参数说明
+
+`<XboxID>` 玩家的XboxID
+
+注：当前还不能录入带空格的XboxID,需要管理员手动修改`player_data.json`文件
+
+#### 详细指令
+
+#帮助: 显示帮助菜单
+
+#赞我: 给自己点10个赞
+
+#绑定 <XboxID>: 绑定XboxID
+
+例：#绑定 NIANIANKNIA
+
+#查：查询自己账号的相关信息
+
+#查 @要查询的人 : 查询别人账号的相关信息
+
+### 管理指令
+
+#### 参数说明
+
+`<时间>` 应当以min(分钟)、h(小时)、d(天)为结尾，前面只能为阿拉伯数字
+
+例：1min、10h、100d等
+
+#### 详细指令
+
+#禁言 @要禁言的人 <时间>: 禁言指定群成员
+
+例：#禁言 @NIANIANKNIA 1h
+
+#解禁 @要解禁的人: 解禁指定群成员
+
+#改绑 @要改绑的人 <XboxID>: 改绑XboxID
+
+#封禁 @要封禁的人 <时间>: 封禁指定群成员游戏账号
+
+例：#封禁 @NIANIANKNIA 1d
+
+#解封 @要解封的人: 解封指定群成员账号
+
+#改权限 @要改权限的人 <权限>: 改变指定群成员的权限
+
+
+## HTTP API一览表
 
 ### [POST] `/RunCmd`
 
