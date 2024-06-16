@@ -43,12 +43,10 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v2
         with:
-          # 域名设置为docs.mcnia.com
-          fqdn: docs.mcnia.com
           # 部署到 gh-pages 分支
           target_branch: gh-pages
           #保留历史
-          keep_history: false
+          keep_history: true
           # 部署目录为 VuePress 的默认输出目录
           build_dir: docs/.vuepress/dist
         env:
