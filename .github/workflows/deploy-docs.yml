@@ -43,6 +43,8 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v2
         with:
+          # 域名设置为docs.mcnia.com
+          fqdn: docs.mcnia.com
           # 部署到 gh-pages 分支
           target_branch: gh-pages
           #保留历史
