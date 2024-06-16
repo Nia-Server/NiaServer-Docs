@@ -54,26 +54,3 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-  push-to-niaserver-docs-cn:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout NiaServer-Docs-CN
-      uses: actions/checkout@v2
-      with:
-        repository: 'Nia-Server/NiaServer-Docs-CN'
-        token: ${{ secrets.PUSH_REPO_TOKEN }}
-        path: 'NiaServer-Docs-CN'
-
-    - name: Copy files to NiaServer-Docs-CN
-      run: |
-        cp -r docs/.vuepress/dist/* NiaServer-Docs-CN/
-
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        directory: NiaServer-Docs-CN
-        github_token: ${{ secrets.PUSH_REPO_TOKEN }}
-        branch: gh-pages
-
-
