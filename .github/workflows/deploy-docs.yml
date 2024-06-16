@@ -1,5 +1,5 @@
 
-name: docs
+name: build-and-deploy
 
 on:
   # 每当 push 到 main 分支时触发部署
@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  docs:
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -32,28 +32,13 @@ jobs:
           # 选择要使用的 node 版本
           node-version: 18
           # 缓存 pnpm 依赖
-
+          cache: pnpm
 
       # 运行构建脚本
       - name: Build VuePress site
         run: pnpm docs:build
 
-      - name: Push to NiaServer-Docs-CN
-        run: |
-          git config --global user.name 'GitHub Actions'
-          git config --global user.email 'actions@github.com'
-          git clone https://github.com/Nia-Server/NiaServer-Docs-CN.git
-          cd NiaServer-Docs-CN
-          git checkout gh-pages || git checkout --orphan gh-pages
-          git rm -rf .
-          cp -r ../docs/.vuepress/dist/* .
-          git add .
-          git commit -m "Update docs"
-          git push --force "https://${{ secrets.PUSH_REPO_TOKEN }}@github.com/Nia-Server/NiaServer-Docs-CN.git" gh-pages
-        env:
-          GITHUB_TOKEN: ${{ secrets.PUSH_REPO_TOKEN }}
-
-      # 查看 workflow 的文档来获取更多信息
+            # 查看 workflow 的文档来获取更多信息
       # @see https://github.com/crazy-max/ghaction-github-pages
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v2
@@ -68,3 +53,27 @@ jobs:
           build_dir: docs/.vuepress/dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  push-to-niaserver-docs-cn:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout NiaServer-Docs-CN
+      uses: actions/checkout@v2
+      with:
+        repository: 'Nia-Server/NiaServer-Docs-CN'
+        token: ${{ secrets.PUSH_REPO_TOKEN }}
+        path: 'NiaServer-Docs-CN'
+
+    - name: Copy files to NiaServer-Docs-CN
+      run: |
+        cp -r docs/.vuepress/dist/* NiaServer-Docs-CN/
+
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        directory: NiaServer-Docs-CN
+        github_token: ${{ secrets.PUSH_REPO_TOKEN }}
+        branch: gh-pages
+
+
