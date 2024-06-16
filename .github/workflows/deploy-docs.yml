@@ -46,9 +46,24 @@ jobs:
           # 部署到 gh-pages 分支
           target_branch: gh-pages
           #保留历史
-          keep_history: true
+          keep_history: fasle
           # 部署目录为 VuePress 的默认输出目录
           build_dir: docs/.vuepress/dist
         env:
           # @see https://docs.github.com/cn/actions/reference/authentication-in-a-workflow#about-the-github_token-secret
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Push to NiaServer-Docs-CN
+        run: |
+          git config --global user.name 'GitHub Actions'
+          git config --global user.email 'actions@github.com'
+          git clone https://github.com/Nia-Server/NiaServer-Docs-CN.git
+          cd NiaServer-Docs-CN
+          git checkout gh-pages || git checkout --orphan gh-pages
+          git rm -rf .
+          cp -r ../docs/.vuepress/dist/* .
+          git add .
+          git commit -m "Update docs"
+          git push -u origin gh-pages --force
+        env:
+          GITHUB_TOKEN: ${{ secrets.PUSH_REPO_TOKEN }}
