@@ -1,20 +1,20 @@
 {
-  "name": "niaserver-docs",
+  "name": "vuepress-theme-hope-template",
   "version": "2.0.0",
   "description": "A project of vuepress-theme-hope",
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "docs:build": "vuepress build docs",
-    "docs:clean-dev": "vuepress dev docs --clean-cache",
-    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress-vite build src",
+    "docs:clean-dev": "vuepress-vite dev src --clean-cache",
+    "docs:dev": "vuepress-vite dev src",
     "docs:update-package": "npx vp-update"
   },
   "devDependencies": {
-    "@vuepress/client": "2.0.0-rc.0",
-    "@vuepress/plugin-docsearch": "^2.0.0-rc.0",
-    "vue": "^3.3.8",
-    "vuepress": "2.0.0-rc.0",
-    "vuepress-theme-hope": "2.0.0-rc.0"
+    "@vuepress/bundler-vite": "2.0.0-rc.13",
+    "@vuepress/plugin-docsearch": "^2.0.0-rc.34",
+    "vue": "^3.4.27",
+    "vuepress": "2.0.0-rc.13",
+    "vuepress-theme-hope": "2.0.0-rc.48"
   }
 }
