@@ -12,8 +12,8 @@ export default hopeTheme({
 
   iconAssets: "fontawesome-with-brands",
 
-  repo: "/NIANIANKNIA/NiaServer-Docs",
-  docsRepo: 'https://github.com/NIANIANKNIA/NiaServer-Docs',
+  repo: "/Nia-Server/NiaServer-Docs",
+  docsRepo: 'https://github.com/Nia-Server/NiaServer-Docs',
   docsBranch: 'main',
   docsDir: 'docs',
   editLinkPattern: ':repo/edit/:branch/:path',
