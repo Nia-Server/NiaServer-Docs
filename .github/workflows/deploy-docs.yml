@@ -46,7 +46,7 @@ jobs:
           # 部署到 gh-pages 分支
           target_branch: gh-pages
           #保留历史
-          keep_history: fasle
+          keep_history: false
           # 部署目录为 VuePress 的默认输出目录
           build_dir: docs/.vuepress/dist
         env:
@@ -64,6 +64,6 @@ jobs:
           cp -r ../docs/.vuepress/dist/* .
           git add .
           git commit -m "Update docs"
-          git push -u origin gh-pages --force
+          git push --force "https://${{ secrets.PUSH_REPO_TOKEN }}@github.com/NiaServer/NiaServer-Docs-CN.git" gh-pages
         env:
           GITHUB_TOKEN: ${{ secrets.PUSH_REPO_TOKEN }}
