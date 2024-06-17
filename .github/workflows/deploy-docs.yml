@@ -55,20 +55,9 @@ jobs:
           git rm -rf .
           cp -r ../src/.vuepress/dist/* .
           git add .
-          git commit -m "Update docs"
-          git push --force "https://${{ secrets.PUSH_REPO_TOKEN }}@github.com/Nia-Server/NiaServer-Docs-CN.git" gh-pages
-        env:
-          GITHUB_TOKEN: ${{ secrets.PUSH_REPO_TOKEN }}
-
-      - name: Create CNAME file
-        run: echo "docs.mcnia.top" > CNAME
-
-      - name: Commit and Push CNAME file
-        run: |
-          git config --local user.name "GitHub Action"
-          git config --local user.email "action@github.com"
+          echo "docs.mcnia.top" > CNAME  # 直接在这里创建CNAME文件
           git add CNAME
-          git commit -m "Add CNAME file"
+          git commit -m "Update docs"
           git push --force "https://${{ secrets.PUSH_REPO_TOKEN }}@github.com/Nia-Server/NiaServer-Docs-CN.git" gh-pages
         env:
           GITHUB_TOKEN: ${{ secrets.PUSH_REPO_TOKEN }}
