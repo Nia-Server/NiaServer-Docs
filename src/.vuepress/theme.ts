@@ -14,7 +14,7 @@ export default hopeTheme({
   repo: "/Nia-Server/NiaServer-Docs",
   docsRepo: 'https://github.com/Nia-Server/NiaServer-Docs',
   docsBranch: 'main',
-  docsDir: 'rec',
+  docsDir: 'src',
   editLinkPattern: ':repo/edit/:branch/:path',
 
 
