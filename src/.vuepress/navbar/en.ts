@@ -7,13 +7,13 @@ export const enNavbar = navbar([
       text: "Server",
       icon: "server",
       prefix: "/en-US/server/",
-      children: ['README','developers','specialThanks']
+      children: ['index','developers','specialThanks']
     },
     {
       text: "Developer documentation",
       icon: "code",
       prefix: "/en-US/dev/",
-      children: ['README','Http-Bot','Ntrade','KillItem'],
+      children: ['index','Http-Bot','Ntrade','KillItem'],
     },
     {
       text: "Links",

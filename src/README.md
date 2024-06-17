@@ -6,10 +6,10 @@ heroImage: /logo.png
 heroImageDark: /logoDark.png
 actions:
   - text: 关于我们
-    link: /server
+    link: /server/
     type: primary
   - text: 部署服务器
-    link: /dev
+    link: /dev/
     type: secondary
 
 highlights:
