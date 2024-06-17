@@ -59,3 +59,16 @@ jobs:
           git push --force "https://${{ secrets.PUSH_REPO_TOKEN }}@github.com/Nia-Server/NiaServer-Docs-CN.git" gh-pages
         env:
           GITHUB_TOKEN: ${{ secrets.PUSH_REPO_TOKEN }}
+
+      - name: Create CNAME file
+        run: echo "docs.mcnia.top" > CNAME
+
+      - name: Commit and Push CNAME file
+        run: |
+          git config --local user.name "GitHub Action"
+          git config --local user.email "action@github.com"
+          git add CNAME
+          git commit -m "Add CNAME file"
+          git push --force "https://${{ secrets.PUSH_REPO_TOKEN }}@github.com/Nia-Server/NiaServer-Docs-CN.git" gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.PUSH_REPO_TOKEN }}
