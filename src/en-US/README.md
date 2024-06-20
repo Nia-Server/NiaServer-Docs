@@ -6,10 +6,10 @@ heroImageDark: /logoDark.png
 tagline: Coming soon...
 actions:
   - text: Github
-    link: https://github.com/NIANIANKNIA/NiaServer-Docs
+    link: https://github.com/Nia-Server/NiaServer-Docs
     type: primary
   - text: Start
-    link: /en-US/server
+    link: /en-US/server/
     type: secondary
 features:
 - title: 📝Rules and regulations

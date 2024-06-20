@@ -1,5 +1,6 @@
 import { hopeTheme } from "vuepress-theme-hope";
 import { docsearchPlugin } from "@vuepress/plugin-docsearch";
+import { watermarkPlugin } from '@vuepress/plugin-watermark'
 import { enNavbar, zhNavbar } from "./navbar/index.js";
 import { enSidebar, zhSidebar } from "./sidebar/index.js";
 
@@ -208,3 +209,6 @@ export default hopeTheme({
     // },
   },
 });
+
+
+

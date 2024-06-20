@@ -1,5 +1,6 @@
 import { defineUserConfig } from "vuepress";
 import { docsearchPlugin } from "@vuepress/plugin-docsearch";
+import { watermarkPlugin } from '@vuepress/plugin-watermark'
 import theme from "./theme.js";
 
 export default defineUserConfig({

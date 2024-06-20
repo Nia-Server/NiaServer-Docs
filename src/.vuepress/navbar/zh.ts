@@ -6,20 +6,17 @@ export const zhNavbar = navbar([
   {
     text: "游玩指南",
     icon: "lightbulb",
-    prefix: "/play-guide/",
-    children: ['index','regulation','Illustrated'],
+    link: "/play-guide/index"
   },
   {
     text: "服务器相关",
     icon: "server",
-    prefix: "/server/",
-    children: ['index','changelog','history','developers','specialThanks','map']
+    link: "/server/index"
   },
   {
     text: "开发者文档",
     icon: "code",
-    prefix: "/dev/",
-    children: ['index','Http-Bot','Shop','Ntrade','KillItem'],
+    link: "/dev/index"
   },
   {
     text: "其他链接",
@@ -32,10 +29,6 @@ export const zhNavbar = navbar([
       {
         text: '如何编辑本文档站',
         link: 'https://www.mcnia.top/howtoedit'
-      },
-      {
-        text: "获取授权ID",
-        link: "https://getid.mcnia.top",
       }
     ],
   }

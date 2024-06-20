@@ -29,15 +29,15 @@ highlights:
         link: /server
 
   - header: 原版生存内容扩展
-    description: 我们基于原版生存进行了大量内容扩展，让你的生存体验更加丰富！
+    description: 我们基于原版生存使用官方Add-ons对玩法进行一定的修改，让你的生存体验更加丰富！
     image: /mc_icons/Scaffolding.png
     bgImageStyle:
       background-repeat: repeat
       background-size: initial
     features:
-      - title: 地形生成修改
+      - title: 全新挑战
         icon: mound
-        details: 全新的地形生成，让整个游戏世界更加丰富多彩
+        details: 在水里可以呼吸，而在空气中会窒息！对于这样的挑战你准备好了吗？
       - title: 生物修改
         icon: fish
         details: 为了匹配扩展之后的游戏内容，我们修改了部分生物的行为
@@ -49,29 +49,27 @@ highlights:
         details: 为了方便玩家之间的交易，我们提供了交易市场，让你可以更加方便的交易
 
 
-  - header: 开放的开发环境
-    description: 我们提供了开放的开发环境，让你可以自由的开发属于你自己的服务器！
+  - header: Add-ons&&相关组件全部开源
+    description: 服务器所开发的Add-ons和相关组件全部开源，你可以根据自己的需求开设一个属于你自己的服务器！
     image: /mc_icons/promo_creeper.png
     features:
-      - title: Http-BOT
-        icon: server
-        details: 基于Http实现对文件进行读写操作，赋予了原版script-api更多的能力
-        link: /dev/Http-BOT
-
-      - title: 服务器源代码全部开源
+      - title: 同步服务器新特性
         icon: file-code
-        details: 服务器源代码全部开源，你可以在Github上找到我们的项目
+        details: 开源的Add-ons和相关组件会同步服务器的新特性，同时跟随官方版本更新，为你提供最新的游戏体验
         link: /server
+
+      - title: NIAHttpBOT
+        icon: server
+        details: 基于http实现对文件进行读写操作等操作，赋予了原版script-api更多的能力
+        link: /dev/Http-BOT
 
       - title: 完善的开发文档
         icon: file
-        details: 这里有完善的开发文档，可以帮助你快速上手开发
+        details: 这里有较为完善的开发文档，可以帮助你快速上手了解我们的开源项目如何使用
 
-      - title: 基于script-api开发
+      - title: Add-ons功能分离
         icon: file-lines
-        details: 基于官方的script-api开发，随官方更新而更新，不用担心版本问题
-
-
+        details: Add-ons分为NiaServer-Core和NiaServer-ExtraFeatures两部分，你可以根据自己的需求选择性的使用
 
 
 ---
