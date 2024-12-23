@@ -21,12 +21,12 @@ highlights:
       - title: 基岩版服务器
         icon: server
         details: 服务器基于官方BDS开发，支持在Android、iOS、Windows等可下载Minecraft Bedrock(我的世界基岩版)平台游玩
-        link: /dev/Http-BOT
+        link: /play-guide/
 
       - title: 随官方版本更新
         icon: file-code
         details: 得益于基岩版的特性，服务器随官方版本更新而更新，随时为您提供最新的游戏体验
-        link: /server
+        link: /play-guide/
 
   - header: 原版生存内容扩展
     description: 我们基于原版生存使用官方Add-ons对玩法进行一定的修改，让你的生存体验更加丰富！
@@ -56,16 +56,16 @@ highlights:
       - title: 同步服务器新特性
         icon: file-code
         details: 开源的Add-ons和相关组件会同步服务器的新特性，同时跟随官方版本更新，为你提供最新的游戏体验
-        link: /server
 
       - title: NIAHttpBOT
         icon: server
         details: 基于http实现对文件进行读写操作等操作，赋予了原版script-api更多的能力
-        link: /dev/Http-BOT
+        link: /dev/Http-BOT/
 
       - title: 完善的开发文档
         icon: file
         details: 这里有较为完善的开发文档，可以帮助你快速上手了解我们的开源项目如何使用
+        link: /dev/
 
       - title: Add-ons功能分离
         icon: file-lines

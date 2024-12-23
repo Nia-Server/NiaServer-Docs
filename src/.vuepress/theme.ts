@@ -28,7 +28,7 @@ export default hopeTheme({
       // sidebar
       sidebar: zhSidebar,
 
-      footer: "Copyright © 2019-2024 NIA服务器",
+      footer: "Copyright © 2019-2025 NIA服务器",
 
       displayFooter: true,
 
@@ -45,7 +45,7 @@ export default hopeTheme({
       // sidebar
       sidebar: enSidebar,
 
-      footer: "Copyright © 2019-2024 Nia-Server",
+      footer: "Copyright © 2019-2025 Nia-Server",
 
       displayFooter: true,
 
