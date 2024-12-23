@@ -8,15 +8,12 @@ title: 关于本网站
 
 ## 📇网站构建状态
 
-### 主站(docs.mcnia.com)
-
 ![status](https://img.shields.io/github/actions/workflow/status/Nia-Server/NiaServer-Docs/deploy-docs.yml?style=for-the-badge)
 ![GitHub last commit](https://img.shields.io/github/last-commit/Nia-Server/NiaServer-Docs?style=for-the-badge)
 
 
 ## 🧵网站基本信息
 
-国内用户请访问镜像网站 [docs.mcnia.top](http://docs.mcnia.top)
 
 网站基于github-page部署，使用[VuePress](https://v2.vuepress.vuejs.org/)构建
 

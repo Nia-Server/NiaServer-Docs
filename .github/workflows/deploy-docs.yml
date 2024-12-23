@@ -44,20 +44,3 @@ jobs:
           # 部署文档
           branch: gh-pages
           folder: src/.vuepress/dist
-
-      - name: Push to NiaServer-Docs-CN
-        run: |
-          git config --global user.name 'GitHub Actions'
-          git config --global user.email 'actions@github.com'
-          git clone https://github.com/Nia-Server/NiaServer-Docs-CN.git
-          cd NiaServer-Docs-CN
-          git checkout gh-pages || git checkout --orphan gh-pages
-          git rm -rf .
-          cp -r ../src/.vuepress/dist/* .
-          git add .
-          echo "docs.mcnia.top" > CNAME  # 直接在这里创建CNAME文件
-          git add CNAME
-          git commit -m "Update docs"
-          git push --force "https://${{ secrets.PUSH_REPO_TOKEN }}@github.com/Nia-Server/NiaServer-Docs-CN.git" gh-pages
-        env:
-          GITHUB_TOKEN: ${{ secrets.PUSH_REPO_TOKEN }}
