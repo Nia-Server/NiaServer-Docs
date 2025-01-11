@@ -5,8 +5,8 @@ title: 首页
 heroImage: /logo.png
 heroImageDark: /logoDark.png
 actions:
-  - text: 关于我们
-    link: /server/
+  - text: 开始游玩
+    link: /play-guide/
     type: primary
   - text: 部署服务器
     link: /dev/
@@ -60,7 +60,7 @@ highlights:
       - title: NIAHttpBOT
         icon: server
         details: 基于http实现对文件进行读写操作等操作，赋予了原版script-api更多的能力
-        link: /dev/Http-Bot/
+        link: /dev/Http-Bot
 
       - title: 完善的开发文档
         icon: file
