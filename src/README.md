@@ -42,10 +42,10 @@ highlights:
         icon: fish
         details: 为了匹配扩展之后的游戏内容，我们修改了部分生物的行为
       - title: 圈地系统
-        icon: fence
+        icon: house
         details: 全方位保护你的领地，让你的领地不再受到外界的侵扰
       - title: 交易市场
-        icon: emerald
+        icon: store
         details: 为了方便玩家之间的交易，我们提供了交易市场，让你可以更加方便的交易
 
 
@@ -69,7 +69,7 @@ highlights:
 
       - title: Add-ons功能分离
         icon: file-lines
-        details: Add-ons分为NiaServer-Core和NiaServer-ExtraFeatures两部分，你可以根据自己的需求选择性的使用
+        details: Add-ons分为NiaServer-Core和NiaServer-Extra两部分，你可以根据自己的需求选择性的使用
 
 
 ---

@@ -1,11 +1,11 @@
 ---
 lang: zh-CN
-title: 🛖圈地系统使用说明
+title: 🛖圈地系统
 ---
-# 🛖圈地系统使用说明
+# 🛖圈地系统
 
 ::: info 提示
-圈地系统依赖于[NIAHttpBOT](Http-Bot.md),在使用圈地系统之前请先阅读[NIAHttpBOT使用说明](Http-Bot.md)，设置好NIAHttpBOT的配置文件。
+圈地系统依赖于[NIAHttpBOT](NIAHttpBOT.md),在使用圈地系统之前请先阅读[NIAHttpBOT使用说明](NIAHttpBOT.md)，设置好NIAHttpBOT的配置文件。
 :::
 
 ## 圈地系统特性
