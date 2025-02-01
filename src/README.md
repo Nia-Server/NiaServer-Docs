@@ -60,7 +60,7 @@ highlights:
       - title: NIAHttpBOT
         icon: server
         details: 基于http实现对文件进行读写操作等操作，赋予了原版script-api更多的能力
-        link: /dev/Http-Bot
+        link: /dev/NIAHttpBOT
 
       - title: 完善的开发文档
         icon: file
