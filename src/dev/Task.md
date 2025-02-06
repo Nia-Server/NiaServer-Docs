@@ -5,7 +5,7 @@ title: 📱任务系统
 # 📱任务系统
 
 ::: info 提示
-圈地系统依赖于[NIAHttpBOT](NIAHttpBOT.md),在使用圈地系统之前请先阅读[NIAHttpBOT使用说明](NIAHttpBOT.md)，设置好NIAHttpBOT的配置文件。
+任务系统依赖于[NIAHttpBOT](NIAHttpBOT.md),在使用任务系统之前请先阅读[NIAHttpBOT使用说明](NIAHttpBOT.md)，设置好NIAHttpBOT的配置文件。
 :::
 
 ## 任务系统文件示例
