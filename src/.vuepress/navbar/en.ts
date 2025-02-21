@@ -21,11 +21,11 @@ export const enNavbar = navbar([
       children: [
         {
           text: 'Blog',
-          link: 'https://www.mcnia.top'
+          link: 'https://www.mcnia.com'
         },
         {
           text: 'How to edit this document',
-          link: 'https://www.mcnia.top/howtoedit'
+          link: 'https://www.mcnia.com/howtoedit'
         }
       ],
     },
