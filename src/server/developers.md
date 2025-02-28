@@ -3,10 +3,6 @@ lang: zh-CN
 title: 😙开发者名单
 ---
 
-
-
-
-
 ::: center
 NiaServer 目前主要由以下成员维护
 
@@ -20,7 +16,7 @@ NiaServer 目前主要由以下成员维护
 
 ![lonely](/dev_icon/lonely.jpg =150x150)
 
-***NiaServer系列开源项目贡献者，建筑师***
+***建筑师，NiaServer系列开源项目贡献者***
 
 ![AiLaZuiKeAi](/dev_icon/AiLaZuiKeAi.jpg =150x150)
 
