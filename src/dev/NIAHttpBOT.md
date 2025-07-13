@@ -335,9 +335,9 @@ NIAHttpBOT若收到请求则会返回状态码`200`且根据请求内容返回�
 | **501** | 目标qq群不存在 |
 | **502** | qq群消息发送失败 |
 
+---
 
-
-#### [POST] `/RunCmd`
+#### [POST] **`/RunCmd`**
 
 执行DOS命令
 
@@ -363,9 +363,9 @@ NIAHttpBOT若收到请求则会返回状态码`200`且根据请求内容返回�
 
 无
 
+---
 
-
-#### [POST] `/CheckFile`
+#### [POST] **`/CheckFile`**
 
 检查一个文件是否存在
 
@@ -380,8 +380,9 @@ NIAHttpBOT若收到请求则会返回状态码`200`且根据请求内容返回�
 | :----: | :----: | :----: |
 | `result` | bool | 文件存在为**true**，不存在为**false** |
 
+---
 
-#### [POST] `/CheckDir`
+#### [POST] **`/CheckDir`**
 
 检查目标文件夹是否存在
 
@@ -396,7 +397,9 @@ NIAHttpBOT若收到请求则会返回状态码`200`且根据请求内容返回�
 | :----: | :----: | :----: |
 | `result` | bool | 文件夹存在为**true**，不存在为**false** |
 
-#### [POST] `/CreateNewFile`
+---
+
+#### [POST] **`/CreateNewFile`**
 
 创建一个文件并写入内容
 
@@ -411,9 +414,9 @@ NIAHttpBOT若收到请求则会返回状态码`200`且根据请求内容返回�
 
 无
 
+---
 
-
-#### [POST] `/CreateNewJsonFile`
+#### [POST] **`/CreateNewJsonFile`**
 
 创建一个JSON文件并写入内容
 
@@ -428,7 +431,9 @@ NIAHttpBOT若收到请求则会返回状态码`200`且根据请求内容返回�
 
 无
 
-#### [POST] `/GetFileData`
+---
+
+#### [POST] **`/GetFileData`**
 
 获取文件数据
 
@@ -443,11 +448,11 @@ NIAHttpBOT若收到请求则会返回状态码`200`且根据请求内容返回�
 | :----: | :----: | :----: |
 | `file_data` | string | 获取成功则返回文件内容 |
 
+---
 
-#### [POST] `/GetJsonFileData`
+#### [POST] **`/GetJsonFileData`**
 
-> [!warning]
-> json文件应当没有任何语法错误/注释，否则将无法正确读取json数据！，详细请查看[json文件读取注意事项](#json文件读取注意事项)
+> json文件应当没有任何语法错误/注释，否则将无法正确读取json数据！详细请查看[json文件读取注意事项](#json文件读取注意事项)
 
 获取JSON文件数据
 
@@ -462,7 +467,9 @@ NIAHttpBOT若收到请求则会返回状态码`200`且根据请求内容返回�
 | :----: | :----: | :----: |
 | `file_data` | object | 获取成功则返回JSON内容 |
 
-### [POST] `/OverwriteFile`
+---
+
+#### [POST] **`/OverwriteFile`**
 
 覆盖文件内容
 
@@ -477,7 +484,9 @@ NIAHttpBOT若收到请求则会返回状态码`200`且根据请求内容返回�
 
 无
 
-#### [POST] `/OverwriteJsonFile`
+---
+
+#### [POST] **`/OverwriteJsonFile`**
 
 覆盖JSON文件内容
 
@@ -492,7 +501,9 @@ NIAHttpBOT若收到请求则会返回状态码`200`且根据请求内容返回�
 
 无
 
-#### [POST] `/WriteLineToFile`
+---
+
+#### [POST] **`/WriteLineToFile`**
 
 向目标文件最后写入如一行内容
 
@@ -509,7 +520,9 @@ NIAHttpBOT若收到请求则会返回状态码`200`且根据请求内容返回�
 
 无
 
-#### [POST] `/SendQQGroupMessage`
+---
+
+#### [POST] **`/SendQQGroupMessage`**
 
 向指定QQ群发送消息
 
@@ -524,6 +537,7 @@ NIAHttpBOT若收到请求则会返回状态码`200`且根据请求内容返回�
 
 无
 
+---
 
 ## 附加说明
 
