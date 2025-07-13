@@ -274,7 +274,70 @@ QQGroup = "123456789"
 
 ## HTTP API一览表
 
-### [POST] `/RunCmd`
+### v1.0
+
+| Http API | 方法 | 简介 | Windows | Linux |
+| :----:| :----: | :----: | :----: | :----: |
+| [/RunCmd](#post-runcmd) | **POST** | 执行DOS指令 | ✅ | ✅ |
+| [/CheckFile](#post-checkfile) | **POST** | 检查文件是否存在 | ✅ | ✅ |
+| [/CheckDir](#post-checkdir) | **POST** | 检查文件夹是否存在 | ✅ | ✅ |
+| [/CreateNewFile](#post-createnewfile) | **POST** | 创建一个文件 | ✅ | ✅ |
+| [/CreateNewJsonFile](#post-createnewjsonfile) | **POST** | 创建一个JSON文件 | ✅ | ✅ |
+| [/GetFileData](#post-getfiledata) | **POST** | 获取文件数据 | ✅ | ✅ |
+| [/GetJsonFileData](#post-getjsonfiledata) | **POST** | 获取JSON文件数据 | ✅ | ✅ |
+| [/OverwriteFile](#post-overwritefile) | **POST** | 覆写文件内容 | ✅ | ✅ |
+| [/OverwriteJsonFile](#post-overwritejsonfile) | **POST** | 覆写JSON文件内容 | ✅ | ✅ |
+| [/WriteLineToFile](#post-writelinetofile) | **POST** | 向文件写入一行内容 | ✅ | ✅ |
+
+
+#### **POST方法 API使用方法**
+
+向`http://<IPAddress>:<ClientPort>`发送一个http POST请求
+
+请求体内容应为**json格式**：
+
+```json
+{
+    "api_version": "1.0", // API版本号
+    "key_1": "value_1", // 传入的参数1
+    "key_2": "value_2" // 传入的参数2（可选）
+    // ...
+}
+```
+
+NIAHttpBOT若收到请求则会返回状态码`200`且根据请求内容返回如下**json格式**：
+
+```json
+{
+    "httpbot_version": "1.1", // NIAHttpBOT版本号
+    "status": "success", // 状态码，若请求处理成功则为success，否则为fail
+    "data": { // 返回的数据
+        "key_1": "value_1", // 返回的参数1
+        "key_2": "value_2" // 返回的参数2（可选）
+        // ...
+    },
+    "failure_code": 100, // 若请求处理失败则返回失败代码
+}
+```
+
+#### 错误码列表
+
+| 错误码 | 错误原因 |
+| :----: | :----: |
+| **100** | 请求体格式错误 |
+| **101** | 请求体缺少必要的键 |
+| **102** | 请求体键的值格式错误 |
+| **200** | API版本不匹配 |
+| **300** | NIAhttpBOT自身错误 |
+| **400** | 目标操作文件/路径不存在 |
+| **401** | 目标操作文件已经存在无法创建 |
+| **500** | 没有成功链接到qq机器人 |
+| **501** | 目标qq群不存在 |
+| **502** | qq群消息发送失败 |
+
+
+
+#### [POST] `/RunCmd`
 
 执行DOS命令
 
@@ -290,263 +353,177 @@ QQGroup = "123456789"
 
 如需了解更多DOS指令，请前往[微软官方文档站](https://learn.microsoft.com/zh-cn/windows-server/administration/windows-commands/windows-commands)查看
 
-使用示例
-```js
-const port = 3000
-const reqRunCmd = new HttpRequest(`http://127.0.0.1:${port}/RunCmd`);
-    reqRunCmd.body = "del 123.txt"
-    reqRunCmd.method = HttpRequestMethod.Post;
-    reqRunCmd.headers = [
-        new HttpHeader("Content-Type", "text/plain"),
-    ];
-http.request(reqRunCmd).then((response) => {
-    if (response.status == 200) {
-        console.log("Dos command executed successfully!")
-    } else {
-        console.error("Dependent server connection failed! Check whether the dependent server started successfully.")
-    }
-})
-```
+**参数**
+| 字段名 | 数据类型 | 默认值 | 说明 |
+| :----: | :----: | :----: | :----: |
+| `api_version` | string |  | API版本 |
+| `cmd` | string |  | 要执行的dos指令，如del 123.txt |
 
+**响应数据**
 
-### [POST] `/CheckFile`
-
-检查一个文件是否存在，目标文件存在则返回`true`,状态码为`200`，不存在则返回`false`，状态码为`400`
-
-使用示例
-
-```js
-const port = 3000
-const reqCheckFile = new HttpRequest(`http://127.0.0.1:${port}/CheckFile`);
-    reqCheckFile.body = "FileName.json"
-    reqCheckFile.method = HttpRequestMethod.Post;
-    reqCheckFile.headers = [
-        new HttpHeader("Content-Type", "text/plain"),
-    ];
-http.request(reqCheckFile).then((response) => {
-    if (response.status == 200) {
-        console.log("Target file exists.")
-    } else if (response.status == 400) {
-        console.error("The target file does not exist")
-    } else {
-        console.error("Dependent server connection failed! Check whether the dependent server started successfully.")
-    }
-})
-```
-
-### [POST] `/CheckDir`
-
-检查目标文件夹是否存在，目标文件夹存在则返回`true`，状态码为`200`，不存在则返回`false`，状态码为`400`
-
-使用示例
-
-```js
-const port = 3000
-const reqCheckDir = new HttpRequest(`http://127.0.0.1:${port}/CheckDir`);
-    reqCheckDir.body = "./A"
-    reqCheckDir.method = HttpRequestMethod.Post;
-    reqCheckDir.headers = [
-        new HttpHeader("Content-Type", "text/plain"),
-    ];
-http.request(reqCheckDir).then((response) => {
-    if (response.status == 200) {
-        console.log("Target folder exists.")
-    } else if (response.status == 400) {
-        console.error("The target folder does not exist")
-    } else {
-        console.error("Dependent server connection failed! Check whether the dependent server started successfully.")
-    }
-})
-```
-
-### [POST] `/CreateNewFile`
-
-创建一个文件，创建成功返回`success`，状态码为`200`，创建失败则返回`失败原因`，状态码为`400`
-
-
-使用示例
-
-```js
-const port = 3000
-const reqCreateNewFile = new HttpRequest(`http://127.0.0.1:${port}/CreateNewFile`);
-    reqCreateNewFile.body = JSON.stringify({"fileName":"test.txt","content":"这是第一行\n这是第二行"})
-    reqCreateNewFile.method = HttpRequestMethod.Post;
-    reqCreateNewFile.headers = [
-        new HttpHeader("Content-Type", "text/plain"),
-    ];
-http.request(reqCreateNewFile).then((response) => {
-    if (response.status == 200) {
-        console.log("File created successfully!")
-    } else if (response.status == 400) {
-        console.error(response.body)
-    } else {
-        console.error("Dependent server connection failed! Check whether the dependent server started successfully.")
-    }
-})
-```
+无
 
 
 
-### [POST] `/CreateNewJsonFile`
+#### [POST] `/CheckFile`
 
-创建一个JSON文件，创建成功返回`success`，状态码为`200`，创建失败则返回`失败原因`，状态码为`400`
+检查一个文件是否存在
 
-使用示例
+**参数**
+| 字段名 | 数据类型 | 默认值 | 说明 |
+| :----: | :----: | :----: | :----: |
+| `api_version` | string |  | API版本 |
+| `file_name` | string |  | 要检查的目标文件名字 |
 
-```js
-const port = 3000
-const reqCreateNewJsonFile = new HttpRequest(`http://127.0.0.1:${port}/CreateNewJsonFile`);
-    reqCreateNewJsonFile.body = JSON.stringify({"fileName":"market111.json","content":{"a":10}})
-    reqCreateNewJsonFile.method = HttpRequestMethod.Post;
-    reqCreateNewJsonFile.headers = [
-        new HttpHeader("Content-Type", "text/plain"),
-    ];
-http.request(reqCreateNewJsonFile).then((response) => {
-    if (response.status == 200) {
-        console.log("File created successfully!")
-    } else if (response.status == 400) {
-        console.error(response.body)
-    } else {
-        console.error("Dependent server connection failed! Check whether the dependent server started successfully.")
-    }
-})
-```
-
-### [POST] `/GetFileData`
-
-获取文件数据，获取成功则返回文件数据（类型为字符串），状态码为`200`，获取失败则返回`fail`，状态码为`400`
-
-使用示例
-
-```js
-const port = 3000
-const reqGetFileData = new HttpRequest(`http://127.0.0.1:${port}/GetFileData`);
-    reqGetFileData.body = "text.txt"
-    reqGetFileData.method = HttpRequestMethod.Post;
-    reqGetFileData.headers = [
-        new HttpHeader("Content-Type", "text/plain"),
-    ];
-http.request(reqGetFileData).then((response) => {
-    if (response.status == 200) {
-        console.log("Get file data successfully! File data:" + response.body)
-    } else if (response.status == 400) {
-        console.error("The target file does not exist")
-    } else {
-        console.error("Dependent server connection failed! Check whether the dependent server started successfully.")
-    }
-})
-```
+**响应数据**
+| 字段名 | 数据类型 | 说明 |
+| :----: | :----: | :----: |
+| `result` | bool | 文件存在为**true**，不存在为**false** |
 
 
-### [POST] `/GetJsonFileData`
+#### [POST] `/CheckDir`
+
+检查目标文件夹是否存在
+
+**参数**
+| 字段名 | 数据类型 | 默认值 | 说明 |
+| :----: | :----: | :----: | :----: |
+| `api_version` | string |  | API版本 |
+| `dir_name` | string |  | 要检查的目标文件夹名字 |
+
+**响应数据**
+| 字段名 | 数据类型 | 说明 |
+| :----: | :----: | :----: |
+| `result` | bool | 文件夹存在为**true**，不存在为**false** |
+
+#### [POST] `/CreateNewFile`
+
+创建一个文件并写入内容
+
+**参数**
+| 字段名 | 数据类型 | 默认值 | 说明 |
+| :----: | :----: | :----: | :----: |
+| `api_version` | string |  | API版本 |
+| `file_name` | string |  | 要创建的目标文件名字 |
+| `content` | string |  | 要写入的内容 |
+
+**响应数据**
+
+无
+
+
+
+#### [POST] `/CreateNewJsonFile`
+
+创建一个JSON文件并写入内容
+
+**参数**
+| 字段名 | 数据类型 | 默认值 | 说明 |
+| :----: | :----: | :----: | :----: |
+| `api_version` | string |  | API版本 |
+| `file_name` | string |  | 要创建的目标JSON文件名字 |
+| `content` | object |  | 要写入的内容，必须为JSON格式 |
+
+**响应数据**
+
+无
+
+#### [POST] `/GetFileData`
+
+获取文件数据
+
+**参数**
+| 字段名 | 数据类型 | 默认值 | 说明 |
+| :----: | :----: | :----: | :----: |
+| `api_version` | string |  | API版本 |
+| `file_name` | string |  | 要获取的目标文件名字 |
+
+**响应数据**
+| 字段名 | 数据类型 | 说明 |
+| :----: | :----: | :----: |
+| `file_data` | string | 获取成功则返回文件内容 |
+
+
+#### [POST] `/GetJsonFileData`
 
 > [!warning]
 > json文件应当没有任何语法错误/注释，否则将无法正确读取json数据！，详细请查看[json文件读取注意事项](#json文件读取注意事项)
 
-获取JSON文件数据，获取成功则返回json格式的数据，状态码为`200`，获取失败则返回`fail`，状态码为`400`
+获取JSON文件数据
 
-使用示例
-```js
-const port = 3000
-const reqGetJsonFileData = new HttpRequest(`http://127.0.0.1:${port}/GetJsonFileData`);
-    reqGetJsonFileData.body = "market.json"
-    reqGetJsonFileData.method = HttpRequestMethod.Post;
-    reqGetJsonFileData.headers = [
-        new HttpHeader("Content-Type", "text/plain"),
-    ];
-http.request(reqGetJsonFileData).then((response) => {
-    if (response.status == 200) {
-        console.log("Get file data successfully! File data:" + response.body)
-    } else if (response.status == 400) {
-        console.error("The target file does not exist")
-    } else {
-        console.error("Dependent server connection failed! Check whether the dependent server started successfully.")
-    }
-})
-```
+**参数**
+| 字段名 | 数据类型 | 默认值 | 说明 |
+| :----: | :----: | :----: | :----: |
+| `api_version` | string |  | API版本 |
+| `file_name` | string |  | 要获取的目标JSON文件名字 |
+
+**响应数据**
+| 字段名 | 数据类型 | 说明 |
+| :----: | :----: | :----: |
+| `file_data` | object | 获取成功则返回JSON内容 |
 
 ### [POST] `/OverwriteFile`
 
-覆盖文件内容，覆盖成功则返回`success`，状态码为`200`，覆盖失败则返回`失败原因`，状态码为`400`
+覆盖文件内容
 
-使用示例
+**参数**
+| 字段名 | 数据类型 | 默认值 | 说明 |
+| :----: | :----: | :----: | :----: |
+| `api_version` | string |  | API版本 |
+| `file_name` | string |  | 要覆盖的目标文件名字 |
+| `content` | string |  | 要覆盖的内容 |
 
-```js
-const port = 3000
-const reqOverwriteFile = new HttpRequest(`http://127.0.0.1:${port}/OverwriteFile`);
-    reqOverwriteFile.body = JSON.stringify({"fileName":"FileName.txt","content": "这是第一行\n这是第二行"})
-    reqOverwriteFile.method = HttpRequestMethod.Post;
-    reqOverwriteFile.headers = [
-        new HttpHeader("Content-Type", "text/plain"),
-    ];
-http.request(reqOverwriteFile).then((response) => {
-    if (response.status == 200) {
-        console.log("Overwrite file data successfully!")
-    } else if (response.status == 400) {
-        console.error(response.body)
-    } else {
-        console.error("Dependent server connection failed! Check whether the dependent server started successfully.")
-    }
-})
-```
+**响应数据**
 
-### [POST] `/OverwriteJsonFile`
+无
 
-覆盖JSON文件内容，覆盖成功则返回`success`，状态码为`200`，覆盖失败则返回`失败原因`，状态码为`200`
+#### [POST] `/OverwriteJsonFile`
 
-使用示例
+覆盖JSON文件内容
 
-```js
-const port = 3000
-const reqOverwriteJsonFile = new HttpRequest(`http://127.0.0.1:${port}/OverwriteJsonFile`);
-    reqOverwriteJsonFile.body = JSON.stringify({"fileName":"FileName.json","content":{"a":"呵呵呵呵"}})
-    reqOverwriteJsonFile.method = HttpRequestMethod.Post;
-    reqOverwriteJsonFile.headers = [
-        new HttpHeader("Content-Type", "text/plain"),
-    ];
-http.request(reqOverwriteJsonFile).then((response) => {
-    if (response.status == 200) {
-        console.log("Overwrite file data successfully!")
-    } else if (response.status == 400) {
-        console.error(response.body)
-    } else {
-        console.error("Dependent server connection failed! Check whether the dependent server started successfully.")
-    }
-})
-```
+**参数**
+| 字段名 | 数据类型 | 默认值 | 说明 |
+| :----: | :----: | :----: | :----: |
+| `api_version` | string |  | API版本 |
+| `file_name` | string |  | 要覆盖的目标JSON文件名字 |
+| `content` | object |  | 要覆盖的内容，必须为JSON格式 |
 
+**响应数据**
 
+无
 
-### [POST] `/WriteLineToFile`
+#### [POST] `/WriteLineToFile`
 
-向目标文件最后写入如一行内容，成功则返回`success`，状态码为`200`，失败则返回`失败原因`，状态码为`400`
+向目标文件最后写入如一行内容
 
 **注意增加换行符（\n），否则不会换行！**
 
-使用示例
+**参数**
+| 字段名 | 数据类型 | 默认值 | 说明 |
+| :----: | :----: | :----: | :----: |
+| `api_version` | string |  | API版本 |
+| `file_name` | string |  | 要写入的目标文件名字 |
+| `content` | string |  | 要写入的内容 |
 
-```js
-const port = 3000
-const reqWriteLineToFile = new HttpRequest(`http://127.0.0.1:${port}/WriteLineToFile`);
-    reqWriteLineToFile.body = JSON.stringify({"fileName":"123.txt","content": "这是一行测试内容" + "\n"})
-    reqWriteLineToFile.method = HttpRequestMethod.Post;
-    reqWriteLineToFile.headers = [
-        new HttpHeader("Content-Type", "text/plain"),
-    ];
-http.request(reqWriteLineToFile).then((response) => {
-    if (response.status == 200) {
-        console.log("Overwrite file data successfully!")
-    } else if (response.status == 400) {
-        console.error(response.body)
-    } else {
-        console.error("Dependent server connection failed! Check whether the dependent server started successfully.")
-    }
-})
-```
+**响应数据**
 
-### [POST] `/CopyFolder`
+无
 
-将特定文件夹复制到指定位置
+#### [POST] `/SendQQGroupMessage`
+
+向指定QQ群发送消息
+
+**参数**
+| 字段名 | 数据类型 | 默认值 | 说明 |
+| :----: | :----: | :----: | :----: |
+| `api_version` | string |  | API版本 |
+| `group_id` | string |  | 要发送消息的QQ群号 |
+| `message` | string |  | 要发送的消息内容 |
+
+**响应数据**
+
+无
+
 
 ## 附加说明
 
