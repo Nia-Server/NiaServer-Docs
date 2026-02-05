@@ -22,13 +22,3 @@ title: 🗺️存档下载
 
 [V7 空岛服 存档](https://pan.baidu.com/s/1iRfG2JyfjJkrgCv42GgeSg?pwd=tt3s)
 
-
-## NIA·PAN下载
-
-[V4 纯生存服 存档](https://pan.mcnia.com/s/rvSL)
-
-[V5 战争服 存档](https://pan.mcnia.com/s/2BhG)
-
-[V6 纯生存服 存档](https://pan.mcnia.com/s/dkcD)
-
-[V7 空岛服 存档](https://pan.mcnia.com/s/eZtW)
