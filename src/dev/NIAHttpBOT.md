@@ -299,6 +299,7 @@ QQGroup = "123456789"
 ```json
 {
     "api_version": "1.0", // API版本号
+    "server_id": "main", // 服务器ID，不传则按NIAHttpBOT默认设置处理
     "key_1": "value_1", // 传入的参数1
     "key_2": "value_2" // 传入的参数2（可选）
     // ...
@@ -309,7 +310,7 @@ NIAHttpBOT若收到请求则会返回状态码`200`且根据请求内容返回�
 
 ```json
 {
-    "httpbot_version": "1.1", // NIAHttpBOT版本号
+    "httpbot_version": "1.0", // NIAHttpBOT版本号
     "status": "success", // 状态码，若请求处理成功则为success，否则为fail
     "data": { // 返回的数据
         "key_1": "value_1", // 返回的参数1
